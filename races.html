@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos races</title>
+    <meta name="description" content="Découvrez les différentes races de chiens">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-site">
+
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="w-100 d-flex align-items-center">
+
+                <!-- LOGO -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-header">
+                    
+                    <div class="logo-nom ms-3">
+                        <div class="nom-principal">
+                            Toutou <span>&</span> Compagnie
+                        </div>
+                        <div class="sous-titre-logo">
+                            ÉLEVAGE CANIN
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- MENU HAMBURGER -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navigation">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <!-- MENU -->
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                            href="elevage.html">
+                                Notre élevage
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="races.html">
+                                Nos races
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="chiots.html">
+                                Nos chiots
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="conseils.html">
+                                Conseils
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- RECHERCHE -->
+                    <button class="btn-recherche" type="button" aria-label="Rechercher">
+                        <img src="images/accueil/loupe.jpg" alt="Logo de recherche" class="logo-recherche">
+                    </button>
+
+                    <div class="form-check form-switch mt-3">
+                        <input type="checkbox" id="mode-sombre" class="form-check-input" role="switch">
+                        <label for="mode-sombre" class="form-check-label">Mode sombre</label>
+                    </div>
+
+                    <!-- BOUTON CONTACT -->
+                    <a href="contact.html"
+                    class="btn-nous-joindre">
+                        Nous joindre
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Entete et filtre -->
+    
+        <section class="banniere-race mt-4">
+            <span class="patte patte-1">🐾</span>
+            <span class="patte patte-2">🐾</span>
+            
+            <div class="px-4"> 
+                <div class="row align-items-center">
+                                       
+                    <div class="col-lg-4 chien-banniere">
+                        <img src="images/nos_races/image_banniere.png" class="img-fluid"
+                            alt="image banniere">
+                    </div>
+
+                    <div class="col-lg-5 milieu-banniere">
+                        <h1 class="titre-banniere">Découvrez nos races <br> de chiens</h1>
+
+                        <p class="texte-banniere">
+                            Cliquez sur une race pour en savoir plus 
+                            sur son caractère, ses besoins et ses particularités
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="message-banniere">
+                            <p>
+                                🐾   Trouvez le compagnon idéal pour votre famille!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+    <main class="conteneur">
+        <div class="filtres">
+            
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <label class="d-block mb-2">Filtrer par taille :</label>
+
+                    <button type="button" class="btn btn-filtre active">Toutes</button>
+                    <button type="button" class="btn btn-filtre">Petits</button>
+                    <button type="button" class="btn btn-filtre">Moyens</button>
+                    <button type="button" class="btn btn-filtre">Grands</button>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="recherche-race">Filtrer par races :</label>
+                        <input type="search"
+                            id="recherche-race"
+                            class="form-control"
+                            placeholder="Rechercher une race...">
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+
+
+        <!-- Galerie des races -->
+
+        <div class="galerie" id="galerie">
+
+            <article class="carte type-grand">               
+                <img class="carte-image" src="images/nos_races/berger_allemand.jpg"
+                    alt="Image de berger allemand">
+
+                <div class="carte-titre">
+                    <h2 class="carte-nom">Berger allemand</h2>
+                    
+                </div>
+
+                <p class="carte-type">Grand</p>
+                
+                <div class="couleurs-race">
+                    <span class="pastille pastille-noir" data-couleur="Noir"></span>
+                    <span class="pastille pastille-sable" data-couleur="Sable"></span>
+                    <span class="pastille pastille-gris" data-couleur="Gris"></span>
+                    <span class="pastille pastille-noir-feu" data-couleur="Noir et feu"></span>
+                    
+                </div>
+                <p class="carte-couleur">Noir et feu</p>
+                <a class="carte-bouton" href="#carte1">🐾 Voir la fiche complète  ></a>
+            </article>
+
+            <article class="carte type-moyen">              
+                <img class="carte-image" src="images/nos_races/border_collie.jpg"
+                    alt="Image de border collie">
+
+                <div class="carte-titre">
+                    <h2 class="carte-nom">Border collie</h2>
+                    
+                </div>
+
+                <p class="carte-type">Moyen</p>
+                
+                <div class="couleurs-race">
+                    <span class="pastille pastille-roux-blanc" data-couleur="Roux et blanc"></span>
+                    <span class="pastille pastille-bleu-merle" data-couleur="Bleu et merle"></span>
+                    <span class="pastille pastille-tricolore" data-couleur="Tricolore"></span>
+                    <span class="pastille pastille-noir-blanc" data-couleur="Noir et blanc"></span>
+                    
+                </div>
+                <p class="carte-couleur">Noir et blanc</p>               
+                <a class="carte-bouton" href="#carte2">🐾 Voir la fiche complète  ></a>
+            </article>
+
+            <article class="carte type-petit">               
+                <img class="carte-image" src="images/nos_races/corgi.jpg"
+                    alt="Image de corgi">
+
+                <div class="carte-titre">
+                    <h2 class="carte-nom">Corgi</h2>
+                    
+                </div>
+
+                <p class="carte-type">Petit</p>
+                
+                <div class="couleurs-race">
+                    <span class="pastille pastille-fauve-blanc" data-couleur="Fauve et blanc"></span>
+                    <span class="pastille pastille-roux-blanc" data-couleur="Roux et blanc"></span>
+                    <span class="pastille pastille-sable-blanc" data-couleur="Sable et blanc"></span>
+                    <span class="pastille pastille-tricolore" data-couleur="Tricolore"></span>
+                    
+                </div>
+                <p class="carte-couleur">Fauve et blanc</p>
+                <a class="carte-bouton" href="#carte3">🐾 Voir la fiche complète  ></a>
+            </article>
+
+            <article class="carte type-grand">             
+                <img class="carte-image" src="images/nos_races/husky.jpg"
+                    alt="Image de husky">
+
+                <div class="carte-titre">
+                    <h2 class="carte-nom">Husky sibérien</h2>
+                    
+                </div>
+
+                <p class="carte-type">Grand</p>
+                
+                <div class="couleurs-race">
+                    <span class="pastille pastille-noir-blanc" data-couleur="Noir et blanc"></span>
+                    <span class="pastille pastille-gris-blanc" data-couleur="Gris et blanc"></span>
+                    <span class="pastille pastille-cuivre-blanc" data-couleur="Cuivré et blanc"></span>
+                    <span class="pastille pastille-blanc" data-couleur="Blanc"></span>
+                    
+                </div>
+                <p class="carte-couleur">Cuivré et blanc</p>               
+                <a class="carte-bouton" href="#carte4">🐾 Voir la fiche complète  ></a>
+            </article>
+
+            <article class="carte type-petit">             
+                <img class="carte-image" src="images/nos_races/dachshund.jpg"
+                    alt="Image de dachshund">
+
+                <div class="carte-titre">
+                    <h2 class="carte-nom">Dachshund</h2>
+                    
+                </div>
+
+                <p class="carte-type">Petit</p>
+                
+                <div class="couleurs-race">
+                    <span class="pastille pastille-chocolat-feu" data-couleur="Chocolat et feu"></span>
+                    <span class="pastille pastille-brun-roux" data-couleur="Brun et roux"></span>
+                    <span class="pastille pastille-noir-feu" data-couleur="Noir et feu"></span>
+                    <span class="pastille pastille-arlequin" data-couleur="Arlequin"></span>
+                    
+                </div>
+                <p class="carte-couleur">Chocolat et feu</p>               
+                <a class="carte-bouton" href="#carte5">🐾 Voir la fiche complète  ></a>
+            </article>
+
+            <article class="carte type-moyen">             
+                <img class="carte-image" src="images/nos_races/shiba_inu.jpg"
+                    alt="Image de shiba inu">
+
+                <div class="carte-titre">
+                    <h2 class="carte-nom">Shiba inu</h2>
+                    
+                </div>
+
+                <p class="carte-type">Moyen</p>
+                
+                <div class="couleurs-race">
+                    <span class="pastille pastille-noir-feu" data-couleur="Noir et feu"></span>
+                    <span class="pastille pastille-rouge-urajiro" data-couleur="Rouge et urajiro"></span>
+                    <span class="pastille pastille-sesame" data-couleur="Sésame"></span>
+                    <span class="pastille pastille-creme" data-couleur="Crème"></span>
+                    
+                </div>
+                <p class="carte-couleur">Cuivré et blanc</p>               
+                <a class="carte-bouton" href="#carte6">🐾 Voir la fiche complète  ></a>
+            </article>
+
+            <article class="carte type-Grand">             
+                <img class="carte-image" src="images/nos_races/golden_retriever.jpg"
+                    alt="Image de golden retriever">
+
+                <div class="carte-titre">
+                    <h2 class="carte-nom">Golden retriever</h2>
+                    
+                </div>
+
+                <p class="carte-type">Grand</p>
+                
+                <div class="couleurs-race">
+                    <span class="pastille pastille-creme" data-couleur="Crème"></span>
+                    <span class="pastille pastille-dore-clair" data-couleur="Doré clair"></span>
+                    <span class="pastille pastille-dore" data-couleur="Doré"></span>
+                    <span class="pastille pastille-dore-fonce" data-couleur="Doré foncé"></span>
+                    
+                </div>
+                <p class="carte-couleur">Doré</p>               
+                <a class="carte-bouton" href="#carte7">🐾 Voir la fiche complète  ></a>
+            </article>
+
+            <article class="carte type-petit">             
+                <img class="carte-image" src="images/nos_races/yorkshire.jpg"
+                    alt="Image de yorkshire">
+
+                <div class="carte-titre">
+                    <h2 class="carte-nom">Yorkshire</h2>
+                    
+                </div>
+
+                <p class="carte-type">Petit</p>
+                
+                <div class="couleurs-race">
+                    <span class="pastille pastille-bleu_acier-feu" data-couleur="Bleu acier et feu"></span>
+                    <span class="pastille pastille-noir-feu" data-couleur="Noir et feu"></span>
+                    <span class="pastille pastille-bleu_acier-dore" data-couleur="Bleu acier et doré"></span>
+                    <span class="pastille pastille-noir-dore" data-couleur="Noir et doré"></span>
+                    
+                </div>
+                <p class="carte-couleur">Noir et feu</p>               
+                <a class="carte-bouton" href="#carte8">🐾 Voir la fiche complète  ></a>
+            </article>
+
+            <article class="carte type-moyen">             
+                <img class="carte-image" src="images/nos_races/beagle.jpg"
+                    alt="Image de beagle">
+
+                <div class="carte-titre">
+                    <h2 class="carte-nom">Beagle</h2>
+                    
+                </div>
+
+                <p class="carte-type">Moyen</p>
+                
+                <div class="couleurs-race">
+                    <span class="pastille pastille-tricolore" data-couleur="Tricolore"></span>
+                    <span class="pastille pastille-fauve-blanc" data-couleur="Fauve et blanc"></span>
+                    <span class="pastille pastille-roux-blanc" data-couleur="Roux et blanc"></span>
+                    <span class="pastille pastille-citron-blanc" data-couleur="Citron et blanc"></span>
+                    
+                </div>
+                <p class="carte-couleur">Noir et feu</p>               
+                <a class="carte-bouton" href="#carte9">🐾 Voir la fiche complète  ></a>
+            </article>
+
+            <article class="carte type-grand">             
+                <img class="carte-image" src="images/nos_races/doberman.jpg"
+                    alt="Image de doberman">
+
+                <div class="carte-titre">
+                    <h2 class="carte-nom">Doberman</h2>
+                    
+                </div>
+
+                <p class="carte-type">Grand</p>
+                
+                <div class="couleurs-race">
+                    <span class="pastille pastille-roux-feu" data-couleur="Roux et feu"></span>
+                    <span class="pastille pastille-noir-feu" data-couleur="Noir et feu"></span>
+                    <span class="pastille pastille-bleu-feu" data-couleur="Bleu et feu"></span>
+                    <span class="pastille pastille-fauve-feu" data-couleur="Fauve et feu"></span>
+                    
+                </div>
+                <p class="carte-couleur">Noir et feu</p>               
+                <a class="carte-bouton" href="#carte10">🐾 Voir la fiche complète  ></a>
+            </article>
+
+            <article class="carte type-petit">             
+                <img class="carte-image" src="images/nos_races/spitz_nain.jpg"
+                    alt="Image de spitz nain">
+
+                <div class="carte-titre">
+                    <h2 class="carte-nom">Spitz nain</h2>
+                    
+                </div>
+
+                <p class="carte-type">Petit</p>
+                
+                <div class="couleurs-race">
+                    <span class="pastille pastille-orange" data-couleur="Orange"></span>
+                    <span class="pastille pastille-creme" data-couleur="Crème"></span>
+                    <span class="pastille pastille-noir" data-couleur="Noir"></span>
+                    <span class="pastille pastille-chocolat" data-couleur="Chocolat"></span>
+                    
+                </div>
+                <p class="carte-couleur">Noir et feu</p>               
+                <a class="carte-bouton" href="#carte11">🐾 Voir la fiche complète  ></a>
+            </article>
+        </div>
+    </main>
+
+
+
+
+    
+    <footer class="footer-site">
+        <!-- Forme arrondie -->
+        <div class="footer-vague"></div>
+
+        <div class="container footer-contenu">
+            <div class="row gy-5">
+                <!-- ================================ -->
+                <!-- LOGO -->
+                <!-- ================================ -->
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html"
+                    class="footer-logo d-flex align-items-center">
+                        <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-footer">
+
+                        <div class="ms-3">
+                            <div class="footer-nom">
+                                Toutou <span>&</span><br>
+                                Compagnie
+                            </div>
+                            <div class="footer-sous-titre">
+                                ÉLEVAGE CANIN
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ================================ -->
+                <!-- NAVIGATION -->
+                <!-- ================================ -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h2 class="footer-titre">
+                        Navigation
+                    </h2>
+
+                    <ul class="footer-navigation">
+
+                        <li>
+                            <a href="index.html">Accueil</a>
+                        </li>
+
+                        <li>
+                            <a href="elevage.html">Notre élevage</a>
+                        </li>
+
+                        <li>
+                            <a href="races.html">Nos races</a>
+                        </li>
+
+                        <li>
+                            <a href="chiots.html">Nos chiots</a>
+                        </li>
+
+                        <li>
+                            <a href="conseils.html">Conseils</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ================================ -->
+                <!-- CONTACT -->
+                <!-- ================================ -->
+
+                <div class="col-lg-3 col-md-6">
+                    <h2 class="footer-titre">
+                        Nous joindre
+                    </h2>
+
+                    <div class="footer-contact">
+                        <div class="contact-ligne">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>
+                                123, chemin des Cavaliers<br>
+                                Saint-Henri, QC G0R 3E0
+                            </p>
+                        </div>
+
+                        <div class="contact-ligne">
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>
+                                (418) 555-0123
+                            </p>
+                        </div>
+
+                        <div class="contact-ligne">
+                            <i class="bi bi-envelope-fill"></i>
+                            <p>
+                                info@toutouetcompagnie.ca
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================================ -->
+                <!-- RÉSEAUX -->
+                <!-- ================================ -->
+
+                <div class="col-lg-3 col-md-6">
+                    <h2 class="footer-titre">
+                        Suivez-nous
+                    </h2>
+
+                    <div class="reseaux-sociaux">
+                        <a href="https://www.facebook.com/profile.php?id=61594627183723" target="_blank" aria-label="Facebook">
+                            <img src="images/accueil/logo_facebook.png" alt="Logo Facebook" class="logo-reseaux">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/jbelangerthibault/" target="_blank" aria-label="Instagram">
+                            <img src="images/accueil/logo_instagram.png" alt="Logo Instagram" class="logo-reseaux">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@ToutouCompagnie-p2m" target="_blank" aria-label="YouTube">
+                            <img src="images/accueil/logo_youtube.png" alt="Logo YouTube" class="logo-reseaux">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="modale berger_allemand" id="carte1">
+        <a class="modale-fond" href="#galerie"></a>
+        <div class="modale-contenu">
+            <a class="modale-fermer" href="#galerie">&times;</a>
+            <div class="haut-fiche">
+
+                <div class="photo-fiche">
+                    <img class="modale-image"
+                        src="images/nos_races/berger_allemand.jpg"
+                        alt="Image de berger allemand">
+                </div>
+
+                <div class="modale-infos">
+                    <h2 class="modale-titre">Berger allemand</h2>
+                    <div class="separateur-fiche">
+                        <span></span>
+                        <span>🐾</span>
+                        <span></span>
+                    </div>
+
+                    <p class="modale-caracteristiques">
+                        Grand chien • Actif • Protecteur • Intelligent
+                    </p>
+
+                    <h3>À propos de la race</h3>
+
+                    <p>
+                        Le berger allemand est un chien de berger exceptionnel, réputé pour sa grande intelligence et sa polyvalence unique.
+                        Fidèle, protecteur et courageux, il développe un attachement profond et indéfectible envers sa famille.
+                        Son endurance physique et ses facultés d'apprentissage en font le partenaire idéal des forces de l'ordre.
+                    </p>
+
+                    <div class="statistiques-fiche">
+                        <div class="stat-fiche">
+                            <div class="icone-stat">📏</div>
+                            <h4>Taille</h4>
+                            <p>56 - 66 cm</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚖️</div>
+                            <h4>Poids</h4>
+                            <p>23 - 41 kg</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">♥</div>
+                            <h4>Espérance de vie</h4>
+                            <p>12 - 14 ans</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚡</div>
+                            <h4>Niveau d'activité</h4>
+                            <p>Élevé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÉPARATEUR BAS -->
+            <div class="separateur-bas">
+                <span></span>
+                <span>🐾</span>
+                <span></span>
+            </div>
+
+            <div class="details-fiche">
+                <div class="detail-fiche">
+                    <div class="icone-detail">🏠</div>
+                    <div>
+                        <h4>Vie en famille</h4>
+                        <p>
+                            Très attaché à sa famille. Son énergie, sa taille et ses instincts de travail 
+                            nécessitent un foyer impliqué dans ses activités et son éducation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🎓</div>
+                    <div>
+                        <h4>Éducation</h4>
+                        <p>
+                            Socialisation et éducation précoces particulièrement importantes. Très apte à l'obéissance et aux 
+                            tâches structurées; l'apprentissage doit se poursuivre à l'âge adulte.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🐕</div>
+                    <div>
+                        <h4>Besoins</h4>
+                        <p>
+                            Chien athlétique ayant besoin de beaucoup d'exercice et de stimulation 
+                            mentale. Promenades, jeux, pistage et activités canines lui conviennent bien.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🪮</div>
+                    <div>
+                        <h4>Entretien</h4>
+                        <p>
+                            Double pelage avec perte de poils notable; brossage 
+                            fréquent, davantage pendant les périodes de mue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fermer-fiche">
+                <a href="#galerie">🐾 Fermer la fiche</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modale border_collier" id="carte2">
+        <a class="modale-fond" href="#galerie"></a>
+        <div class="modale-contenu">
+            <a class="modale-fermer" href="#galerie">&times;</a>
+            <div class="haut-fiche">
+
+                <div class="photo-fiche">
+                    <img class="modale-image"
+                        src="images/nos_races/border_collie.jpg"
+                        alt="Image de border collie">
+                </div>
+
+                <div class="modale-infos">
+                    <h2 class="modale-titre">Border collie</h2>
+                    <div class="separateur-fiche">
+                        <span></span>
+                        <span>🐾</span>
+                        <span></span>
+                    </div>
+
+                    <p class="modale-caracteristiques">
+                        Moyen chien • Très actif • Intelligent • Obéissant
+                    </p>
+
+                    <h3>À propos de la race</h3>
+
+                    <p>
+                        Le border collie est un chien de berger extrêmement intelligent et énergique.
+                        Il excelle dans les activités nécessitant de l'agilité et de la rapidité.
+                        Sa nature travailleuse et son désir de plaire en font un compagnon idéal pour les familles actives.
+                    </p>
+
+                    <div class="statistiques-fiche">
+                        <div class="stat-fiche">
+                            <div class="icone-stat">📏</div>
+                            <h4>Taille</h4>
+                            <p>46 - 56 cm</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚖️</div>
+                            <h4>Poids</h4>
+                            <p>14 - 20 kg</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">♥</div>
+                            <h4>Espérance de vie</h4>
+                            <p>12 - 15 ans</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚡</div>
+                            <h4>Niveau d'activité</h4>
+                            <p>Très élevé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÉPARATEUR BAS -->
+            <div class="separateur-bas">
+                <span></span>
+                <span>🐾</span>
+                <span></span>
+            </div>
+
+            <div class="details-fiche">
+                <div class="detail-fiche">
+                    <div class="icone-detail">🏠</div>
+                    <div>
+                        <h4>Vie en famille</h4>
+                        <p>
+                            Peut être excellent en famille, mais son instinct de rassemblement peut 
+                            le pousser à vouloir « conduire » les enfants. Idéal pour un foyer très actif.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🎓</div>
+                    <div>
+                        <h4>Éducation</h4>
+                        <p>
+                            Exceptionnellement réceptif à l'apprentissage. Il a besoin de défis réguliers 
+                            et d'un propriétaire impliqué; l'ennui peut devenir problématique.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🐕</div>
+                    <div>
+                        <h4>Besoins</h4>
+                        <p>
+                            Très grands besoins physiques et mentaux. Longues activités, 
+                            entraînement, jeux de réflexion, agility ou activités similaires.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🪮</div>
+                    <div>
+                        <h4>Entretien</h4>
+                        <p>
+                            Double pelage à brosser régulièrement, généralement une 
+                            à deux fois par semaine, davantage durant les mues.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fermer-fiche">
+                <a href="#galerie">🐾 Fermer la fiche</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modale corgi" id="carte3">
+        <a class="modale-fond" href="#galerie"></a>
+        <div class="modale-contenu">
+            <a class="modale-fermer" href="#galerie">&times;</a>
+            <div class="haut-fiche">
+
+                <div class="photo-fiche">
+                    <img class="modale-image"
+                        src="images/nos_races/corgi.jpg"
+                        alt="Image de corgi">
+                </div>
+
+                <div class="modale-infos">
+                    <h2 class="modale-titre">Corgi</h2>
+                    <div class="separateur-fiche">
+                        <span></span>
+                        <span>🐾</span>
+                        <span></span>
+                    </div>
+
+                    <p class="modale-caracteristiques">
+                        Petit chien • Actif • Affectueux • Intelligent
+                    </p>
+
+                    <h3>À propos de la race</h3>
+
+                    <p>
+                        Le Corgi est un petit chien au caractère vif et affectueux.
+                        Il est connu pour sa loyauté envers sa famille et son tempérament joyeux.
+                        Malgré sa petite taille, il est courageux et aime participer à diverses activités.
+                    </p>
+
+                    <div class="statistiques-fiche">
+                        <div class="stat-fiche">
+                            <div class="icone-stat">📏</div>
+                            <h4>Taille</h4>
+                            <p>25 - 30 cm</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚖️</div>
+                            <h4>Poids</h4>
+                            <p>10 - 14 kg</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">♥</div>
+                            <h4>Espérance de vie</h4>
+                            <p>12 - 15 ans</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚡</div>
+                            <h4>Niveau d'activité</h4>
+                            <p>Modéré</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÉPARATEUR BAS -->
+            <div class="separateur-bas">
+                <span></span>
+                <span>🐾</span>
+                <span></span>
+            </div>
+
+            <div class="details-fiche">
+                <div class="detail-fiche">
+                    <div class="icone-detail">🏠</div>
+                    <div>
+                        <h4>Vie en famille</h4>
+                        <p>
+                            Affectueux et très proche de sa famille. Peut bien vivre 
+                            avec des enfants lorsqu'il est correctement socialisé.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🎓</div>
+                    <div>
+                        <h4>Éducation</h4>
+                        <p>
+                            Intelligent et généralement réceptif, mais peut 
+                            avoir un côté indépendant. Éducation douce, cohérente et positive.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🐕</div>
+                    <div>
+                        <h4>Besoins</h4>
+                        <p>
+                            Chien énergique qui apprécie promenades, jeux et activités 
+                            mentales. Son passé de chien de troupeau se ressent encore.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🪮</div>
+                    <div>
+                        <h4>Entretien</h4>
+                        <p>
+                            Double pelage avec perte de poils importante; brossage 
+                            fréquent, particulièrement durant les périodes de mue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fermer-fiche">
+                <a href="#galerie">🐾 Fermer la fiche</a>
+            </div>
+        </div>
+    </div>  
+
+    <div class="modale husky" id="carte4">
+        <a class="modale-fond" href="#galerie"></a>
+        <div class="modale-contenu">
+            <a class="modale-fermer" href="#galerie">&times;</a>
+            <div class="haut-fiche">
+
+                <div class="photo-fiche">
+                    <img class="modale-image"
+                        src="images/nos_races/husky.jpg"
+                        alt="Image de husky">
+                </div>
+
+                <div class="modale-infos">
+                    <h2 class="modale-titre">Husky sibérien</h2>
+                    <div class="separateur-fiche">
+                        <span></span>
+                        <span>🐾</span>
+                        <span></span>
+                    </div>
+
+                    <p class="modale-caracteristiques">
+                        Grand chien • Très actif • Amical • Intelligent
+                    </p>
+
+                    <h3>À propos de la race</h3>
+
+                    <p>
+                        Le Husky sibérien est un chien de traîneau robuste et énergique.
+                        Il est connu pour sa nature amicale et son tempérament sociable.
+                        Avec son pelage épais et ses yeux perçants, il est à la fois beau et résistant aux conditions climatiques rigoureuses.
+                    </p>
+
+                    <div class="statistiques-fiche">
+                        <div class="stat-fiche">
+                            <div class="icone-stat">📏</div>
+                            <h4>Taille</h4>
+                            <p>50 - 60 cm</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚖️</div>
+                            <h4>Poids</h4>
+                            <p>20 - 27 kg</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">♥</div>
+                            <h4>Espérance de vie</h4>
+                            <p>12 - 14 ans</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚡</div>
+                            <h4>Niveau d'activité</h4>
+                            <p>Très élevé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÉPARETEUR BAS -->
+            <div class="separateur-bas">
+                <span></span>
+                <span>🐾</span>
+                <span></span>
+            </div>
+
+            <div class="details-fiche">
+                <div class="detail-fiche">
+                    <div class="icone-detail">🏠</div>
+                    <div>
+                        <h4>Vie en famille</h4>
+                        <p>
+                            Très social, généralement amical avec les humains et les autres chiens. 
+                            Il apprécie énormément la compagnie et supporte mal d'être seul longtemps.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🎓</div>
+                    <div>
+                        <h4>Éducation</h4>
+                        <p>
+                            Intelligent mais indépendant. Éducation patiente, cohérente et positive; son instinct de 
+                            prédation et son goût de l'exploration nécessitent une bonne gestion.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🐕</div>
+                    <div>
+                        <h4>Besoins</h4>
+                        <p>
+                            Très énergique. Demande beaucoup d'exercice, de stimulation 
+                            et un environnement sécurisé; il peut creuser ou chercher à s'échapper.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🪮</div>
+                    <div>
+                        <h4>Entretien</h4>
+                        <p>
+                            Double pelage dense avec mues importantes; brossage 
+                            particulièrement nécessaire lors de la perte du sous-poil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fermer-fiche">
+                <a href="#galerie">🐾 Fermer la fiche</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modale dachshund" id="carte5">
+        <a class="modale-fond" href="#galerie"></a>
+        <div class="modale-contenu">
+            <a class="modale-fermer" href="#galerie">&times;</a>
+            <div class="haut-fiche">
+
+                <div class="photo-fiche">
+                    <img class="modale-image"
+                        src="images/nos_races/dachshund.jpg"
+                        alt="Image de dachshund">
+                </div>
+
+                <div class="modale-infos">
+                    <h2 class="modale-titre">Dachshund</h2>
+                    <div class="separateur-fiche">
+                        <span></span>
+                        <span>🐾</span>
+                        <span></span>
+                    </div>
+
+                    <p class="modale-caracteristiques">
+                        Petit chien • Actif • Affectueux • Intelligent
+                    </p>
+
+                    <h3>À propos de la race</h3>
+
+                    <p>
+                        Le Dachshund, également connu sous le nom de Teckel, est un petit chien au corps allongé et aux pattes courtes.
+                        Il est courageux, curieux et très attaché à sa famille.
+                        Malgré sa taille, il possède une grande personnalité et aime participer à diverses activités.
+                    </p>
+
+                    <div class="statistiques-fiche">
+                        <div class="stat-fiche">
+                            <div class="icone-stat">📏</div>
+                            <h4>Taille</h4>
+                            <p>20 - 27 cm</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚖️</div>
+                            <h4>Poids</h4>
+                            <p>7 - 14 kg</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">♥</div>
+                            <h4>Espérance de vie</h4>
+                            <p>12 - 16 ans</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚡</div>
+                            <h4>Niveau d'activité</h4>
+                            <p>Modéré</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÉPARATEUR BAS -->
+            <div class="separateur-bas">
+                <span></span>
+                <span>🐾</span>
+                <span></span>
+            </div>
+
+            <div class="details-fiche">
+                <div class="detail-fiche">
+                    <div class="icone-detail">🏠</div>
+                    <div>
+                        <h4>Vie en famille</h4>
+                        <p>
+                            Sociable et très attaché à ses humains. Mieux adapté 
+                            aux enfants capables de le manipuler correctement.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🎓</div>
+                    <div>
+                        <h4>Éducation</h4>
+                        <p>
+                            Intelligent, déterminé et parfois têtu. Motivation par 
+                            récompenses, patience et constance. Son instinct de chasse peut facilement le distraire.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🐕</div>
+                    <div>
+                        <h4>Besoins</h4>
+                        <p>
+                            Exercice quotidien modéré, notamment deux promenades. 
+                            L'activité aide à maintenir sa musculature, importante pour soutenir son dos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🪮</div>
+                    <div>
+                        <h4>Entretien</h4>
+                        <p>
+                            Dépend du pelage : le poil ras demande peu d'entretien, 
+                            tandis que les variétés longues ou dures demandent davantage de brossage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fermer-fiche">
+                <a href="#galerie">🐾 Fermer la fiche</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modale shiba_inu" id="carte6">
+        <a class="modale-fond" href="#galerie"></a>
+        <div class="modale-contenu">
+            <a class="modale-fermer" href="#galerie">&times;</a>
+            <div class="haut-fiche">
+
+                <div class="photo-fiche">
+                    <img class="modale-image"
+                        src="images/nos_races/shiba_inu.jpg"
+                        alt="Image de shiba inu">
+                </div>
+
+                <div class="modale-infos">
+                    <h2 class="modale-titre">Shiba Inu</h2>
+                    <div class="separateur-fiche">
+                        <span></span>
+                        <span>🐾</span>
+                        <span></span>
+                    </div>
+
+                    <p class="modale-caracteristiques">
+                        Petit chien • Actif • Affectueux • Intelligent
+                    </p>
+
+                    <h3>À propos de la race</h3>
+
+                    <p>
+                        Le Shiba Inu est un petit chien japonais au caractère vif et indépendant.
+                        Il est connu pour sa loyauté envers sa famille et son tempérament joyeux.
+                        Avec son pelage épais et ses yeux perçants, il est à la fois beau et résistant aux conditions climatiques rigoureuses.
+                    </p>
+
+                    <div class="statistiques-fiche">
+                        <div class="stat-fiche">
+                            <div class="icone-stat">📏</div>
+                            <h4>Taille</h4>
+                            <p>33 - 41 cm</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚖️</div>
+                            <h4>Poids</h4>
+                            <p>8 - 10 kg</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">♥</div>
+                            <h4>Espérance de vie</h4>
+                            <p>12 - 15 ans</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚡</div>
+                            <h4>Niveau d'activité</h4>
+                            <p>Modéré</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÉPARATEUR BAS -->
+            <div class="separateur-bas">
+                <span></span>
+                <span>🐾</span>
+                <span></span>
+            </div>
+
+            <div class="details-fiche">
+                <div class="detail-fiche">
+                    <div class="icone-detail">🏠</div>
+                    <div>
+                        <h4>Vie en famille</h4>
+                        <p>
+                            Loyal envers sa famille, mais plus indépendant que beaucoup d'autres races. 
+                            Généralement mieux adapté à un foyer attentif et à des enfants plus âgés.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🎓</div>
+                    <div>
+                        <h4>Éducation</h4>
+                        <p>
+                            Intelligent mais volontaire et indépendant. Socialisation 
+                            précoce, patience et constance essentielles.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🐕</div>
+                    <div>
+                        <h4>Besoins</h4>
+                        <p>
+                            Besoin important d'activité physique et mentale. 
+                            Les sorties doivent être sécurisées en raison de son indépendance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🪮</div>
+                    <div>
+                        <h4>Entretien</h4>
+                        <p>
+                            Pelage double relativement facile à entretenir, mais les 
+                            périodes de mue peuvent être importantes et demander davantage de brossage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fermer-fiche">
+                <a href="#galerie">🐾 Fermer la fiche</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modale golden_retriever" id="carte7">
+        <a class="modale-fond" href="#galerie"></a>
+        <div class="modale-contenu">
+            <a class="modale-fermer" href="#galerie">&times;</a>
+            <div class="haut-fiche">
+
+                <div class="photo-fiche">
+                    <img class="modale-image"
+                        src="images/nos_races/golden_retriever.jpg"
+                        alt="Image de golden retriever">
+                </div>
+
+                <div class="modale-infos">
+                    <h2 class="modale-titre">Golden Retriever</h2>
+                    <div class="separateur-fiche">
+                        <span></span>
+                        <span>🐾</span>
+                        <span></span>
+                    </div>
+
+                    <p class="modale-caracteristiques">
+                        Grand chien • Actif • Affectueux • Intelligent
+                    </p>
+
+                    <h3>À propos de la race</h3>
+
+                    <p>
+                        Le Golden Retriever est un chien de grande taille, connu pour sa nature amicale et son tempérament doux.
+                        Il est très sociable, loyal et aime être entouré de sa famille.
+                        Sa polyvalence en fait un excellent compagnon pour les activités de plein air et les sports canins.
+                    </p>
+
+                    <div class="statistiques-fiche">
+                        <div class="stat-fiche">
+                            <div class="icone-stat">📏</div>
+                            <h4>Taille</h4>
+                            <p>55 - 61 cm</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚖️</div>
+                            <h4>Poids</h4>
+                            <p>25 - 34 kg</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">♥</div>
+                            <h4>Espérance de vie</h4>
+                            <p>10 - 12 ans</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚡</div>
+                            <h4>Niveau d'activité</h4>
+                            <p>Élevé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÉPARATEUR BAS -->
+            <div class="separateur-bas">
+                <span></span>
+                <span>🐾</span>
+                <span></span>
+            </div> 
+
+            <div class="details-fiche">
+                <div class="detail-fiche">
+                    <div class="icone-detail">🏠</div>
+                    <div>
+                        <h4>Vie en famille</h4>
+                        <p>
+                            Particulièrement sociable, affectueux et généralement très à l'aise 
+                            dans la vie familiale et avec les enfants.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🎓</div>
+                    <div>
+                        <h4>Éducation</h4>
+                        <p>
+                            Intelligent et désireux de plaire, donc généralement facile à éduquer. Socialisation précoce 
+                            et apprentissage cohérent permettent de canaliser son enthousiasme.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🐕</div>
+                    <div>
+                        <h4>Besoins</h4>
+                        <p>
+                            Chien actif qui demande de l'exercice quotidien. Il apprécie particulièrement 
+                            les promenades, la course, la randonnée, la nage et les jeux de rapport.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🪮</div>
+                    <div>
+                        <h4>Entretien</h4>
+                        <p>
+                            Double pelage avec mue régulière : brossage une à deux 
+                            fois par semaine, plus souvent durant les fortes mues.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fermer-fiche">
+                <a href="#galerie">🐾 Fermer la fiche</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modale yorkshire" id="carte8">
+        <a class="modale-fond" href="#galerie"></a>
+        <div class="modale-contenu">
+            <a class="modale-fermer" href="#galerie">&times;</a>
+            <div class="haut-fiche">
+
+                <div class="photo-fiche">
+                    <img class="modale-image"
+                        src="images/nos_races/yorkshire.jpg"
+                        alt="Image de yorkshire">
+                </div>
+
+                <div class="modale-infos">
+                    <h2 class="modale-titre">Yorkshire Terrier</h2>
+                    <div class="separateur-fiche">
+                        <span></span>
+                        <span>🐾</span>
+                        <span></span>
+                    </div>
+
+                    <p class="modale-caracteristiques">
+                        Petit chien • Actif • Affectueux • Intelligent
+                    </p>
+
+                    <h3>À propos de la race</h3>
+
+                    <p>
+                        Le Yorkshire Terrier est un petit chien au caractère vif et affectueux.
+                        Il est connu pour sa loyauté envers sa famille et son tempérament joyeux.
+                        Malgré sa petite taille, il possède une grande personnalité et aime participer à diverses activités.
+                    </p>
+
+                    <div class="statistiques-fiche">
+                        <div class="stat-fiche">
+                            <div class="icone-stat">📏</div>
+                            <h4>Taille</h4>
+                            <p>15 - 17 cm</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚖️</div>
+                            <h4>Poids</h4>
+                            <p>2 - 3 kg</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">♥</div>
+                            <h4>Espérance de vie</h4>
+                            <p>12 - 15 ans</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚡</div>
+                            <h4>Niveau d'activité</h4>
+                            <p>Modéré</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÉPARATEUR BAS -->
+            <div class="separateur-bas">
+                <span></span>
+                <span>🐾</span>
+                <span></span>
+            </div>
+            
+
+            <div class="details-fiche">
+                <div class="detail-fiche">
+                    <div class="icone-detail">🏠</div>
+                    <div>
+                        <h4>Vie en famille</h4>
+                        <p>
+                            Très attaché à ses humains et adaptable; sa petite taille demande 
+                            toutefois de la délicatesse, surtout avec de jeunes enfants.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🎓</div>
+                    <div>
+                        <h4>Éducation</h4>
+                        <p>
+                            Intelligent mais parfois indépendant. Séances courtes, patientes
+                            et basées sur le renforcement positif.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🐕</div>
+                    <div>
+                        <h4>Besoins</h4>
+                        <p>
+                            Petites promenades quotidiennes, jeux et 
+                            stimulation mentale malgré son petit format.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🪮</div>
+                    <div>
+                        <h4>Entretien</h4>
+                        <p>
+                            Si le poil est gardé long, brossage quotidien; 
+                            bains réguliers et attention aux dents, oreilles et griffes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fermer-fiche">
+                <a href="#galerie">🐾 Fermer la fiche</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modale beagle" id="carte9">
+        <a class="modale-fond" href="#galerie"></a>
+        <div class="modale-contenu">
+            <a class="modale-fermer" href="#galerie">&times;</a>
+            <div class="haut-fiche">
+
+                <div class="photo-fiche">
+                    <img class="modale-image"
+                        src="images/nos_races/beagle.jpg"
+                        alt="Image de beagle">
+                </div>
+
+                <div class="modale-infos">
+                    <h2 class="modale-titre">Beagle</h2>
+                    <div class="separateur-fiche">
+                        <span></span>
+                        <span>🐾</span>
+                        <span></span>
+                    </div>
+
+                    <p class="modale-caracteristiques">
+                        Chien de taille moyenne • Actif • Affectueux • Intelligent
+                    </p>
+
+                    <h3>À propos de la race</h3>
+
+                    <p>
+                        Le Beagle est un chien de taille moyenne, connu pour sa nature amicale et son tempérament doux.
+                        Il est très sociable, loyal et aime être entouré de sa famille.
+                        Sa polyvalence en fait un excellent compagnon pour les activités de plein air et les sports canins.
+                    </p>
+
+                    <div class="statistiques-fiche">
+                        <div class="stat-fiche">
+                            <div class="icone-stat">📏</div>
+                            <h4>Taille</h4>
+                            <p>33 - 41 cm</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚖️</div>
+                            <h4>Poids</h4>
+                            <p>9 - 11 kg</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">♥</div>
+                            <h4>Espérance de vie</h4>
+                            <p>12 - 15 ans</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚡</div>
+                            <h4>Niveau d'activité</h4>
+                            <p>Élevé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SÉPARATEUR BAS -->
+            <div class="separateur-bas">
+                <span></span>
+                <span>🐾</span>
+                <span></span>
+            </div>
+
+            <div class="details-fiche">
+                <div class="detail-fiche">
+                    <div class="icone-detail">🏠</div>
+                    <div>
+                        <h4>Vie en famille</h4>
+                        <p>
+                            Très sociable, affectueux et généralement bon avec les enfants. 
+                            Supporte mal les longues périodes de solitude.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🎓</div>
+                    <div>
+                        <h4>Éducation</h4>
+                        <p>
+                            Son odorat peut prendre le dessus sur son attention. Travail en laisse, 
+                            patience et récompenses alimentaires sont particulièrement utiles.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🐕</div>
+                    <div>
+                        <h4>Besoins</h4>
+                        <p>
+                            Au moins environ une heure d'exercice quotidien; promenades, 
+                            exploration et jeux olfactifs lui conviennent particulièrement bien.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🪮</div>
+                    <div>
+                        <h4>Entretien</h4>
+                        <p>
+                            Pelage court et dense : brossage hebdomadaire généralement suffisant; bains peu fréquents.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fermer-fiche">
+                <a href="#galerie">🐾 Fermer la fiche</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modale doberman" id="carte10">
+        <a class="modale-fond" href="#galerie"></a>
+        <div class="modale-contenu">
+            <a class="modale-fermer" href="#galerie">&times;</a>
+            <div class="haut-fiche">
+
+                <div class="photo-fiche">
+                    <img class="modale-image"
+                        src="images/nos_races/doberman.jpg"
+                        alt="Image de doberman">
+                </div>
+
+                <div class="modale-infos">
+                    <h2 class="modale-titre">Doberman</h2>
+                    <div class="separateur-fiche">
+                        <span></span>
+                        <span>🐾</span>
+                        <span></span>
+                    </div>
+
+                    <p class="modale-caracteristiques">
+                        Grand chien • Actif • Affectueux • Intelligent
+                    </p>
+
+                    <h3>À propos de la race</h3>
+
+                    <p>
+                        Le Doberman est un chien de grande taille, connu pour sa nature protectrice et son tempérament loyal.
+                        Il est très intelligent, énergique et aime être actif.
+                        Avec son allure élégante et sa musculature puissante, il est à la fois impressionnant et affectueux envers sa famille.
+                    </p>
+
+                    <div class="statistiques-fiche">
+                        <div class="stat-fiche">
+                            <div class="icone-stat">📏</div>
+                            <h4>Taille</h4>
+                            <p>63 - 72 cm</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚖️</div>
+                            <h4>Poids</h4>
+                            <p>30 - 40 kg</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">♥</div>
+                            <h4>Espérance de vie</h4>
+                            <p>10 - 13 ans</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚡</div>
+                            <h4>Niveau d'activité</h4>
+                            <p>Élevé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÉPARATEUR BAS -->
+            <div class="separateur-bas">
+                <span></span>
+                <span>🐾</span>
+                <span></span>
+            </div>
+
+            <div class="details-fiche">
+                <div class="detail-fiche">
+                    <div class="icone-detail">🏠</div>
+                    <div>
+                        <h4>Vie en famille</h4>
+                        <p>
+                            Très loyal et fortement attaché à sa famille. Peut être un excellent chien 
+                            familial avec une socialisation appropriée, tout en restant naturellement vigilant.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🎓</div>
+                    <div>
+                        <h4>Éducation</h4>
+                        <p>
+                            Très intelligent et apprend rapidement. En raison de sa puissance et de son tempérament protecteur, socialisation et 
+                            éducation cohérentes dès le jeune âge sont particulièrement importantes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🐕</div>
+                    <div>
+                        <h4>Besoins</h4>
+                        <p>
+                            Besoin quotidien d'activité physique et mentale. 
+                            Promenades soutenues, jeux, randonnée, obéissance ou agility sont de bonnes options.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🪮</div>
+                    <div>
+                        <h4>Entretien</h4>
+                        <p>
+                            Faible entretien du pelage. Son poil court demande principalement un brossage 
+                            rapide régulier ainsi que les soins habituels des griffes, dents et oreilles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fermer-fiche">
+                <a href="#galerie">🐾 Fermer la fiche</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modale spitz_nain" id="carte11">
+        <a class="modale-fond" href="#galerie"></a>
+        <div class="modale-contenu">
+            <a class="modale-fermer" href="#galerie">&times;</a>
+            <div class="haut-fiche">
+
+                <div class="photo-fiche">
+                    <img class="modale-image"
+                        src="images/nos_races/spitz_nain.jpg"
+                        alt="Image de spitz nain">
+                </div>
+
+                <div class="modale-infos">
+                    <h2 class="modale-titre">Spitz Nain</h2>
+                    <div class="separateur-fiche">
+                        <span></span>
+                        <span>🐾</span>
+                        <span></span>
+                    </div>
+
+                    <p class="modale-caracteristiques">
+                        Petit chien • Actif • Affectueux • Intelligent
+                    </p>
+
+                    <h3>À propos de la race</h3>
+
+                    <p>
+                        Le Spitz Nain, également connu sous le nom de Pomeranian, est un petit chien au pelage abondant et à la personnalité vive.
+                        Il est très attaché à sa famille et aime être le centre d'attention.
+                        Malgré sa petite taille, il possède une grande énergie et apprécie les activités ludiques.
+                    </p>
+
+                    <div class="statistiques-fiche">
+                        <div class="stat-fiche">
+                            <div class="icone-stat">📏</div>
+                            <h4>Taille</h4>
+                            <p>18 - 30 cm</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚖️</div>
+                            <h4>Poids</h4>
+                            <p>1.5 - 3 kg</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">♥</div>
+                            <h4>Espérance de vie</h4>
+                            <p>12 - 16 ans</p>
+                        </div>
+
+                        <div class="stat-fiche">
+                            <div class="icone-stat">⚡</div>
+                            <h4>Niveau d'activité</h4>
+                            <p>Modéré</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÉPARATEUR BAS -->
+            <div class="separateur-bas">
+                <span></span>
+                <span>🐾</span>
+                <span></span>
+            </div>
+
+            <div class="details-fiche">
+                <div class="detail-fiche">
+                    <div class="icone-detail">🏠</div>
+                    <div>
+                        <h4>Vie en famille</h4>
+                        <p>
+                            Compagnon très proche de ses propriétaires. Sa très petite taille 
+                            nécessite davantage de précautions lors des interactions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🎓</div>
+                    <div>
+                        <h4>Éducation</h4>
+                        <p>
+                            Très intelligent, mais une approche patiente et constante 
+                            est nécessaire. Socialisation précoce recommandée.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🐕</div>
+                    <div>
+                        <h4>Besoins</h4>
+                        <p>
+                            Jeux, petites promenades et stimulation mentale. 
+                            Malgré sa taille, c'est un petit chien actif.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-fiche">
+                    <div class="icone-detail">🪮</div>
+                    <div>
+                        <h4>Entretien</h4>
+                        <p>
+                            Son épais double pelage demande un brossage fréquent; un 
+                            toilettage complet périodique peut également être utile.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fermer-fiche">
+                <a href="#galerie">🐾 Fermer la fiche</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

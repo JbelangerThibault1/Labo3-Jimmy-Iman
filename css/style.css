@@ -1,0 +1,3188 @@
+/* ==================================================
+   VARIABLES / ROOT / CHARTE GRAPHIQUE
+   ================================================== */
+
+/* [T1] Variables CSS pour la palette de couleurs */
+
+:root {
+    --vert-fonce: #173f3f;
+    --vert-sauge: #d8e4c6;
+    --creme: #f7f3ea;
+    --beige: #e8d9c6;
+    --brun: #9b7656;
+    --blanc: #ffffff;
+}
+
+/* ==================================================
+   BOX-SIZING
+   ================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ==================================================
+   MODE SOMBRE et body
+   ================================================== */
+
+/* [T2] Typographie : polices distinctes, rem et line-height */
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: var(--creme);
+    color: var(--vert-fonce);
+}
+body.dark-mode header {
+    background-color: #121212;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+body.dark-mode {
+    background-color: black;
+    color: var(--creme);
+    border-color: var(--vert-sauge);
+}
+body.dark-mode section,
+body.dark-mode main {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+body.dark-mode .hero-accueil {
+    background: linear-gradient(135deg, #121212, #242424);
+}
+body.dark-mode .card {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode p,
+body.dark-mode label {
+    color: #f5f5f5;
+}
+body.dark-mode .carte-engagement {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode .form-control {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+body.dark-mode .vedette-contenu {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode .carte-race-accueil {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode .bloc-quiz-accueil {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode .bloc-cta-accueil {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode .fiche-elevage {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode .appel-contact-chiot {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode .footer-vague {
+    background-color: #121212;
+}
+body.dark-mode .footer-vague::before {
+    background-color: #121212;
+}
+body.dark-mode .filtres {
+    background-color: #242424;
+    border-color: #444;
+}
+body.dark-mode.body-elevage {
+    background-image: none;
+    background-color: #121212;
+}
+body.dark-mode .carte-chiot {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode .carte-famille {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode .entete-conseil {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode .conseil-item {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode .bloc-formulaire {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background-color: #333333;
+    color: white;
+    border: 1px solid #555555;
+}
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+    background-color: #333333;
+    color: white;
+    border-color: #8fae8b;
+    outline: none;
+}
+body.dark-mode .carte-merci {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}
+
+/* ================================
+   BADGE DISPONIBLE
+   ================================ */
+
+.badge-disponible {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background-color: var(--vert-sauge);
+    color: var(--vert-fonce);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.header-site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(230, 241, 230);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(23, 63, 63, 0.08);
+}
+
+.navbar {
+    width: 100%;
+    padding: 12px 4%;
+}
+
+/* ==================================================
+   LOGO
+   ================================================== */
+
+.navbar-brand {
+    color: var(--vert-fonce);
+    text-decoration: none;
+}
+.navbar-brand:hover {
+    color: var(--vert-fonce);
+}
+.logo-header {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.logo-nom {
+    line-height: 1;
+}
+.nom-principal {
+    font-family: "Fredoka", sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.nom-principal span {
+    color: var(--brun);
+}
+.sous-titre-logo {
+    margin-top: 8px;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: var(--brun);
+}
+
+/* ==================================================
+   NAVIGATION
+   (contient T3, T9)
+   ================================================== */
+
+/* [T9] Personnaliser 2 composants Bootstrap */
+.navbar-nav {
+    gap: 10px;
+}
+
+/* [T3] Sélecteurs descendant, d'état et structurel */
+.navbar .nav-link {
+    position: relative;
+    padding: 15px 10px;
+    color: var(--vert-fonce);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* [T3] Sélecteurs descendant, d'état et structurel */
+.navbar .nav-link:hover {
+    color: var(--brun);
+}
+
+/* Page active */
+
+.navbar .nav-link.active {
+    color: var(--vert-fonce);
+    font-weight: 500;
+}
+
+.navbar .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 6px;
+    height: 2px;
+    background-color: var(--brun);
+}
+
+/* ==================================================
+   RECHERCHE
+   ================================================== */
+
+.btn-recherche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+    border: none;
+    background: transparent;
+    transition: 0.2s;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.logo-recherche {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-recherche:hover {
+    transform: translateY(-2px);
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--vert-fonce);
+    border-radius: 5px;
+}
+
+/* ==================================================
+   BOUTON NOUS JOINDRE
+   ================================================== */
+
+.btn-nous-joindre {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    border-radius: 30px;
+    background-color: var(--brun);
+    color: var(--blanc);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn-nous-joindre:hover {
+    background-color: var(--vert-fonce);
+    color: var(--blanc);
+    transform: translateY(-2px);
+}
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.logo-footer {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.footer-site {
+    position: relative;
+    margin-top: 100px;
+    padding: 90px 0 25px;
+    overflow: hidden;
+    background-color: var(--vert-fonce);
+    color: var(--creme);
+}
+
+/* ==================================================
+   COURBE DU FOOTER
+   ================================================== */
+
+.footer-vague {
+    position: absolute;
+    top: -55px;
+    left: -5%;
+    width: 110%;
+    height: 100px;
+    background-color: var(--creme);
+    border-radius: 0 0 50% 50%;
+}
+
+/* Deuxième forme pour effet de vague */
+
+.footer-site::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10%;
+    width: 65%;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(216, 228, 198, 0.08);
+}
+
+.footer-contenu {
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   LOGO FOOTER
+   ================================================== */
+
+.footer-logo {
+    color: var(--creme);
+    text-decoration: none;
+}
+
+.footer-nom {
+    font-family: "Fredoka", sans-serif;
+    font-size: 23px;
+    line-height: 1.05;
+}
+
+.footer-nom span {
+    color: var(--brun);
+}
+
+.footer-sous-titre {
+    margin-top: 8px;
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: var(--vert-sauge);
+}
+
+/* ==================================================
+   TITRES DU FOOTER
+   ================================================== */
+
+.footer-titre {
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--creme);
+}
+
+/* ==================================================
+   NAVIGATION FOOTER
+   ================================================== */
+
+.footer-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-navigation li {
+    margin-bottom: 6px;
+}
+
+.footer-navigation a {
+    color: var(--creme);
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.footer-navigation a:hover {
+    color: var(--vert-sauge);
+}
+
+/* ==================================================
+   CONTACT FOOTER
+   ================================================== */
+
+.contact-ligne {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-bottom: 15px;
+}
+
+.contact-ligne i {
+    margin-top: 2px;
+    color: var(--beige);
+    font-size: 16px;
+}
+
+.contact-ligne p {
+    margin: 0;
+    color: var(--creme);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* ==================================================
+   RÉSEAUX SOCIAUX
+   ================================================== */
+
+.reseaux-sociaux {
+    display: flex;
+    gap: 12px;
+}
+
+.reseaux-sociaux a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.logo-reseaux {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.reseaux-sociaux a:hover {
+    background-color: var(--brun);
+    transform: translateY(-3px);
+}
+
+/* ==================================================
+   PAGE ACCUEIL 
+   ================================================== */
+
+/* HERO */
+.hero-accueil {
+    padding: 70px 0;
+
+    background: linear-gradient(135deg, var(--creme), var(--vert-sauge));
+}
+.hero-accueil-contenu {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+}
+.hero-accueil h1 {
+    margin: 10px 0 20px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 1.05;
+    color: var(--vert-fonce);
+}
+.hero-accueil p {
+    max-width: 570px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--vert-fonce);
+}
+.petit-titre-accueil {
+    color: var(--brun);
+    font-size: 14px;
+    font-weight: 600;
+}
+.hero-accueil-image img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 0 15px 35px rgba(23, 63, 63, 0.15);
+}
+
+/* BOUTONS */
+.boutons-hero {
+    display: flex;
+    gap: 14px;
+    margin-top: 28px;
+}
+.btn-accueil-principal,
+.btn-texte-accueil {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 30px;
+    background-color: var(--brun);
+    color: var(--blanc);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.btn-accueil-principal:hover,
+.btn-texte-accueil:hover {
+    background-color: var(--vert-fonce);
+    color: var(--blanc);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+.btn-accueil-secondaire {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid var(--vert-fonce);
+    border-radius: 30px;
+    color: var(--vert-fonce);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.btn-accueil-secondaire:hover {
+    background-color: var(--vert-fonce);
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+/* PRÉSENTATION */
+
+.presentation-accueil {
+    padding: 80px 0;
+    background-color: var(--creme);
+}
+.grille-presentation {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 55px;
+    align-items: center;
+}
+.presentation-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.presentation-texte h2 {
+    margin: 10px 0 20px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    color: var(--vert-fonce);
+}
+
+.presentation-texte p {
+    line-height: 1.8;
+}
+
+/* STATISTIQUES */
+.statistiques-accueil {
+    padding: 45px 0;
+    background-color: var(--vert-fonce);
+}
+.grille-statistiques {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.stat-accueil {
+    text-align: center;
+    color: var(--creme);
+}
+.stat-accueil span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.stat-accueil strong {
+    display: block;
+    font-family: "Fredoka", sans-serif;
+    font-size: 38px;
+    color: var(--vert-sauge);
+}
+.stat-accueil p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* ENGAGEMENTS */
+.engagements-accueil {
+    padding: 80px 0;
+    background-color: var(--creme);
+}
+.titre-centre {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+.titre-centre h2 {
+    margin-top: 8px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    color: var(--vert-fonce);
+}
+.grille-engagements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.icone-engagement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: var(--vert-sauge);
+    font-size: 28px;
+}
+
+/* VEDETTE */
+.vedette-accueil {
+    padding: 80px 0;
+    background-color: var(--beige);
+}
+.vedette-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    object-fit: cover;
+}
+.vedette-contenu {
+    padding: 50px;
+}
+
+.vedette-contenu h2 {
+    margin: 10px 0;
+    font-family: "Fredoka", sans-serif;
+    font-size: 42px;
+    color: var(--vert-fonce);
+}
+
+/* RACES */
+.races-accueil {
+    padding: 80px 0;
+    background-color: var(--creme);
+}
+.grille-races-accueil {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.carte-race-accueil {
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: var(--blanc);
+    color: var(--vert-fonce);
+    text-decoration: none;
+    box-shadow: 0 5px 16px rgba(23, 63, 63, 0.08);
+    transition: 0.2s ease;
+}
+.carte-race-accueil:hover {
+    color: var(--vert-fonce);
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+.carte-race-accueil img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.carte-race-accueil h3 {
+    padding: 18px;
+    font-family: "Fredoka", sans-serif;
+    text-align: center;
+}
+.bouton-centre {
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* CONTACT-ACCUEIL */
+.cta-accueil {
+    padding: 70px 0 30px;
+    background-color: var(--creme);
+}
+.bloc-cta-accueil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 40px 45px;
+    border-radius: 25px;
+    background-color: var(--vert-sauge);
+}
+.bloc-cta-accueil h2 {
+    margin: 5px 0;
+    font-family: "Fredoka", sans-serif;
+    color: var(--vert-fonce);
+}
+.bloc-cta-accueil p {
+    margin: 0;
+}
+
+/* ==================================================
+   QUIZ - PAGE ACCUEIL
+   ================================================== */
+
+.quiz-accueil {
+    padding: 80px 0;
+    background-color: var(--creme);
+}
+.bloc-quiz-accueil {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 45px 55px;
+    border-radius: 30px;
+    background-color: var(--vert-sauge);
+}
+.texte-quiz-accueil {
+    max-width: 700px;
+}
+.texte-quiz-accueil h2 {
+    margin: 8px 0 12px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 38px;
+    color: var(--vert-fonce);
+}
+.texte-quiz-accueil p {
+    margin-bottom: 22px;
+    line-height: 1.7;
+    color: var(--vert-fonce);
+}
+
+/* ==================================================
+   PAGE NOTRE ÉLEVAGE
+   ================================================== */
+
+.body-elevage {
+    background: url(../images/elevage/fond_elevage.png) center/cover;
+    min-height: 100vh;
+}
+
+/* ==================================================
+   PAGE ÉLEVAGE
+   ================================================== */
+
+.main-elevage {
+    width: 100%;
+    margin: 0 auto;
+}
+.entete-elevage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texte-entete {
+    background-color: var(--beige);
+    color: var(--vert-fonce);
+    padding: 0px 15px;
+    max-width: 220px;
+    border-radius: 25px 25px 25px 25px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    transform: rotate(-3deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.titre-page {
+    font-family: "Fredoka", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--vert-fonce);
+    text-align: center;
+}
+.image-entete {
+    position: relative;
+    width: 55%;
+    height: auto;
+    overflow: hidden;
+    padding: 0px 65px 25px 0px;
+    margin: 30px 0px;
+}
+.notre-histoire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    margin: 0px 40px;
+}
+.notre-histoire .titre-principal .texte-elevage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titre-principal {
+    font-family: "Fredoka", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--vert-fonce);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fiche-elevage {
+    background-color: var(--beige);
+    border-radius: 15px;
+    padding-top: 20px;
+}
+.etiquette-fiche-elevage {
+    text-align: center;
+}
+.notre-approche {
+    display: flex;
+    margin: 10px 50px;
+}
+.image-approche {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.texte-approche {
+    font-family: "Fredoka", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--vert-fonce);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.texte-approche h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.p-approche {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+
+/* ==================================================
+   PAGE NOS RACES
+   (contient T4, T5, T8)
+   ================================================== */
+
+/* ==================================================
+   Banniere page Nos races
+   ================================================== */
+
+.banniere-race {
+    position: relative;
+    width: 100%;
+    background-color: var(--creme);
+    overflow: hidden;
+    padding: 45px 0 55px;
+    margin-bottom: 30px;
+}
+.chien-banniere img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
+.titre-banniere {
+    font-family: "Fredoka", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--vert-fonce);
+    margin-bottom: 12px;
+}
+.texte-banniere {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.milieu-banniere h1::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 4px;
+    background-color: var(--brun);
+    border-radius: 10px;
+    margin: 10px auto 0;
+}
+
+.banniere-race::after {
+    content: "";
+    position: absolute;
+    width: 115%;
+    height: 65%;
+    left: -5%;
+    bottom: -42%;
+    background-color: var(--vert-sauge);
+    border-radius: 45% 55% 0 0 / 35% 55% 0 0;
+    transform: rotate(2deg);
+    z-index: 0;
+}
+
+.banniere-race > * {
+    position: relative;
+    z-index: 1;
+}
+
+.message-banniere {
+    background-color: var(--beige);
+    color: var(--vert-fonce);
+    padding: 0px 15px;
+    max-width: 220px;
+    border-radius: 25px 25px 25px 25px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    transform: rotate(-3deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* pattes dans la banniere */
+.patte {
+    position: absolute;
+    color: var(--brun);
+    opacity: 0.12;
+    z-index: 1;
+}
+.patte-1 {
+    font-size: 45px;
+    top: 5px;
+    left: 4%;
+    transform: rotate(-20deg);
+}
+.patte-2 {
+    font-size: 30px;
+    right: 5%;
+    bottom: 30px;
+    transform: rotate(20deg);
+}
+
+/* Les filtres */
+.filtres {
+    position: relative;
+    width: 92%;
+    max-width: 1250px;
+    margin: -50px auto 45px;
+    padding: 25px 30px 20px;
+    background-color: white;
+    border: 1px solid var(--beige);
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+.btn-filtre {
+    background-color: var(--creme);
+    color: var(--vert-fonce);
+    border: 1px solid var(--beige);
+    border-radius: 50px;
+    padding: 9px 18px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+.btn-filtre.active {
+    background-color: var(--brun);
+    border-color: var(--brun);
+    color: white;
+}
+.btn-filtre:hover {
+    background-color: var(--vert-sauge);
+    border-color: var(--vert-sauge);
+    color: var(--vert-fonce);
+    transform: translateY(-2px);
+}
+.filtres .form-control {
+    height: 46px;
+    padding: 0 18px;
+    background-color: var(--creme);
+    border: 1px solid var(--beige);
+    border-radius: 50px;
+}
+.filtres .form-control:focus {
+    background-color: white;
+    border-color: var(--brun);
+    box-shadow: 0 0 0 3px rgba(155, 118, 86, 0.15);
+}
+.filtres label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--vert-fonce);
+    font-weight: 600;
+}
+
+/* Page Nos races */
+.conteneur {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.titre-banniere {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+    width: auto;
+}
+
+/* [T4] Modèle de boîte : margin, padding, bordure et dimensions */
+/* [T5] Flexbox écrit par vous */
+.carte {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(238, 238, 238, 0.692);
+    padding-bottom: 5px;
+    border: 1px solid var(--beige);
+}
+
+/* T8 — Interactions : hover + focus-visible + transition */
+.carte:hover,
+.carte:focus-visible {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.carte-type {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: var(--brun);
+    color: var(--blanc);
+    font-size: 12px;
+    font-weight: 500;
+}
+.carte-image {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    object-position: center 30%;
+}
+.carte-bouton {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--brun);
+    color: var(--blanc);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.carte-bouton:hover {
+    background-color: var(--vert-fonce);
+    color: var(--blanc);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+.pastille {
+    position: relative;
+    cursor: pointer;
+}
+.pastille::after {
+    content: attr(data-couleur);
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #173f3f;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+.pastille:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ===============================
+    les pastilles de couleur 
+=============================== */
+.pastille-noir {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin-right: 5px;
+}
+.pastille-sable {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d2b48c;
+    margin-right: 5px;
+}
+.pastille-gris {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #b6b6b6;
+    margin-right: 5px;
+}
+.pastille-noir-feu {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1f1f1f 50%, #92511c 50%);
+    margin-right: 5px;
+}
+.pastille-roux-blanc {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #922f2f 50%, #ffffff 50%);
+    margin-right: 5px;
+}
+.pastille-bleu-merle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1f1f1f 50%, #5c7d8e 50%);
+    margin-right: 5px;
+}
+.pastille-tricolore {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        #1f1f1f 33.33%,
+        #ffffff 33.33%,
+        #ffffff 66.66%,
+        #d2b48c 66.66%
+    );
+    margin-right: 5px;
+}
+.pastille-noir-blanc {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1f1f1f 50%, #ffffff 50%);
+    margin-right: 5px;
+}
+.pastille-fauve-blanc {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d2b48c 50%, #ffffff 50%);
+    margin-right: 5px;
+}
+.pastille-sable-blanc {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d2b48c 50%, #ffffff 50%);
+    margin-right: 5px;
+}
+.pastille-gris-blanc {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #b6b6b6 50%, #ffffff 50%);
+    margin-right: 5px;
+}
+.pastille-blanc {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 5px;
+}
+.pastille-cuivre-blanc {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #b87333 50%, #ffffff 50%);
+    margin-right: 5px;
+}
+.pastille-chocolat-feu {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7b3f00 50%, #ffcc99 50%);
+    margin-right: 5px;
+}
+.pastille-brun-roux {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #5c4033 50%, #d2691e 50%);
+    margin-right: 5px;
+}
+.pastille-noir-feu {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1f1f1f 50%, #ffcc99 50%);
+    margin-right: 5px;
+}
+.pastille-arlequin {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        #1f1f1f 25%,
+        #ffffff 25%,
+        #ffffff 50%,
+        #d2b48c 50%,
+        #d2b48c 75%,
+        #ffffff 75%
+    );
+    margin-right: 5px;
+}
+.pastille-rouge-urajiro {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #a82929 50%, #ffffff 50%);
+    margin-right: 5px;
+}
+.pastille-sesame {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d2b48c 50%, #1f1f1f 50%);
+    margin-right: 5px;
+}
+.pastille-creme {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ddddce;
+    margin-right: 5px;
+}
+.pastille-dore-clair {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #e6c27a;
+    margin-right: 5px;
+}
+.pastille-dore {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d4a017;
+    margin-right: 5px;
+}
+.pastille-dore-fonce {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #b8860b;
+    margin-right: 5px;
+}
+.pastille-bleu_acier-feu {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4682b4 50%, #ffcc99 50%);
+    margin-right: 5px;
+}
+.pastille-bleu_acier-dore {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4682b4 50%, #d4a017 50%);
+    margin-right: 5px;
+}
+.pastille-noir-dore {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1f1f1f 50%, #d4a017 50%);
+    margin-right: 5px;
+}
+.pastille-citron-blanc {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffff99 50%, #ffffff 50%);
+    margin-right: 5px;
+}
+.pastille-roux-feu {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d2691e 50%, #ffcc99 50%);
+    margin-right: 5px;
+}
+.pastille-bleu-feu {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4682b4 50%, #ffcc99 50%);
+    margin-right: 5px;
+}
+.pastille-fauve-feu {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d2691e 50%, #ffcc99 50%);
+    margin-right: 5px;
+}
+.pastille-orange {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffa500;
+    margin-right: 5px;
+}
+.pastille-chocolat {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #7b3f00;
+    margin-right: 5px;
+}
+
+/* ==================================================
+   le modale et haut de la fiche
+    (contient T3, T6)
+   ================================================== */
+
+.modale {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(15, 23, 42, 0.75);
+    padding: 20px;
+    z-index: 1000;
+}
+.modale:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modale-contenu {
+    background-color: #ffffff;
+    padding: 26px;
+    border-radius: 16px;
+    max-width: 1000px;
+    max-height: 90vh;
+    width: 100%;
+    overflow-y: auto;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.modale-fond {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.haut-fiche {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    flex-direction: column;
+}
+.modale-fermer {
+    top: 10px;
+    right: 14px;
+    position: absolute;
+    color: var(--vert-fonce);
+    text-decoration: none;
+    font-size: 26px;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+.modale-fermer:hover {
+    background-color: var(--vert-sauge);
+    color: var(--brun);
+}
+.modale-titre {
+    font-family: "Fredoka", sans-serif;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.photo-fiche {
+    flex: 0 0 40%;
+    min-width: 0;
+}
+.modale-image {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+.modale-caracteristiques {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.modale-infos h2 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 2.7rem;
+    font-weight: 700;
+
+    color: var(--vert-fonce);
+
+    margin: 5px 0 10px;
+}
+.modale-infos h3 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.5rem;
+
+    color: var(--vert-fonce);
+
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+.modale-infos p {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+
+    color: var(--vert-fonce);
+}
+
+/* [T6] Grid écrit par vous */
+.statistiques-fiche {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+.stat-fiche {
+    background-color: var(--beige);
+    padding: 18px 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+.icone-stat {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--vert-sauge);
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+.stat-fiche h4 {
+    font-family: "Fredoka", sans-serif;
+    color: var(--vert-fonce);
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.stat-fiche p {
+    font-weight: 600;
+    color: var(--vert-fonce);
+    margin: 0;
+}
+.details-fiche {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.detail-fiche {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--beige);
+    border-radius: 15px;
+}
+.icone-detail {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--vert-sauge);
+    border-radius: 50%;
+    font-size: 1.4rem;
+}
+.detail-fiche h4 {
+    font-family: "Fredoka", sans-serif;
+    color: var(--vert-fonce);
+    margin: 0 0 5px;
+}
+.detail-fiche p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--vert-fonce);
+}
+.fermer-fiche {
+    text-align: center;
+    margin-top: 25px;
+}
+.fermer-fiche a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--brun);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.fermer-fiche a:hover {
+    background-color: var(--vert-fonce);
+}
+
+/* LES SEPARATEURS DE LA FICHE */
+.separateur-fiche {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    color: var(--brun);
+}
+
+/* [T3] Sélecteurs descendant, d'état et structurel */
+.separateur-fiche span:first-child,
+.separateur-fiche span:last-child {
+    flex: 1;
+    height: 3px;
+    background-color: var(--brun);
+    border-radius: 10px;
+}
+
+.separateur-bas {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+    color: var(--brun);
+}
+.separateur-bas span:first-child,
+.separateur-bas span:last-child {
+    flex: 1;
+    height: 1px;
+    background-color: var(--brun);
+}
+
+/* ==================================================
+   PAGE NOS CHIOTS
+   ================================================== */
+
+/* ================================
+   CARTE CHIOT
+   ================================ */
+
+.carte-chiot {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    min-height: 270px;
+    overflow: hidden;
+    background-color: var(--blanc);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(23, 63, 63, 0.1);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.carte-chiot:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(23, 63, 63, 0.16);
+}
+
+/* ================================
+   PHOTO DU CHIOT
+   ================================ */
+
+.photo-carte-chiot {
+    width: 100%;
+    height: 100%;
+    min-height: 270px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ================================
+   INFORMATIONS DU CHIOT
+   ================================ */
+
+.infos-carte-chiot {
+    position: relative;
+    padding: 25px;
+}
+
+.infos-carte-chiot::after {
+    content: "🐾";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 34px;
+    opacity: 0.07;
+}
+
+.infos-carte-chiot h3 {
+    margin: 0;
+    font-family: "Fredoka", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--vert-fonce);
+}
+
+.race-chiot {
+    margin-top: 2px;
+    margin-bottom: 18px;
+    color: var(--brun);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.carte-famille {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px;
+    border-radius: 18px;
+    background-color: var(--creme);
+    box-shadow: 0 4px 14px rgba(23, 63, 63, 0.08);
+}
+
+.carte-famille img {
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.carte-famille h3 {
+    margin: 0 0 2px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 21px;
+    color: var(--vert-fonce);
+}
+
+.carte-famille p {
+    margin-bottom: 10px;
+    color: var(--brun);
+}
+
+.icone-race-vide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background-color: var(--vert-sauge);
+    font-size: 50px;
+}
+
+/* ================================
+   CARTE INFORMATION
+   ================================ */
+
+.carte-contact-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 18px;
+    border-radius: 15px;
+    background-color: rgba(247, 243, 234, 0.08);
+}
+.carte-contact-info h3 {
+    margin: 0 0 4px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 17px;
+    color: var(--creme);
+}
+.carte-contact-info p {
+    margin: 0;
+    color: var(--beige);
+    font-size: 13px;
+    line-height: 1.6;
+}
+.carte-engagement {
+    padding: 35px;
+    border-radius: 22px;
+    background-color: var(--blanc);
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(23, 63, 63, 0.08);
+    transition: 0.2s ease;
+}
+.carte-engagement:hover {
+    transform: translateY(-5px);
+}
+.carte-engagement h3 {
+    font-family: "Fredoka", sans-serif;
+    color: var(--vert-fonce);
+}
+.carte-engagement p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+.carte-vedette {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: var(--blanc);
+}
+.race-vedette {
+    color: var(--brun);
+    font-weight: 600;
+}
+
+/* QUESTION */
+.carte-question {
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 22px;
+    background-color: var(--blanc);
+    box-shadow: 0 6px 20px rgba(23, 63, 63, 0.08);
+}
+
+.carte-question h2 {
+    margin-bottom: 22px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 24px;
+    color: var(--vert-fonce);
+}
+
+/* ==================================================
+   PAGE NOS CHIOTS
+   ================================================== */
+
+.image-chiots {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================================
+   BANNIÈRE
+   ================================ */
+
+.hero-chiots {
+    padding: 70px 0;
+    background-color: var(--beige);
+}
+
+.hero-chiots-contenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.hero-chiots-texte {
+    max-width: 650px;
+}
+.hero-chiots h1 {
+    margin-bottom: 15px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--vert-fonce);
+}
+.hero-chiots p {
+    max-width: 600px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--vert-fonce);
+}
+.hero-chiots-decoration {
+    font-size: 70px;
+    opacity: 0.18;
+}
+
+/* ================================
+   SECTION CHIOTS DISPONIBLES
+   ================================ */
+
+.chiots-disponibles {
+    padding: 70px 0;
+    background-color: var(--creme);
+}
+.titre-section-chiots {
+    margin-bottom: 40px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--vert-fonce);
+}
+
+/* ================================
+   GRILLE DES CHIOTS
+   ================================ */
+
+.grille-chiots {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* ================================
+   DÉTAILS
+   ================================ */
+
+.details-chiot {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.details-chiot li {
+    margin-bottom: 9px;
+    color: var(--vert-fonce);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ================================
+   BOUTON DES CHIOTS
+   (contient T8)
+   ================================ */
+
+.btn-chiot {
+    display: inline-block;
+    padding: 9px 16px;
+    border-radius: 25px;
+    background-color: var(--brun);
+    color: var(--blanc);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/* T8 — Interactions : hover + focus-visible + transition */
+.btn-chiot:hover,
+.btn-chiot:focus-visible {
+    background-color: var(--vert-fonce);
+    color: var(--blanc);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* ==================================================
+   CHIOTS AYANT TROUVÉ LEUR FAMILLE
+   ================================================== */
+
+.chiots-famille {
+    padding: 60px 0;
+    background-color: var(--beige);
+}
+
+.grille-famille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.badge-famille {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 14px;
+    background-color: var(--beige);
+    color: var(--vert-fonce);
+    font-size: 12px;
+}
+
+/* ==================================================
+   APPEL À L'ACTION
+   ================================================== */
+
+.section-contact-chiot {
+    padding: 70px 0 30px;
+    background-color: var(--creme);
+}
+
+.appel-contact-chiot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 35px 45px;
+    border-radius: 25px;
+    background-color: var(--beige);
+}
+.appel-contact-chiot h2 {
+    margin-bottom: 5px;
+    font-family: "Fredoka", sans-serif;
+    color: var(--vert-fonce);
+}
+.appel-contact-chiot p {
+    margin: 0;
+    color: var(--vert-fonce);
+}
+.btn-rendez-vous {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background-color: var(--brun);
+    color: var(--blanc);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.btn-rendez-vous:hover,
+.btn-rendez-vous:focus-visible {
+    background-color: var(--vert-fonce);
+    color: var(--blanc);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+.image-chiots {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* ==================================================
+   PAGE CONSEILS
+   (contient t9)
+   ================================================== */
+
+/* La bannière */
+
+.banniere-conseils {
+    position: relative;
+    padding: 75px 0;
+    overflow: hidden;
+    background-color: var(--vert-sauge);
+}
+
+.banniere-conseils::after {
+    content: "";
+    position: absolute;
+    left: -5%;
+    bottom: -55px;
+    width: 110%;
+    height: 85px;
+    background-color: var(--creme);
+    border-radius: 50% 50% 0 0;
+}
+
+.banniere-conseils-contenu {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.banniere-conseils-texte {
+    max-width: 720px;
+}
+
+.petit-titre-conseils {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--brun);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.banniere-conseils h1 {
+    margin-bottom: 18px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--vert-fonce);
+}
+
+.banniere-conseils p {
+    max-width: 650px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--vert-fonce);
+}
+
+.banniere-conseils-decoration {
+    font-size: 90px;
+    color: var(--brun);
+    opacity: 0.65;
+    transform: rotate(10deg);
+}
+
+/* ==================================================
+   les sections conseils
+    ================================================== */
+
+.conseils-section {
+    background-color: #e8ece2;
+    border: 1px solid rgba(53, 92, 67, 0.15);
+    border-radius: 15px;
+}
+.conseil-titre {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    color: var(--vert-fonce);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.entete-conseil {
+    background-color: var(--vert-sauge);
+    border-radius: 15px;
+    margin: 10px 0px;
+}
+.conseil-titre p {
+    text-align: left;
+}
+.conseil-icone {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+.conseil-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.conseil-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 18px;
+    background-color: #f7faf4;
+    border-radius: 12% 25% 15% 22% / 20% 12% 25% 15%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.item-texte {
+    flex: 1;
+}
+.item-texte h3 {
+    margin: 0 0 5px 0;
+}
+.item-texte p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.conseil-visuel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.conseil-image {
+    width: 100%;
+    max-width: 280px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 35% 12% 30% 15% / 12% 25% 15% 30%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.conseil-astuce {
+    background-color: var(--beige);
+    padding: 20px 25px;
+    border-radius: 30% 15% 25% 12% / 20% 30% 15% 25%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    rotate: -1deg;
+}
+
+/* TABLEAU CONSEILS */
+
+/* [T9] Personnaliser 2 composants Bootstrap */
+
+.tableau-conteneur {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(53, 92, 67, 0.15);
+}
+
+.tableau-conseils {
+    margin-bottom: 0;
+}
+.tableau-conseils th {
+    background-color: var(--vert-fonce);
+    color: var(--creme);
+}
+
+/* ==================================================
+   PAGE CONTACT
+   ================================================== */
+
+/* ================================
+   BANNIÈRE CONTACT
+   ================================ */
+
+.hero-contact {
+    padding: 70px 0;
+    background-color: var(--beige);
+}
+
+.hero-contact-contenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-contact-contenu > div:first-child {
+    max-width: 700px;
+}
+
+.petit-titre-contact {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--brun);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-contact h1 {
+    margin-bottom: 15px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    color: var(--vert-fonce);
+}
+
+.hero-contact p {
+    max-width: 650px;
+    margin: 0;
+    color: var(--vert-fonce);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.decor-contact {
+    color: var(--brun);
+    font-size: 80px;
+    opacity: 0.3;
+    transform: rotate(8deg);
+}
+
+/* ================================
+   SECTION PRINCIPALE
+   ================================ */
+
+.section-contact {
+    padding: 75px 0;
+    background-color: var(--creme);
+}
+
+.grille-contact {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(300px, 0.9fr);
+    gap: 45px;
+    align-items: start;
+}
+
+/* ================================
+   FORMULAIRE
+   ================================ */
+
+.bloc-formulaire {
+    padding: 40px;
+    background-color: var(--blanc);
+    border-radius: 24px;
+    box-shadow: 0 8px 28px rgba(23, 63, 63, 0.1);
+}
+
+.sous-titre-formulaire {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--brun);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.bloc-formulaire h2,
+.bloc-coordonnees h2 {
+    margin-bottom: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--vert-fonce);
+}
+
+.intro-formulaire {
+    margin-bottom: 30px;
+    color: var(--vert-fonce);
+    line-height: 1.6;
+}
+
+/* ================================
+   DEUX CHAMPS SUR UNE LIGNE
+   ================================ */
+
+.ligne-formulaire {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* ================================
+   CHAMPS
+   ================================ */
+
+.champ-contact {
+    margin-bottom: 20px;
+}
+
+.champ-contact label,
+.type-demande legend {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--vert-fonce);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.champ-contact input,
+.champ-contact select,
+.champ-contact textarea {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1px solid var(--beige);
+    border-radius: 12px;
+    background-color: var(--creme);
+    color: var(--vert-fonce);
+    font-family: "Poppins", Arial, sans-serif;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.champ-contact textarea {
+    resize: vertical;
+}
+
+/* ================================
+   FOCUS DU FORMULAIRE
+   (contient T10)
+   ================================ */
+
+/* [T10] Formulaire ou tableau stylé */
+
+.champ-contact input:focus,
+.champ-contact select:focus,
+.champ-contact textarea:focus {
+    border-color: var(--brun);
+    background-color: var(--blanc);
+    box-shadow: 0 0 0 3px rgba(155, 118, 86, 0.14);
+}
+
+/* ================================
+   TYPE DE DEMANDE
+   ================================ */
+
+.type-demande {
+    margin: 5px 0 22px;
+    padding: 0;
+    border: none;
+}
+
+.choix-demande {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.choix-contact {
+    cursor: pointer;
+}
+
+.choix-contact input {
+    position: absolute;
+    opacity: 0;
+}
+
+.choix-contact span {
+    display: block;
+    padding: 14px;
+    border: 1px solid var(--beige);
+    border-radius: 12px;
+    background-color: var(--creme);
+    color: var(--vert-fonce);
+    text-align: center;
+    transition: 0.2s ease;
+}
+.choix-contact input:checked + span {
+    border-color: var(--brun);
+    background-color: var(--vert-sauge);
+    font-weight: 600;
+}
+.choix-contact:hover span {
+    transform: translateY(-2px);
+}
+
+/* ================================
+   CONSENTEMENT
+   ================================ */
+
+.consentement-contact {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 5px 0 25px;
+    color: var(--vert-fonce);
+    font-size: 12px;
+    line-height: 1.5;
+}
+.consentement-contact input {
+    margin-top: 3px;
+    accent-color: var(--brun);
+}
+
+/* ================================
+   BOUTON ENVOYER
+   ================================ */
+
+.btn-envoyer-contact {
+    padding: 13px 24px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--brun);
+    color: var(--blanc);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.btn-envoyer-contact:hover,
+.btn-envoyer-contact:focus-visible {
+    background-color: var(--vert-fonce);
+    transform: translateY(-2px);
+}
+
+/* ==================================================
+   COORDONNÉES
+   ================================================== */
+
+.bloc-coordonnees {
+    padding: 35px;
+    border-radius: 24px;
+    background-color: var(--vert-fonce);
+    color: var(--creme);
+}
+.bloc-coordonnees h2 {
+    color: var(--creme);
+}
+.texte-coordonnees {
+    margin-bottom: 30px;
+    color: var(--creme);
+    font-size: 14px;
+    line-height: 1.7;
+}
+.icone-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--vert-sauge);
+    color: var(--vert-fonce);
+    font-size: 18px;
+}
+
+/* ================================
+   MESSAGE EN BAS
+   ================================ */
+
+.message-contact {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: var(--vert-sauge);
+    color: var(--vert-fonce);
+}
+.message-contact span {
+    font-size: 24px;
+}
+.message-contact p {
+    margin: 8px 0 0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+.formulaire-quiz {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ==================================================
+   PAGE QUIZ
+   ================================================== */
+
+.icone-quiz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--blanc);
+    font-size: 60px;
+}
+.hero-quiz {
+    padding: 70px 0;
+    background-color: var(--beige);
+}
+.hero-quiz-contenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.hero-quiz-contenu > div:first-child {
+    max-width: 750px;
+}
+.petit-titre-quiz {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--brun);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-quiz h1 {
+    margin-bottom: 15px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    color: var(--vert-fonce);
+}
+
+.hero-quiz p {
+    max-width: 680px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--vert-fonce);
+}
+
+.decor-quiz {
+    font-size: 80px;
+    color: var(--brun);
+    opacity: 0.25;
+}
+
+/* SECTION QUIZ */
+
+.section-quiz {
+    padding: 70px 0;
+    background-color: var(--creme);
+}
+
+.numero-question {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--brun);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* RÉPONSES */
+
+.reponse-quiz {
+    display: block;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.reponse-quiz input {
+    position: absolute;
+    opacity: 0;
+}
+.reponse-quiz span {
+    display: block;
+    padding: 14px 18px;
+    border: 1px solid var(--beige);
+    border-radius: 14px;
+    background-color: var(--creme);
+    color: var(--vert-fonce);
+    transition: 0.2s ease;
+}
+
+.reponse-quiz span:hover {
+    border-color: var(--brun);
+    transform: translateY(-2px);
+}
+
+.reponse-quiz input:checked + span {
+    border-color: var(--brun);
+    background-color: var(--vert-sauge);
+    font-weight: 600;
+}
+
+/* BOUTON */
+
+.bouton-quiz {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.btn-resultat-quiz {
+    padding: 14px 26px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--brun);
+    color: var(--blanc);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-resultat-quiz:hover {
+    background-color: var(--vert-fonce);
+    transform: translateY(-2px);
+}
+
+/* RÉSULTAT */
+
+.resultat-quiz {
+    display: none;
+    max-width: 700px;
+    margin: 50px auto 0;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: var(--vert-sauge);
+    text-align: center;
+}
+
+.resultat-quiz h2 {
+    margin: 5px 0 15px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 36px;
+    color: var(--vert-fonce);
+}
+
+.resultat-quiz p {
+    margin-bottom: 22px;
+    line-height: 1.7;
+    color: var(--vert-fonce);
+}
+
+.btn-resultat-lien {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 30px;
+    background-color: var(--brun);
+    color: var(--blanc);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.btn-resultat-lien:hover {
+    background-color: var(--vert-fonce);
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+/* ==================================================
+   PAGE MERCI
+   ================================================== */
+
+.page-merci {
+    background-color: var(--creme);
+}
+
+.section-merci {
+    min-height: 65vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 0;
+}
+
+.carte-merci {
+    max-width: 750px;
+
+    margin: 0 auto;
+    padding: 55px 45px;
+
+    border-radius: 30px;
+
+    background-color: var(--blanc);
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(23, 63, 63, 0.1);
+}
+
+.icone-merci {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 85px;
+    height: 85px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background-color: var(--vert-sauge);
+
+    color: var(--vert-fonce);
+
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.petit-titre-merci {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: var(--brun);
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.carte-merci h1 {
+    margin-bottom: 18px;
+
+    font-family: "Fredoka", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+
+    color: var(--vert-fonce);
+}
+
+.carte-merci p {
+    max-width: 580px;
+
+    margin: 0 auto 12px;
+
+    color: var(--vert-fonce);
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.boutons-merci {
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.btn-merci-principal,
+.btn-merci-secondaire {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.btn-merci-principal {
+    background-color: var(--brun);
+    color: var(--blanc);
+}
+
+.btn-merci-principal:hover {
+    background-color: var(--vert-fonce);
+    color: var(--blanc);
+
+    text-decoration: none;
+
+    transform: translateY(-2px);
+}
+
+.btn-merci-secondaire {
+    border: 1px solid var(--vert-fonce);
+
+    color: var(--vert-fonce);
+
+    background-color: transparent;
+}
+
+.btn-merci-secondaire:hover {
+    background-color: var(--vert-fonce);
+    color: var(--blanc);
+
+    text-decoration: none;
+
+    transform: translateY(-2px);
+}
+
+/* ==================================================
+   RESPONSIVE — 991px
+   ================================================== */
+
+@media (max-width: 991px) {
+    .header-site .navbar > div {
+        flex-wrap: wrap;
+    }
+    .navbar {
+        min-height: auto;
+    }
+    .navbar-toggler {
+        margin-left: auto;
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+        width: 100%;
+        margin-top: 15px;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: var(--beige);
+    }
+    .navbar-nav {
+        gap: 0;
+    }
+    .navbar .nav-link {
+        padding: 10px 5px;
+    }
+
+    .navbar .nav-link.active::after {
+        left: 5px;
+        right: auto;
+        bottom: 4px;
+        width: 35px;
+    }
+    .btn-recherche {
+        display: none;
+    }
+    .btn-nous-joindre {
+        margin-top: 15px;
+    }
+    .grille-chiots {
+        grid-template-columns: 1fr;
+    }
+    .grille-famille {
+        grid-template-columns: 1fr;
+    }
+    .grille-contact {
+        grid-template-columns: 1fr;
+    }
+    .hero-accueil-contenu,
+    .grille-presentation,
+    .carte-vedette {
+        grid-template-columns: 1fr;
+    }
+    .grille-statistiques,
+    .grille-races-accueil {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grille-engagements {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE — 767px
+   (contient T7)
+   ================================================== */
+
+/* [T7] Media query personnalisée pour l'affichage responsive */
+
+@media (max-width: 767px) {
+    /* ACCUEIL */
+
+    .hero-accueil {
+        text-align: center;
+    }
+    .hero-accueil h1 {
+        font-size: 45px;
+    }
+    .boutons-hero {
+        flex-direction: column;
+    }
+    .hero-accueil-image img {
+        height: 340px;
+    }
+
+    .presentation-texte {
+        text-align: center;
+    }
+
+    .grille-statistiques,
+    .grille-races-accueil {
+        grid-template-columns: 1fr;
+    }
+
+    .vedette-contenu {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .bloc-cta-accueil {
+        display: block;
+        text-align: center;
+    }
+
+    .bloc-cta-accueil .btn-accueil-principal {
+        margin-top: 20px;
+    }
+
+    .bloc-quiz-accueil {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .icone-quiz {
+        width: 100px;
+        height: 100px;
+        font-size: 45px;
+    }
+
+    /* NOS CHIOTS */
+
+    .hero-chiots {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .hero-chiots-contenu {
+        display: block;
+    }
+
+    .hero-chiots h1 {
+        font-size: 46px;
+    }
+
+    .hero-chiots-decoration {
+        display: none;
+    }
+
+    .titre-section-chiots {
+        font-size: 30px;
+    }
+
+    .carte-chiot {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-carte-chiot {
+        height: 300px;
+        min-height: 0;
+    }
+
+    .infos-carte-chiot {
+        padding: 22px;
+    }
+
+    .appel-contact-chiot {
+        display: block;
+        padding: 28px;
+        text-align: center;
+    }
+
+    .btn-rendez-vous {
+        margin-top: 20px;
+    }
+
+    /* CONTACT */
+
+    .hero-contact {
+        padding: 50px 0;
+    }
+
+    .hero-contact-contenu {
+        display: block;
+        text-align: center;
+    }
+
+    .hero-contact h1 {
+        font-size: 44px;
+    }
+
+    .decor-contact {
+        display: none;
+    }
+
+    .bloc-formulaire,
+    .bloc-coordonnees {
+        padding: 25px;
+    }
+
+    .ligne-formulaire {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .choix-demande {
+        grid-template-columns: 1fr;
+    }
+
+    /* QUIZ */
+
+    .hero-quiz {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .hero-quiz-contenu {
+        display: block;
+    }
+
+    .hero-quiz h1 {
+        font-size: 43px;
+    }
+
+    .decor-quiz {
+        display: none;
+    }
+
+    .carte-question {
+        padding: 22px;
+    }
+
+    .carte-question h2 {
+        font-size: 21px;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE — 575px
+   ================================================== */
+
+@media (max-width: 575px) {
+    /* HEADER */
+
+    .nom-principal {
+        font-size: 18px;
+    }
+
+    .sous-titre-logo {
+        font-size: 7px;
+        letter-spacing: 2px;
+    }
+
+    /* FOOTER */
+
+    .footer-site {
+        padding-top: 75px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .contact-ligne {
+        justify-content: center;
+    }
+
+    .reseaux-sociaux {
+        justify-content: center;
+    }
+
+    .footer-bas {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* NOTRE ÉLEVAGE */
+
+    .details-fiche {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .detail-fiche {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+        padding: 12px 8px;
+    }
+
+    .icone-detail {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .detail-fiche h4 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .detail-fiche p {
+        font-size: 0.78rem;
+        line-height: 1.4;
+    }
+
+    .section-elevage {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .notre-histoire {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* CONSEILS */
+
+    .conseil-item {
+        padding: 13px;
+        gap: 12px;
+    }
+
+    .conseil-icone {
+        width: 55px;
+        height: 55px;
+    }
+
+    .item-texte h3 {
+        font-size: 1.05rem;
+    }
+
+    .item-texte p {
+        font-size: 0.85rem;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE — 375px
+   ================================================== */
+
+@media (max-width: 375px) {
+    .nom-principal {
+        font-size: 15px;
+    }
+
+    .sous-titre-logo {
+        display: none;
+    }
+}

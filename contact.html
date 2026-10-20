@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Toutou & Compagnie</title>
+    <meta name="description" content="Communiquez avec Toutou & Compagnie">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-site">
+
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="w-100 d-flex align-items-center">
+
+                <!-- LOGO -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-header">
+                    
+                    <div class="logo-nom ms-3">
+                        <div class="nom-principal">
+                            Toutou <span>&</span> Compagnie
+                        </div>
+                        <div class="sous-titre-logo">
+                            ÉLEVAGE CANIN
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- MENU HAMBURGER -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navigation">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <!-- MENU -->
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                            href="elevage.html">
+                                Notre élevage
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="races.html">
+                                Nos races
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="chiots.html">
+                                Nos chiots
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="conseils.html">
+                                Conseils
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- RECHERCHE -->
+                    <button class="btn-recherche" type="button" aria-label="Rechercher">
+                        <img src="images/accueil/loupe.jpg" alt="Logo de recherche" class="logo-recherche">
+                    </button>
+
+                    <div class="form-check form-switch mt-3">
+                        <input type="checkbox" id="mode-sombre" class="form-check-input" role="switch">
+                        <label for="mode-sombre" class="form-check-label">Mode sombre</label>
+                    </div>
+
+                    <!-- BOUTON CONTACT -->
+                    <a href="contact.html"
+                    class="btn-nous-joindre">
+                        Nous joindre
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-contact">
+
+    <!-- ============================= -->
+    <!-- BANNIÈRE CONTACT -->
+    <!-- ============================= -->
+
+        <section class="hero-contact">
+
+            <div class="container">
+
+                <div class="hero-contact-contenu">
+
+                    <div>
+                        <span class="petit-titre-contact">
+                            🐾 Toutou & Compagnie
+                        </span>
+
+                        <h1>Contactez-nous</h1>
+
+                        <p>
+                            Vous avez une question sur nos chiens ou
+                            vous avez trouvé votre futur compagnon ?
+                            Écrivez-nous, il nous fera plaisir de vous répondre.
+                        </p>
+                    </div>
+
+                    <div class="decor-contact">
+                        ♡
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    <!-- ============================= -->
+    <!-- FORMULAIRE + INFORMATIONS -->
+    <!-- ============================= -->
+
+        <section class="section-contact">
+
+            <div class="container">
+
+                <div class="grille-contact">
+
+
+                    <!-- ============================= -->
+                    <!-- FORMULAIRE -->
+                    <!-- ============================= -->
+
+                    <div class="bloc-formulaire">
+
+                        <span class="sous-titre-formulaire">
+                            🐾 Une question ?
+                        </span>
+                        <h2>Envoyez-nous un message</h2>
+                        <p class="intro-formulaire">
+                            Remplissez le formulaire ci-dessous et
+                            nous vous répondrons dès que possible.
+                        </p>
+
+
+                        <form action="merci.html"
+                            method="get"
+                            class="formulaire-contact">
+
+
+                            <!-- PRÉNOM + NOM -->
+
+                            <div class="ligne-formulaire">
+
+                                <div class="champ-contact">
+
+                                    <label for="prenom" class="form-label">
+                                        Prénom *
+                                    </label>
+
+                                    <input
+                                        class="form-control"
+                                        type="text"
+                                        id="prenom"
+                                        name="prenom"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="champ-contact">
+
+                                    <label for="nom" class="form-label">
+                                        Nom *
+                                    </label>
+
+                                    <input
+                                        class="form-control"
+                                        type="text"
+                                        id="nom"
+                                        name="nom"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- COURRIEL -->
+
+                            <div class="champ-contact">
+
+                                <label for="courriel" class="form-label">
+                                    Courriel *
+                                </label>
+
+                                <input
+                                    class="form-control"
+                                    type="email"
+                                    id="courriel"
+                                    name="courriel"
+                                    placeholder="exemple@courriel.com"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- TÉLÉPHONE -->
+
+                            <div class="champ-contact">
+
+                                <label for="telephone" class="form-label">
+                                    Téléphone
+                                </label>
+
+                                <input
+                                    class="form-control"
+                                    type="tel"
+                                    id="telephone"
+                                    name="telephone"
+                                    placeholder="514-555-1234"
+                                >
+
+                            </div>
+
+
+                            <!-- TYPE DE DEMANDE -->
+
+                            <fieldset class="type-demande">
+
+                                <legend>
+                                    Pour quelle raison nous contactez-vous ? *
+                                </legend>
+
+                                <div class="choix-demande">
+
+                                    <label class="choix-contact form-check-label">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="raison"
+                                            value="adoption"
+                                            required
+                                        >
+
+                                        <span>
+                                            🐶 Adoption
+                                        </span>
+
+                                    </label>
+
+                                    <label class="choix-contact form-check-label">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="raison"
+                                            value="information"
+                                        >
+
+                                        <span>
+                                            💬 Information
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+                            <!-- RACE -->
+
+                            <div class="champ-contact">
+
+                                <label for="race" class="form-label">
+                                    Race qui vous intéresse
+                                </label>
+
+                                <select
+                                    id="race"
+                                    name="race"
+                                    class="form-select"
+                                >
+
+                                    <option value="">
+                                        Sélectionnez une race
+                                    </option>
+
+                                    <option value="yorkshire">
+                                        Yorkshire Terrier
+                                    </option>
+
+                                    <option value="corgi">
+                                        Corgi
+                                    </option>
+
+                                    <option value="dachshund">
+                                        Dachshund
+                                    </option>
+
+                                    <option value="shiba">
+                                        Shiba Inu
+                                    </option>
+
+                                    <option value="beagle">
+                                        Beagle
+                                    </option>
+
+                                    <option value="border-collie">
+                                        Border Collie
+                                    </option>
+
+                                    <option value="husky">
+                                        Husky sibérien
+                                    </option>
+
+                                    <option value="berger-allemand">
+                                        Berger allemand
+                                    </option>
+
+                                    <option value="doberman">
+                                        Doberman
+                                    </option>
+
+                                    <option value="golden">
+                                        Golden Retriever
+                                    </option>
+
+                                    <option value="spitz-nain">
+                                        Spitz nain
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- CHIOT -->
+
+                            <div class="champ-contact">
+
+                                <label for="chiot" class="form-label">
+                                    Chiot qui vous intéresse
+                                </label>
+
+                                <select
+                                    id="chiot"
+                                    name="chiot"
+                                    class="form-select"
+                                >
+
+                                    <option value="">
+                                        Aucun en particulier
+                                    </option>
+
+                                    <option>Bella</option>
+                                    <option>Perle</option>
+                                    <option>Moka</option>
+                                    <option>Yuki</option>                              
+                                    <option>Nova</option>
+                                    <option>Sky</option>
+                                    <option>Loki</option>
+                                    <option>Rex</option>
+                                    <option>Tyson</option>
+                                    <option>Luna</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- MESSAGE -->
+
+                            <div class="champ-contact">
+
+                                <label for="message" class="form-label">
+                                    Votre message *
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                    placeholder="Écrivez votre message ici..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <!-- CONSENTEMENT -->
+
+                            <label class="consentement-contact form-check-label">
+
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="consentement"
+                                    required
+                                >
+
+                                <span>
+                                    J'accepte que mes informations soient utilisées
+                                    afin de répondre à ma demande. *
+                                </span>
+
+                            </label>
+
+
+                            <!-- BOUTON -->
+
+                            <button
+                                type="submit"
+                                class="btn-envoyer-contact"
+                            >
+                                Envoyer le message →
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- ============================= -->
+                    <!-- COORDONNÉES -->
+                    <!-- ============================= -->
+
+                    <aside class="bloc-coordonnees">
+
+                        <span class="sous-titre-formulaire">
+                            ♡ Parlons chiens
+                        </span>
+
+                        <h2>Nous joindre</h2>
+
+                        <p class="texte-coordonnees">
+                            Une question concernant une race, un chiot
+                            ou le processus d'adoption ?
+                            Nous sommes là pour vous aider.
+                        </p>
+
+
+                        <!-- TÉLÉPHONE -->
+
+                        <div class="carte-contact-info">
+
+                            <div class="icone-contact">
+                                ☎
+                            </div>
+
+                            <div>
+                                <h3>Téléphone</h3>
+
+                                <p>
+                                    (418) 555-0123
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- COURRIEL -->
+
+                        <div class="carte-contact-info">
+
+                            <div class="icone-contact">
+                                ✉
+                            </div>
+
+                            <div>
+                                <h3>Courriel</h3>
+
+                                <p>
+                                    info@toutouetcompagnie.ca
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- ADRESSE -->
+
+                        <div class="carte-contact-info">
+
+                            <div class="icone-contact">
+                                📍
+                            </div>
+
+                            <div>
+
+                                <h3>Notre élevage</h3>
+
+                                <p>
+                                    123, chemin des Cavaliers<br>
+                                    Saint-Henri, QC G0R 3E0
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- HEURES -->
+
+                        <div class="carte-contact-info">
+
+                            <div class="icone-contact">
+                                🕐
+                            </div>
+
+                            <div>
+
+                                <h3>Visites</h3>
+
+                                <p>
+                                    Sur rendez-vous seulement
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PETIT MESSAGE -->
+
+                        <div class="message-contact">
+
+                            <span>🐾</span>
+
+                            <p>
+                                Vous avez repéré un chiot sur notre site ?
+                                Mentionnez son prénom dans votre message
+                                afin que nous puissions mieux vous renseigner.
+                            </p>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer-site">
+        <!-- Forme arrondie -->
+        <div class="footer-vague"></div>
+
+        <div class="container footer-contenu">
+            <div class="row gy-5">
+                <!-- ================================ -->
+                <!-- LOGO -->
+                <!-- ================================ -->
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html"
+                    class="footer-logo d-flex align-items-center">
+                        <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-footer">
+
+                        <div class="ms-3">
+                            <div class="footer-nom">
+                                Toutou <span>&</span><br>
+                                Compagnie
+                            </div>
+                            <div class="footer-sous-titre">
+                                ÉLEVAGE CANIN
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ================================ -->
+                <!-- NAVIGATION -->
+                <!-- ================================ -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h2 class="footer-titre">
+                        Navigation
+                    </h2>
+
+                    <ul class="footer-navigation">
+
+                        <li>
+                            <a href="index.html">Accueil</a>
+                        </li>
+
+                        <li>
+                            <a href="elevage.html">Notre élevage</a>
+                        </li>
+
+                        <li>
+                            <a href="races.html">Nos races</a>
+                        </li>
+
+                        <li>
+                            <a href="chiots.html">Nos chiots</a>
+                        </li>
+
+                        <li>
+                            <a href="conseils.html">Conseils</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ================================ -->
+                <!-- CONTACT -->
+                <!-- ================================ -->
+
+                <div class="col-lg-3 col-md-6">
+                    <h2 class="footer-titre">
+                        Nous joindre
+                    </h2>
+
+                    <div class="footer-contact">
+                        <div class="contact-ligne">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>
+                                123, chemin des Cavaliers<br>
+                                Saint-Henri, QC G0R 3E0
+                            </p>
+                        </div>
+
+                        <div class="contact-ligne">
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>
+                                (418) 555-0123
+                            </p>
+                        </div>
+
+                        <div class="contact-ligne">
+                            <i class="bi bi-envelope-fill"></i>
+                            <p>
+                                info@toutouetcompagnie.ca
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================================ -->
+                <!-- RÉSEAUX -->
+                <!-- ================================ -->
+
+                <div class="col-lg-3 col-md-6">
+                    <h2 class="footer-titre">
+                        Suivez-nous
+                    </h2>
+
+                    <div class="reseaux-sociaux">
+                        <a href="https://www.facebook.com/profile.php?id=61594627183723" target="_blank" aria-label="Facebook">
+                            <img src="images/accueil/logo_facebook.png" alt="Logo Facebook" class="logo-reseaux">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/jbelangerthibault/" target="_blank" aria-label="Instagram">
+                            <img src="images/accueil/logo_instagram.png" alt="Logo Instagram" class="logo-reseaux">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@ToutouCompagnie-p2m" target="_blank" aria-label="YouTube">
+                            <img src="images/accueil/logo_youtube.png" alt="Logo YouTube" class="logo-reseaux">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>
