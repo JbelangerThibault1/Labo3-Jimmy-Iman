@@ -5,7 +5,6 @@ const CLES = {
 /* ==========================================
     MODE SOMBRE
 =========================================== */
-
 function appliquerModeSombre() {
     if (localStorage.getItem(CLES.sombre) === "true") {
         document.body.classList.add("dark-mode");
@@ -30,7 +29,6 @@ appliquerModeSombre();
     FORMULAIRE CONTACT
     validation et localStorage
 ========================================== */
-
 const formulaireContact = document.querySelector(".formulaire-contact");
 
 if (formulaireContact) {
@@ -85,7 +83,6 @@ if (formulaireContact) {
             afficherErreur(champ, "Ce champ est obligatoire.");
             return false;
         }
-
         // prénom et nom
         if (champ === prenom || champ === nom) {
             if (valeur.length < 2) {
@@ -93,7 +90,6 @@ if (formulaireContact) {
                 return false;
             }
         }
-
         // courriel
         if (champ === courriel) {
             const formatCourriel = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -103,7 +99,6 @@ if (formulaireContact) {
                 return false;
             }
         }
-
         // téléphone (facultatif)
         if (champ === telephone && valeur !== "") {
             const chiffres = valeur.replace(/\D/g, "");
@@ -116,7 +111,6 @@ if (formulaireContact) {
                 return false;
             }
         }
-
         // message
         if (champ === message && valeur.length < 10) {
             afficherErreur(
@@ -125,7 +119,6 @@ if (formulaireContact) {
             );
             return false;
         }
-
         effacerErreur(champ);
         return true;
     }
@@ -146,7 +139,6 @@ if (formulaireContact) {
     champs.forEach(function (champ) {
         champ.addEventListener("input", function () {
             validerChamp(champ);
-
             // Sauvegarder les informations non sensibles
             if (champ === prenom) {
                 localStorage.setItem("contact_prenom", champ.value);
