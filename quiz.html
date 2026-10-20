@@ -1,488 +1,568 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz - Toutou & Compagnie</title>
-    <meta name="description" content="Répondez à notre quiz">
-    <link rel="stylesheet" href="vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header-site">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz - Toutou & Compagnie</title>
+        <meta name="description" content="Répondez à notre quiz" />
+        <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" href="data:," />
+    </head>
+    <body>
+        <header class="header-site">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- LOGO -->
+                    <a
+                        class="navbar-brand d-flex align-items-center"
+                        href="index.html"
+                    >
+                        <img
+                            src="images/accueil/logo.png"
+                            alt="Logo de Toutou & Compagnie"
+                            class="logo-header"
+                        />
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
+                        <div class="logo-nom ms-3">
+                            <div class="nom-principal">
+                                Toutou <span>&</span> Compagnie
+                            </div>
+                            <div class="sous-titre-logo">ÉLEVAGE CANIN</div>
+                        </div>
+                    </a>
 
-                <!-- LOGO -->
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-header">
-                    
-                    <div class="logo-nom ms-3">
-                        <div class="nom-principal">
-                            Toutou <span>&</span> Compagnie
-                        </div>
-                        <div class="sous-titre-logo">
-                            ÉLEVAGE CANIN
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- MENU HAMBURGER -->
-                <button class="navbar-toggler"
+                    <!-- MENU HAMBURGER -->
+                    <button
+                        class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#navigation">
-                    <span class="hamburger-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </button>
-
-                <!-- MENU -->
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                Accueil
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link"
-                            href="elevage.html">
-                                Notre élevage
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="races.html">
-                                Nos races
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="chiots.html">
-                                Nos chiots
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="conseils.html">
-                                Conseils
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- RECHERCHE -->
-                    <button class="btn-recherche" type="button" aria-label="Rechercher">
-                        &#128269;
+                        data-bs-target="#navigation"
+                    >
+                        <span class="hamburger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                     </button>
 
-                    <div class="form-check form-switch mt-3">
-                        <input type="checkbox" id="mode-sombre" class="form-check-input" role="switch">
-                        <label for="mode-sombre" class="form-check-label">Mode sombre</label>
+                    <!-- MENU -->
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    Accueil
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="elevage.html">
+                                    Notre élevage
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="races.html">
+                                    Nos races
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="chiots.html">
+                                    Nos chiots
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="conseils.html">
+                                    Conseils
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- RECHERCHE -->
+                        <button
+                            class="btn-recherche"
+                            type="button"
+                            aria-label="Rechercher"
+                        >
+                            &#128269;
+                        </button>
+
+                        <div class="form-check form-switch mt-3">
+                            <input
+                                type="checkbox"
+                                id="mode-sombre"
+                                class="form-check-input"
+                                role="switch"
+                            />
+                            <label for="mode-sombre" class="form-check-label"
+                                >Mode sombre</label
+                            >
+                        </div>
+
+                        <!-- BOUTON CONTACT -->
+                        <a href="contact.html" class="btn-nous-joindre">
+                            <i class="bi bi-paw-fill"></i>
+                            Nous joindre
+                        </a>
                     </div>
-
-                    <!-- BOUTON CONTACT -->
-                    <a href="contact.html"
-                    class="btn-nous-joindre">
-                        <i class="bi bi-paw-fill"></i>
-                        Nous joindre
-                    </a>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main class="page-quiz">
+            </nav>
+        </header>
+        <main class="page-quiz">
+            <section class="hero-quiz">
+                <div class="container">
+                    <div class="hero-quiz-contenu">
+                        <div>
+                            <span class="petit-titre-quiz">
+                                🐾 Toutou & Compagnie
+                            </span>
 
-        <section class="hero-quiz">
-            <div class="container">
-                <div class="hero-quiz-contenu">
+                            <h1>Quelle race vous correspond ?</h1>
 
-                    <div>
+                            <p>
+                                Répondez à quelques questions sur votre mode de
+                                vie, vos habitudes et vos préférences afin de
+                                découvrir quelles races pourraient le mieux vous
+                                convenir.
+                            </p>
+                        </div>
+
+                        <div class="decor-quiz">♡</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-quiz">
+                <div class="container">
+                    <form class="formulaire-quiz" id="formQuiz">
+                        <!-- QUESTION 1 -->
+                        <div class="carte-question">
+                            <span class="numero-question">Question 1</span>
+
+                            <h2>Quel est votre niveau d'activité ?</h2>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q1"
+                                    value="calme"
+                                    required
+                                />
+                                <span>Plutôt calme</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q1" value="moyen" />
+                                <span>Modérément actif</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q1" value="actif" />
+                                <span>Très actif</span>
+                            </label>
+                        </div>
+
+                        <!-- QUESTION 2 -->
+                        <div class="carte-question">
+                            <span class="numero-question">Question 2</span>
+
+                            <h2>Quel type de logement avez-vous ?</h2>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q2"
+                                    value="appartement"
+                                    required
+                                />
+                                <span>Appartement</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q2" value="maison" />
+                                <span>Maison</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q2" value="cour" />
+                                <span>Maison avec cour</span>
+                            </label>
+                        </div>
+
+                        <!-- QUESTION 3 -->
+                        <div class="carte-question">
+                            <span class="numero-question">Question 3</span>
+
+                            <h2>Quelle taille de chien préférez-vous ?</h2>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q3"
+                                    value="petit"
+                                    required
+                                />
+                                <span>Petit</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q3" value="moyen" />
+                                <span>Moyen</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q3" value="grand" />
+                                <span>Grand</span>
+                            </label>
+                        </div>
+
+                        <!-- QUESTION 4 -->
+                        <div class="carte-question">
+                            <span class="numero-question">Question 4</span>
+
+                            <h2>Quel tempérament recherchez-vous ?</h2>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q4"
+                                    value="affectueux"
+                                    required
+                                />
+                                <span>Doux et affectueux</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q4"
+                                    value="independant"
+                                />
+                                <span>Indépendant</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q4"
+                                    value="energetique"
+                                />
+                                <span>Énergique et joueur</span>
+                            </label>
+                        </div>
+
+                        <!-- QUESTION 5 -->
+                        <div class="carte-question">
+                            <span class="numero-question">Question 5</span>
+
+                            <h2>
+                                Combien de temps pouvez-vous consacrer à
+                                l'exercice chaque jour ?
+                            </h2>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q5"
+                                    value="peu"
+                                    required
+                                />
+                                <span>Moins de 30 minutes</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q5" value="moyen" />
+                                <span>Environ 1 heure</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q5"
+                                    value="beaucoup"
+                                />
+                                <span>Plus d'une heure</span>
+                            </label>
+                        </div>
+
+                        <!-- QUESTION 6 -->
+                        <div class="carte-question">
+                            <span class="numero-question">Question 6</span>
+
+                            <h2>Quel niveau de toilettage préférez-vous ?</h2>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q6"
+                                    value="faible"
+                                    required
+                                />
+                                <span>Peu d'entretien</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q6" value="moyen" />
+                                <span>Entretien régulier</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q6" value="eleve" />
+                                <span
+                                    >Ça ne me dérange pas de beaucoup entretenir
+                                    son pelage</span
+                                >
+                            </label>
+                        </div>
+
+                        <!-- QUESTION 7 -->
+                        <div class="carte-question">
+                            <span class="numero-question">Question 7</span>
+
+                            <h2>Avez-vous déjà eu un chien ?</h2>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q7"
+                                    value="non"
+                                    required
+                                />
+                                <span>Non, ce serait mon premier chien</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q7" value="unpeu" />
+                                <span>J'ai un peu d'expérience</span>
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q7" value="oui" />
+                                <span>Oui, j'ai déjà eu plusieurs chiens</span>
+                            </label>
+                        </div>
+
+                        <!-- QUESTION 8 -->
+                        <div class="carte-question">
+                            <span class="numero-question">Question 8</span>
+
+                            <h2>Quelle description vous ressemble le plus ?</h2>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q8"
+                                    value="tranquille"
+                                    required
+                                />
+                                <span
+                                    >J'aime les activités tranquilles à la
+                                    maison</span
+                                >
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input
+                                    type="radio"
+                                    name="q8"
+                                    value="equilibre"
+                                />
+                                <span
+                                    >J'aime un mélange de calme et
+                                    d'activités</span
+                                >
+                            </label>
+
+                            <label class="reponse-quiz">
+                                <input type="radio" name="q8" value="sportif" />
+                                <span
+                                    >Je suis souvent dehors et très actif</span
+                                >
+                            </label>
+                        </div>
+
+                        <div class="bouton-quiz">
+                            <button type="submit" class="btn-resultat-quiz">
+                                Voir mon résultat →
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- RÉSULTAT -->
+                    <div class="resultat-quiz" id="resultatQuiz">
                         <span class="petit-titre-quiz">
-                            🐾 Toutou & Compagnie
+                            🐾 Votre résultat
                         </span>
 
-                        <h1>Quelle race vous correspond ?</h1>
+                        <h2 id="nomRaceResultat">Votre race idéale</h2>
 
-                        <p>
-                            Répondez à quelques questions sur votre mode de vie,
-                            vos habitudes et vos préférences afin de découvrir
-                            quelles races pourraient le mieux vous convenir.
+                        <p id="texteRaceResultat">
+                            Répondez au quiz pour découvrir votre résultat.
                         </p>
-                    </div>
 
-                    <div class="decor-quiz">
-                        ♡
+                        <a href="races.html" class="btn-resultat-lien">
+                            Découvrir nos races
+                        </a>
                     </div>
-
                 </div>
-            </div>
-        </section>
-
-
-        <section class="section-quiz">
-            <div class="container">
-
-                <form class="formulaire-quiz" id="formQuiz">
-
-                    <!-- QUESTION 1 -->
-                    <div class="carte-question">
-                        <span class="numero-question">Question 1</span>
-
-                        <h2>Quel est votre niveau d'activité ?</h2>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q1" value="calme" required>
-                            <span>Plutôt calme</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q1" value="moyen">
-                            <span>Modérément actif</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q1" value="actif">
-                            <span>Très actif</span>
-                        </label>
-                    </div>
-
-
-                    <!-- QUESTION 2 -->
-                    <div class="carte-question">
-                        <span class="numero-question">Question 2</span>
-
-                        <h2>Quel type de logement avez-vous ?</h2>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q2" value="appartement" required>
-                            <span>Appartement</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q2" value="maison">
-                            <span>Maison</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q2" value="cour">
-                            <span>Maison avec cour</span>
-                        </label>
-                    </div>
-
-
-                    <!-- QUESTION 3 -->
-                    <div class="carte-question">
-                        <span class="numero-question">Question 3</span>
-
-                        <h2>Quelle taille de chien préférez-vous ?</h2>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q3" value="petit" required>
-                            <span>Petit</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q3" value="moyen">
-                            <span>Moyen</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q3" value="grand">
-                            <span>Grand</span>
-                        </label>
-                    </div>
-
-
-                    <!-- QUESTION 4 -->
-                    <div class="carte-question">
-                        <span class="numero-question">Question 4</span>
-
-                        <h2>Quel tempérament recherchez-vous ?</h2>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q4" value="affectueux" required>
-                            <span>Doux et affectueux</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q4" value="independant">
-                            <span>Indépendant</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q4" value="energetique">
-                            <span>Énergique et joueur</span>
-                        </label>
-                    </div>
-
-
-                    <!-- QUESTION 5 -->
-                    <div class="carte-question">
-                        <span class="numero-question">Question 5</span>
-
-                        <h2>Combien de temps pouvez-vous consacrer à l'exercice chaque jour ?</h2>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q5" value="peu" required>
-                            <span>Moins de 30 minutes</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q5" value="moyen">
-                            <span>Environ 1 heure</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q5" value="beaucoup">
-                            <span>Plus d'une heure</span>
-                        </label>
-                    </div>
-
-
-                    <!-- QUESTION 6 -->
-                    <div class="carte-question">
-                        <span class="numero-question">Question 6</span>
-
-                        <h2>Quel niveau de toilettage préférez-vous ?</h2>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q6" value="faible" required>
-                            <span>Peu d'entretien</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q6" value="moyen">
-                            <span>Entretien régulier</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q6" value="eleve">
-                            <span>Ça ne me dérange pas de beaucoup entretenir son pelage</span>
-                        </label>
-                    </div>
-
-
-                    <!-- QUESTION 7 -->
-                    <div class="carte-question">
-                        <span class="numero-question">Question 7</span>
-
-                        <h2>Avez-vous déjà eu un chien ?</h2>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q7" value="non" required>
-                            <span>Non, ce serait mon premier chien</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q7" value="unpeu">
-                            <span>J'ai un peu d'expérience</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q7" value="oui">
-                            <span>Oui, j'ai déjà eu plusieurs chiens</span>
-                        </label>
-                    </div>
-
-
-                    <!-- QUESTION 8 -->
-                    <div class="carte-question">
-                        <span class="numero-question">Question 8</span>
-
-                        <h2>Quelle description vous ressemble le plus ?</h2>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q8" value="tranquille" required>
-                            <span>J'aime les activités tranquilles à la maison</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q8" value="equilibre">
-                            <span>J'aime un mélange de calme et d'activités</span>
-                        </label>
-
-                        <label class="reponse-quiz">
-                            <input type="radio" name="q8" value="sportif">
-                            <span>Je suis souvent dehors et très actif</span>
-                        </label>
-                    </div>
-
-
-                    <div class="bouton-quiz">
-                        <button type="submit" class="btn-resultat-quiz">
-                            Voir mon résultat →
-                        </button>
-                    </div>
-
-                </form>
-
-
-                <!-- RÉSULTAT -->
-                <div class="resultat-quiz" id="resultatQuiz">
-
-                    <span class="petit-titre-quiz">
-                        🐾 Votre résultat
-                    </span>
-
-                    <h2 id="nomRaceResultat">
-                        Votre race idéale
-                    </h2>
-
-                    <p id="texteRaceResultat">
-                        Répondez au quiz pour découvrir votre résultat.
-                    </p>
-
-                    <a href="races.html" class="btn-resultat-lien">
-                        Découvrir nos races
-                    </a>
-
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer-site">
-        <!-- Forme arrondie -->
-        <div class="footer-vague"></div>
-
-        <div class="container footer-contenu">
-            <div class="row gy-5">
-                <!-- ================================ -->
-                <!-- LOGO -->
-                <!-- ================================ -->
-
-                <div class="col-lg-3 col-md-6">
-                    <a href="index.html"
-                    class="footer-logo d-flex align-items-center">
-                        <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-footer">
-
-                        <div class="ms-3">
-                            <div class="footer-nom">
-                                Toutou <span>&</span><br>
-                                Compagnie
+            </section>
+        </main>
+
+        <footer class="footer-site">
+            <!-- Forme arrondie -->
+            <div class="footer-vague"></div>
+
+            <div class="container footer-contenu">
+                <div class="row gy-5">
+                    <!-- ================================ -->
+                    <!-- LOGO -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <a
+                            href="index.html"
+                            class="footer-logo d-flex align-items-center"
+                        >
+                            <img
+                                src="images/accueil/logo.png"
+                                alt="Logo de Toutou & Compagnie"
+                                class="logo-footer"
+                            />
+
+                            <div class="ms-3">
+                                <div class="footer-nom">
+                                    Toutou <span>&</span><br />
+                                    Compagnie
+                                </div>
+                                <div class="footer-sous-titre">
+                                    ÉLEVAGE CANIN
+                                </div>
                             </div>
-                            <div class="footer-sous-titre">
-                                ÉLEVAGE CANIN
+                        </a>
+                    </div>
+
+                    <!-- ================================ -->
+                    <!-- NAVIGATION -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Navigation</h2>
+
+                        <ul class="footer-navigation">
+                            <li>
+                                <a href="index.html">Accueil</a>
+                            </li>
+
+                            <li>
+                                <a href="elevage.html">Notre élevage</a>
+                            </li>
+
+                            <li>
+                                <a href="races.html">Nos races</a>
+                            </li>
+
+                            <li>
+                                <a href="chiots.html">Nos chiots</a>
+                            </li>
+
+                            <li>
+                                <a href="conseils.html">Conseils</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ================================ -->
+                    <!-- CONTACT -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Nous joindre</h2>
+
+                        <div class="footer-contact">
+                            <div class="contact-ligne">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <p>
+                                    123, chemin des Cavaliers<br />
+                                    Saint-Henri, QC G0R 3E0
+                                </p>
+                            </div>
+
+                            <div class="contact-ligne">
+                                <i class="bi bi-telephone-fill"></i>
+                                <p>(418) 555-0123</p>
+                            </div>
+
+                            <div class="contact-ligne">
+                                <i class="bi bi-envelope-fill"></i>
+                                <p>info@toutouetcompagnie.ca</p>
                             </div>
                         </div>
-                    </a>
-                </div>
-
-                <!-- ================================ -->
-                <!-- NAVIGATION -->
-                <!-- ================================ -->
-
-                <div class="col-lg-3 col-md-6">
-
-                    <h2 class="footer-titre">
-                        Navigation
-                    </h2>
-
-                    <ul class="footer-navigation">
-
-                        <li>
-                            <a href="index.html">Accueil</a>
-                        </li>
-
-                        <li>
-                            <a href="elevage.html">Notre élevage</a>
-                        </li>
-
-                        <li>
-                            <a href="races.html">Nos races</a>
-                        </li>
-
-                        <li>
-                            <a href="chiots.html">Nos chiots</a>
-                        </li>
-
-                        <li>
-                            <a href="conseils.html">Conseils</a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- ================================ -->
-                <!-- CONTACT -->
-                <!-- ================================ -->
-
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="footer-titre">
-                        Nous joindre
-                    </h2>
-
-                    <div class="footer-contact">
-                        <div class="contact-ligne">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <p>
-                                123, chemin des Cavaliers<br>
-                                Saint-Henri, QC G0R 3E0
-                            </p>
-                        </div>
-
-                        <div class="contact-ligne">
-                            <i class="bi bi-telephone-fill"></i>
-                            <p>
-                                (418) 555-0123
-                            </p>
-                        </div>
-
-                        <div class="contact-ligne">
-                            <i class="bi bi-envelope-fill"></i>
-                            <p>
-                                info@toutouetcompagnie.ca
-                            </p>
-                        </div>
                     </div>
-                </div>
 
-                <!-- ================================ -->
-                <!-- RÉSEAUX -->
-                <!-- ================================ -->
+                    <!-- ================================ -->
+                    <!-- RÉSEAUX -->
+                    <!-- ================================ -->
 
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="footer-titre">
-                        Suivez-nous
-                    </h2>
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Suivez-nous</h2>
 
-                    <div class="reseaux-sociaux">
-                        <a href="https://www.facebook.com/profile.php?id=61594627183723" target="_blank" aria-label="Facebook">
-                            <img src="images/accueil/logo_facebook.png" alt="Logo Facebook" class="logo-reseaux">
-                            <i class="bi bi-facebook"></i>
-                        </a>
+                        <div class="reseaux-sociaux">
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61594627183723"
+                                target="_blank"
+                                aria-label="Facebook"
+                            >
+                                <img
+                                    src="images/accueil/logo_facebook.png"
+                                    alt="Logo Facebook"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-facebook"></i>
+                            </a>
 
-                        <a href="https://www.instagram.com/jbelangerthibault/" target="_blank" aria-label="Instagram">
-                            <img src="images/accueil/logo_instagram.png" alt="Logo Instagram" class="logo-reseaux">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@ToutouCompagnie-p2m" target="_blank" aria-label="YouTube">
-                            <img src="images/accueil/logo_youtube.png" alt="Logo YouTube" class="logo-reseaux">
-                            <i class="bi bi-youtube"></i>
-                        </a>
+                            <a
+                                href="https://www.instagram.com/jbelangerthibault/"
+                                target="_blank"
+                                aria-label="Instagram"
+                            >
+                                <img
+                                    src="images/accueil/logo_instagram.png"
+                                    alt="Logo Instagram"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@ToutouCompagnie-p2m"
+                                target="_blank"
+                                aria-label="YouTube"
+                            >
+                                <img
+                                    src="images/accueil/logo_youtube.png"
+                                    alt="Logo YouTube"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="js/script.js" defer></script>
-    <script src="vendor/bootstrap.bundle.min.js"></script>
-</body>
+        <script src="js/script.js" defer></script>
+        <script src="vendor/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

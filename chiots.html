@@ -1,811 +1,747 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos chiots</title>
-    <meta name="description" content="Découvrez les chiots fictifs disponibles">
-    <link rel="stylesheet" href="vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header-site">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nos chiots</title>
+        <meta
+            name="description"
+            content="Découvrez les chiots fictifs disponibles"
+        />
+        <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" href="data:," />
+    </head>
+    <body>
+        <header class="header-site">
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="w-100 d-flex align-items-center">
+                    <!-- LOGO -->
+                    <a
+                        class="navbar-brand d-flex align-items-center"
+                        href="index.html"
+                    >
+                        <img
+                            src="images/accueil/logo.png"
+                            alt="Logo de Toutou & Compagnie"
+                            class="logo-header"
+                        />
 
-        <nav class="navbar navbar-expand-lg w-100">
-            <div class="w-100 d-flex align-items-center">
+                        <div class="logo-nom ms-3">
+                            <div class="nom-principal">
+                                Toutou <span>&</span> Compagnie
+                            </div>
+                            <div class="sous-titre-logo">ÉLEVAGE CANIN</div>
+                        </div>
+                    </a>
 
-                <!-- LOGO -->
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-header">
-                    
-                    <div class="logo-nom ms-3">
-                        <div class="nom-principal">
-                            Toutou <span>&</span> Compagnie
-                        </div>
-                        <div class="sous-titre-logo">
-                            ÉLEVAGE CANIN
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- MENU HAMBURGER -->
-                <button class="navbar-toggler"
+                    <!-- MENU HAMBURGER -->
+                    <button
+                        class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#navigation">
-                    <span class="hamburger-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </button>
-
-                <!-- MENU -->
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                Accueil
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link"
-                            href="elevage.html">
-                                Notre élevage
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link " href="races.html">
-                                Nos races
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="chiots.html">
-                                Nos chiots
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="conseils.html">
-                                Conseils
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- RECHERCHE -->
-                    <button class="btn-recherche" type="button" aria-label="Rechercher">
-                        <img src="images/accueil/loupe.jpg" alt="Logo de recherche" class="logo-recherche">
+                        data-bs-target="#navigation"
+                    >
+                        <span class="hamburger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                     </button>
 
-                    <div class="form-check form-switch mt-3">
-                        <input type="checkbox" id="mode-sombre" class="form-check-input" role="switch">
-                        <label for="mode-sombre" class="form-check-label">Mode sombre</label>
+                    <!-- MENU -->
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    Accueil
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="elevage.html">
+                                    Notre élevage
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="races.html">
+                                    Nos races
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="chiots.html"
+                                >
+                                    Nos chiots
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="conseils.html">
+                                    Conseils
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- RECHERCHE -->
+                        <button
+                            class="btn-recherche"
+                            type="button"
+                            aria-label="Rechercher"
+                        >
+                            <img
+                                src="images/accueil/loupe.jpg"
+                                alt="Logo de recherche"
+                                class="logo-recherche"
+                            />
+                        </button>
+
+                        <div class="form-check form-switch mt-3">
+                            <input
+                                type="checkbox"
+                                id="mode-sombre"
+                                class="form-check-input"
+                                role="switch"
+                            />
+                            <label for="mode-sombre" class="form-check-label"
+                                >Mode sombre</label
+                            >
+                        </div>
+
+                        <!-- BOUTON CONTACT -->
+                        <a href="contact.html" class="btn-nous-joindre">
+                            Nous joindre
+                        </a>
                     </div>
-
-                    <!-- BOUTON CONTACT -->
-                    <a href="contact.html"
-                    class="btn-nous-joindre">
-                        Nous joindre
-                    </a>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="page-chiots">
-
-        <!-- ============================= -->
-        <!-- BANNIÈRE NOS CHIOTS -->
-        <!-- ============================= -->
-
-        <section class="hero-chiots">
-
-            <div class="container hero-chiots-contenu">
-
-                <div class="hero-chiots-texte">
-
-                    <h1>Nos chiots</h1>
-
-                    <p>
-                        Découvrez nos chiots actuellement disponibles
-                        ainsi que ceux qui ont déjà trouvé leur famille.
-                    </p>
-
-                </div>
-
-                <div class="hero-chiots-decoration">
-                    🐾
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ============================= -->
-        <!-- CHIOTS DISPONIBLES -->
-        <!-- ============================= -->
-
-        <section class="chiots-disponibles">
-
-            <div class="container">
-
-                <h2 class="titre-section-chiots">
-                    🐾 Nos chiots disponibles
-                </h2>
-
-
-                <div class="grille-chiots">
-
-
-                    <!-- ============================= -->
-                    <!-- YORKSHIRE 1 -->
-                    <!-- ============================= -->
-
-                    <article class="carte-chiot">
-
-                        <img
-                            src="images/nos_chiots/bellayorkshire.png"
-                            alt="Bella, chiot Yorkshire Terrier"
-                            class="photo-carte-chiot"
-                        >
-
-                        <div class="infos-carte-chiot">
-
-                            <span class="badge-disponible">
-                                ✓ Disponible
-                            </span>
-
-                            <h3>Bella</h3>
-
-                            <p class="race-chiot">
-                                Yorkshire Terrier
-                            </p>
-
-                            <ul class="details-chiot">
-                                <li>♀ Femelle</li>
-                                <li>📅 10 semaines</li>
-                                <li>🤎 Douce, affectueuse et très câline</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn-chiot">
-                                Je suis intéressé(e)
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <!-- ============================= -->
-                    <!-- CORGI 1 -->
-                    <!-- ============================= -->
-
-                    <article class="carte-chiot">
-
-                        <img
-                            src="images/nos_chiots/corgie.jpg"
-                            alt="Moka, chiot Corgi"
-                            class="photo-carte-chiot"
-                        >
-
-                        <div class="infos-carte-chiot">
-
-                            <span class="badge-disponible">
-                                ✓ Disponible
-                            </span>
-
-                            <h3>Moka</h3>
-
-                            <p class="race-chiot">
-                                Corgi
-                            </p>
-
-                            <ul class="details-chiot">
-                                <li>♂ Mâle</li>
-                                <li>📅 9 semaines</li>
-                                <li>🤎 Joueur, curieux et très sociable</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn-chiot">
-                                Je suis intéressé(e)
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-
-
-
-
-                    <!-- ============================= -->
-                    <!-- SPITZ NAIN 1 -->
-                    <!-- ============================= -->
-                    <article
-                        class="carte-chiot">
-
-                        <img
-                            src="images/nos_chiots/spitz_nain.jpg"
-                            alt="Lily, chiot Spitz nain"
-                            class="photo-carte-chiot"
-                        >
-
-                        <div class="infos-carte-chiot">
-
-                            <span class="badge-disponible">
-                                ✓ Disponible
-                            </span>
-
-                            <h3>Perle</h3>
-
-                            <p class="race-chiot">
-                                Spitz nain
-                            </p>
-
-                            <ul class="details-chiot">
-                                <li>♀ Femelle</li>
-                                <li>📅 11 semaines</li>
-                                <li>🤎 Vive, curieuse et très affectueuse</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn-chiot">
-                                Je suis intéressé(e)
-                            </a>
-
-                        </div>
-                    </article>
-
-
-
-                    <!-- ============================= -->
-                    <!-- SHIBA INU 1 -->
-                    <!-- ============================= -->
-
-                    <article class="carte-chiot">
-
-                        <img
-                            src="images/nos_chiots/shiba.png"
-                            alt="Yuki, chiot Shiba Inu"
-                            class="photo-carte-chiot"
-                        >
-
-                        <div class="infos-carte-chiot">
-
-                            <span class="badge-disponible">
-                                ✓ Disponible
-                            </span>
-
-                            <h3>Yuki</h3>
-
-                            <p class="race-chiot">
-                                Shiba Inu
-                            </p>
-
-                            <ul class="details-chiot">
-                                <li>♀ Femelle</li>
-                                <li>📅 11 semaines</li>
-                                <li>🤎 Vive, intelligente et très expressive</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn-chiot">
-                                Je suis intéressé(e)
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ============================= -->
-                    <!-- BORDER COLLIE -->
-                    <!-- ============================= -->
-
-                    <article class="carte-chiot">
-
-                        <img
-                            src="images/nos_chiots/borderbrun.png"
-                            alt="Nova, chiot Border Collie"
-                            class="photo-carte-chiot"
-                        >
-
-                        <div class="infos-carte-chiot">
-
-                            <span class="badge-disponible">
-                                ✓ Disponible
-                            </span>
-
-                            <h3>Nova</h3>
-
-                            <p class="race-chiot">
-                                Border Collie
-                            </p>
-
-                            <ul class="details-chiot">
-                                <li>♀ Femelle</li>
-                                <li>📅 10 semaines</li>
-                                <li>🤎 Brillante, active et adore apprendre</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn-chiot">
-                                Je suis intéressé(e)
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ============================= -->
-                    <!-- HUSKY 1 -->
-                    <!-- ============================= -->
-
-                    <article class="carte-chiot">
-
-                        <img
-                            src="images/nos_chiots/huskyblack.jpg"
-                            alt="Sky, chiot Husky sibérien"
-                            class="photo-carte-chiot"
-                        >
-
-                        <div class="infos-carte-chiot">
-
-                            <span class="badge-disponible">
-                                ✓ Disponible
-                            </span>
-
-                            <h3>Sky</h3>
-
-                            <p class="race-chiot">
-                                Husky sibérien
-                            </p>
-
-                            <ul class="details-chiot">
-                                <li>♂ Mâle</li>
-                                <li>📅 10 semaines</li>
-                                <li>🤎 Énergique, enjoué et adore jouer dehors</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn-chiot">
-                                Je suis intéressé(e)
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ============================= -->
-                    <!-- HUSKY 2 -->
-                    <!-- ============================= -->
-
-                    <article class="carte-chiot">
-
-                        <img
-                            src="images/nos_chiots/huskybrun.jpg"
-                            alt="Loki, chiot Husky sibérien"
-                            class="photo-carte-chiot"
-                        >
-
-                        <div class="infos-carte-chiot">
-
-                            <span class="badge-disponible">
-                                ✓ Disponible
-                            </span>
-
-                            <h3>Loki</h3>
-
-                            <p class="race-chiot">
-                                Husky sibérien
-                            </p>
-
-                            <ul class="details-chiot">
-                                <li>♀ Femelle</li>
-                                <li>📅 11 semaines</li>
-                                <li>🤎 Expressif, sociable et très énergique</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn-chiot">
-                                Je suis intéressé(e)
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ============================= -->
-                    <!-- BERGER ALLEMAND -->
-                    <!-- ============================= -->
-
-                    <article class="carte-chiot">
-
-                        <img
-                            src="images/nos_chiots/bergerallemand.png"
-                            alt="Rex, chiot Berger allemand"
-                            class="photo-carte-chiot"
-                        >
-
-                        <div class="infos-carte-chiot">
-
-                            <span class="badge-disponible">
-                                ✓ Disponible
-                            </span>
-
-                            <h3>Rex</h3>
-
-                            <p class="race-chiot">
-                                Berger allemand
-                            </p>
-
-                            <ul class="details-chiot">
-                                <li>♂ Mâle</li>
-                                <li>📅 9 semaines</li>
-                                <li>🤎 Confiant, loyal et très attentif</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn-chiot">
-                                Je suis intéressé(e)
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ============================= -->
-                    <!-- DOBERMAN -->
-                    <!-- ============================= -->
-
-                    <article class="carte-chiot">
-
-                        <img
-                            src="images/nos_chiots/dobermand.png"
-                            alt="Tyson, chiot Doberman"
-                            class="photo-carte-chiot"
-                        >
-
-                        <div class="infos-carte-chiot">
-
-                            <span class="badge-disponible">
-                                ✓ Disponible
-                            </span>
-
-                            <h3>Tyson</h3>
-
-                            <p class="race-chiot">
-                                Doberman
-                            </p>
-
-                            <ul class="details-chiot">
-                                <li>♂ Mâle</li>
-                                <li>📅 10 semaines</li>
-                                <li>🤎 Élégant, attachant et proche de l’humain</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn-chiot">
-                                Je suis intéressé(e)
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ============================= -->
-                    <!-- GOLDEN RETRIEVER -->
-                    <!-- ============================= -->
-
-                    <article class="carte-chiot">
-
-                        <img
-                            src="images/nos_chiots/goldenretriever.png"
-                            alt="Luna, chiot Golden Retriever"
-                            class="photo-carte-chiot"
-                        >
-
-                        <div class="infos-carte-chiot">
-
-                            <span class="badge-disponible">
-                                ✓ Disponible
-                            </span>
-
-                            <h3>Luna</h3>
-
-                            <p class="race-chiot">
-                                Golden Retriever
-                            </p>
-
-                            <ul class="details-chiot">
-                                <li>♀ Femelle</li>
-                                <li>📅 10 semaines</li>
-                                <li>🤎 Calme, douce et idéale pour la famille</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn-chiot">
-                                Je suis intéressé(e)
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ============================= -->
-        <!-- DÉJÀ TROUVÉ LEUR FAMILLE -->
-        <!-- ============================= -->
-
-        <section class="chiots-famille">
-
-            <div class="container">
-
-                <h2 class="titre-section-chiots">
-                    ♡ Ils ont déjà trouvé leur famille
-                </h2>
-
-
-                <div class="grille-famille">
-
-
-                    <!-- DACHSHUND -->
-
-                    <article class="carte-famille">
-
-                        <img
-                            src="images/nos_chiots/dachshund-nouille.png"
-                            alt="Nouille, chiot Dachshund"
-                        >
-
-                        <div>
-                            <h3>Nouille</h3>
-
-                            <p>Dachshund</p>
-
-                            <span class="badge-famille">
-                                🐾 A déjà trouvé sa famille
-                            </span>
-                        </div>
-
-                    </article>
-
-
-                    <!-- BORDER COLLIE -->
-
-                    <article class="carte-famille">
-
-                        <img
-                            src="images/nos_chiots/border-oreo.jpg"
-                            alt="Oreo, chiot Border Collie"
-                        >
-
-                        <div>
-                            <h3>Oreo</h3>
-
-                            <p>Border Collie</p>
-
-                            <span class="badge-famille">
-                                🐾 A déjà trouvé sa famille
-                            </span>
-                        </div>
-
-                    </article>
-
-
-                    <!-- BEAGLE -->
-
-                    <article class="carte-famille">
-
-                        <div class="icone-race-vide">
-                            🐶
-                        </div>
-
-                        <div>
-                            <h3>Beagle</h3>
-
-                            <span class="badge-famille">
-                                Aucun chiot disponible pour le moment
-                            </span>
-                        </div>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ============================= -->
-        <!-- APPEL À L'ACTION -->
-        <!-- ============================= -->
-
-        <section class="section-contact-chiot">
-
-            <div class="container">
-
-                <div class="appel-contact-chiot">
-
-                    <div>
-
-                        <h2>
-                            ♡ Un chiot vous intéresse ?
-                        </h2>
+            </nav>
+        </header>
+
+        <main class="page-chiots">
+            <!-- ============================= -->
+            <!-- BANNIÈRE NOS CHIOTS -->
+            <!-- ============================= -->
+
+            <section class="hero-chiots">
+                <div class="container hero-chiots-contenu">
+                    <div class="hero-chiots-texte">
+                        <h1>Nos chiots</h1>
 
                         <p>
-                            Contactez-nous pour en savoir plus
-                            ou planifier une visite.
+                            Découvrez nos chiots actuellement disponibles ainsi
+                            que ceux qui ont déjà trouvé leur famille.
                         </p>
-
                     </div>
 
-
-                    <a href="contact.html" class="btn-rendez-vous">
-                        Prendre rendez-vous →
-                    </a>
-
+                    <div class="hero-chiots-decoration">🐾</div>
                 </div>
+            </section>
 
-            </div>
+            <!-- ============================= -->
+            <!-- CHIOTS DISPONIBLES -->
+            <!-- ============================= -->
 
-        </section>
+            <section class="chiots-disponibles">
+                <div class="container">
+                    <h2 class="titre-section-chiots">
+                        🐾 Nos chiots disponibles
+                    </h2>
 
-    </main>
+                    <div class="grille-chiots">
+                        <!-- ============================= -->
+                        <!-- YORKSHIRE 1 -->
+                        <!-- ============================= -->
 
-    <!-- ================== -->
-    <!-- TA PARTIE FINIT -->
-    <!-- ================== -->
+                        <article class="carte-chiot">
+                            <img
+                                src="images/nos_chiots/bellayorkshire.png"
+                                alt="Bella, chiot Yorkshire Terrier"
+                                class="photo-carte-chiot"
+                            />
 
+                            <div class="infos-carte-chiot">
+                                <span class="badge-disponible">
+                                    ✓ Disponible
+                                </span>
 
-    <!-- FOOTER JIMMY -->
+                                <h3>Bella</h3>
 
+                                <p class="race-chiot">Yorkshire Terrier</p>
 
-    <footer class="footer-site">
-        <!-- Forme arrondie -->
-        <div class="footer-vague"></div>
+                                <ul class="details-chiot">
+                                    <li>♀ Femelle</li>
+                                    <li>📅 10 semaines</li>
+                                    <li>
+                                        🤎 Douce, affectueuse et très câline
+                                    </li>
+                                </ul>
 
-        <div class="container footer-contenu">
-            <div class="row gy-5">
-                <!-- ================================ -->
-                <!-- LOGO -->
-                <!-- ================================ -->
-
-                <div class="col-lg-3 col-md-6">
-                    <a href="index.html"
-                    class="footer-logo d-flex align-items-center">
-                        <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-footer">
-
-                        <div class="ms-3">
-                            <div class="footer-nom">
-                                Toutou <span>&</span><br>
-                                Compagnie
+                                <a href="contact.html" class="btn-chiot">
+                                    Je suis intéressé(e)
+                                </a>
                             </div>
-                            <div class="footer-sous-titre">
-                                ÉLEVAGE CANIN
+                        </article>
+
+                        <!-- ============================= -->
+                        <!-- CORGI 1 -->
+                        <!-- ============================= -->
+
+                        <article class="carte-chiot">
+                            <img
+                                src="images/nos_chiots/corgie.jpg"
+                                alt="Moka, chiot Corgi"
+                                class="photo-carte-chiot"
+                            />
+
+                            <div class="infos-carte-chiot">
+                                <span class="badge-disponible">
+                                    ✓ Disponible
+                                </span>
+
+                                <h3>Moka</h3>
+
+                                <p class="race-chiot">Corgi</p>
+
+                                <ul class="details-chiot">
+                                    <li>♂ Mâle</li>
+                                    <li>📅 9 semaines</li>
+                                    <li>🤎 Joueur, curieux et très sociable</li>
+                                </ul>
+
+                                <a href="contact.html" class="btn-chiot">
+                                    Je suis intéressé(e)
+                                </a>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </article>
 
-                <!-- ================================ -->
-                <!-- NAVIGATION -->
-                <!-- ================================ -->
+                        <!-- ============================= -->
+                        <!-- SPITZ NAIN 1 -->
+                        <!-- ============================= -->
+                        <article class="carte-chiot">
+                            <img
+                                src="images/nos_chiots/spitz_nain.jpg"
+                                alt="Lily, chiot Spitz nain"
+                                class="photo-carte-chiot"
+                            />
 
-                <div class="col-lg-3 col-md-6">
+                            <div class="infos-carte-chiot">
+                                <span class="badge-disponible">
+                                    ✓ Disponible
+                                </span>
 
-                    <h2 class="footer-titre">
-                        Navigation
-                    </h2>
+                                <h3>Perle</h3>
 
-                    <ul class="footer-navigation">
+                                <p class="race-chiot">Spitz nain</p>
 
-                        <li>
-                            <a href="index.html">Accueil</a>
-                        </li>
+                                <ul class="details-chiot">
+                                    <li>♀ Femelle</li>
+                                    <li>📅 11 semaines</li>
+                                    <li>
+                                        🤎 Vive, curieuse et très affectueuse
+                                    </li>
+                                </ul>
 
-                        <li>
-                            <a href="elevage.html">Notre élevage</a>
-                        </li>
+                                <a href="contact.html" class="btn-chiot">
+                                    Je suis intéressé(e)
+                                </a>
+                            </div>
+                        </article>
 
-                        <li>
-                            <a href="races.html">Nos races</a>
-                        </li>
+                        <!-- ============================= -->
+                        <!-- SHIBA INU 1 -->
+                        <!-- ============================= -->
 
-                        <li>
-                            <a href="chiots.html">Nos chiots</a>
-                        </li>
+                        <article class="carte-chiot">
+                            <img
+                                src="images/nos_chiots/shiba.png"
+                                alt="Yuki, chiot Shiba Inu"
+                                class="photo-carte-chiot"
+                            />
 
-                        <li>
-                            <a href="conseils.html">Conseils</a>
-                        </li>
+                            <div class="infos-carte-chiot">
+                                <span class="badge-disponible">
+                                    ✓ Disponible
+                                </span>
 
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                                <h3>Yuki</h3>
 
-                <!-- ================================ -->
-                <!-- CONTACT -->
-                <!-- ================================ -->
+                                <p class="race-chiot">Shiba Inu</p>
 
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="footer-titre">
-                        Nous joindre
-                    </h2>
+                                <ul class="details-chiot">
+                                    <li>♀ Femelle</li>
+                                    <li>📅 11 semaines</li>
+                                    <li>
+                                        🤎 Vive, intelligente et très expressive
+                                    </li>
+                                </ul>
 
-                    <div class="footer-contact">
-                        <div class="contact-ligne">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <p>
-                                123, chemin des Cavaliers<br>
-                                Saint-Henri, QC G0R 3E0
-                            </p>
-                        </div>
+                                <a href="contact.html" class="btn-chiot">
+                                    Je suis intéressé(e)
+                                </a>
+                            </div>
+                        </article>
 
-                        <div class="contact-ligne">
-                            <i class="bi bi-telephone-fill"></i>
-                            <p>
-                                (418) 555-0123
-                            </p>
-                        </div>
+                        <!-- ============================= -->
+                        <!-- BORDER COLLIE -->
+                        <!-- ============================= -->
 
-                        <div class="contact-ligne">
-                            <i class="bi bi-envelope-fill"></i>
-                            <p>
-                                info@toutouetcompagnie.ca
-                            </p>
-                        </div>
+                        <article class="carte-chiot">
+                            <img
+                                src="images/nos_chiots/borderbrun.png"
+                                alt="Nova, chiot Border Collie"
+                                class="photo-carte-chiot"
+                            />
+
+                            <div class="infos-carte-chiot">
+                                <span class="badge-disponible">
+                                    ✓ Disponible
+                                </span>
+
+                                <h3>Nova</h3>
+
+                                <p class="race-chiot">Border Collie</p>
+
+                                <ul class="details-chiot">
+                                    <li>♀ Femelle</li>
+                                    <li>📅 10 semaines</li>
+                                    <li>
+                                        🤎 Brillante, active et adore apprendre
+                                    </li>
+                                </ul>
+
+                                <a href="contact.html" class="btn-chiot">
+                                    Je suis intéressé(e)
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- ============================= -->
+                        <!-- HUSKY 1 -->
+                        <!-- ============================= -->
+
+                        <article class="carte-chiot">
+                            <img
+                                src="images/nos_chiots/huskyblack.jpg"
+                                alt="Sky, chiot Husky sibérien"
+                                class="photo-carte-chiot"
+                            />
+
+                            <div class="infos-carte-chiot">
+                                <span class="badge-disponible">
+                                    ✓ Disponible
+                                </span>
+
+                                <h3>Sky</h3>
+
+                                <p class="race-chiot">Husky sibérien</p>
+
+                                <ul class="details-chiot">
+                                    <li>♂ Mâle</li>
+                                    <li>📅 10 semaines</li>
+                                    <li>
+                                        🤎 Énergique, enjoué et adore jouer
+                                        dehors
+                                    </li>
+                                </ul>
+
+                                <a href="contact.html" class="btn-chiot">
+                                    Je suis intéressé(e)
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- ============================= -->
+                        <!-- HUSKY 2 -->
+                        <!-- ============================= -->
+
+                        <article class="carte-chiot">
+                            <img
+                                src="images/nos_chiots/huskybrun.jpg"
+                                alt="Loki, chiot Husky sibérien"
+                                class="photo-carte-chiot"
+                            />
+
+                            <div class="infos-carte-chiot">
+                                <span class="badge-disponible">
+                                    ✓ Disponible
+                                </span>
+
+                                <h3>Loki</h3>
+
+                                <p class="race-chiot">Husky sibérien</p>
+
+                                <ul class="details-chiot">
+                                    <li>♀ Femelle</li>
+                                    <li>📅 11 semaines</li>
+                                    <li>
+                                        🤎 Expressif, sociable et très énergique
+                                    </li>
+                                </ul>
+
+                                <a href="contact.html" class="btn-chiot">
+                                    Je suis intéressé(e)
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- ============================= -->
+                        <!-- BERGER ALLEMAND -->
+                        <!-- ============================= -->
+
+                        <article class="carte-chiot">
+                            <img
+                                src="images/nos_chiots/bergerallemand.png"
+                                alt="Rex, chiot Berger allemand"
+                                class="photo-carte-chiot"
+                            />
+
+                            <div class="infos-carte-chiot">
+                                <span class="badge-disponible">
+                                    ✓ Disponible
+                                </span>
+
+                                <h3>Rex</h3>
+
+                                <p class="race-chiot">Berger allemand</p>
+
+                                <ul class="details-chiot">
+                                    <li>♂ Mâle</li>
+                                    <li>📅 9 semaines</li>
+                                    <li>🤎 Confiant, loyal et très attentif</li>
+                                </ul>
+
+                                <a href="contact.html" class="btn-chiot">
+                                    Je suis intéressé(e)
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- ============================= -->
+                        <!-- DOBERMAN -->
+                        <!-- ============================= -->
+
+                        <article class="carte-chiot">
+                            <img
+                                src="images/nos_chiots/dobermand.png"
+                                alt="Tyson, chiot Doberman"
+                                class="photo-carte-chiot"
+                            />
+
+                            <div class="infos-carte-chiot">
+                                <span class="badge-disponible">
+                                    ✓ Disponible
+                                </span>
+
+                                <h3>Tyson</h3>
+
+                                <p class="race-chiot">Doberman</p>
+
+                                <ul class="details-chiot">
+                                    <li>♂ Mâle</li>
+                                    <li>📅 10 semaines</li>
+                                    <li>
+                                        🤎 Élégant, attachant et proche de
+                                        l’humain
+                                    </li>
+                                </ul>
+
+                                <a href="contact.html" class="btn-chiot">
+                                    Je suis intéressé(e)
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- ============================= -->
+                        <!-- GOLDEN RETRIEVER -->
+                        <!-- ============================= -->
+
+                        <article class="carte-chiot">
+                            <img
+                                src="images/nos_chiots/goldenretriever.png"
+                                alt="Luna, chiot Golden Retriever"
+                                class="photo-carte-chiot"
+                            />
+
+                            <div class="infos-carte-chiot">
+                                <span class="badge-disponible">
+                                    ✓ Disponible
+                                </span>
+
+                                <h3>Luna</h3>
+
+                                <p class="race-chiot">Golden Retriever</p>
+
+                                <ul class="details-chiot">
+                                    <li>♀ Femelle</li>
+                                    <li>📅 10 semaines</li>
+                                    <li>
+                                        🤎 Calme, douce et idéale pour la
+                                        famille
+                                    </li>
+                                </ul>
+
+                                <a href="contact.html" class="btn-chiot">
+                                    Je suis intéressé(e)
+                                </a>
+                            </div>
+                        </article>
                     </div>
                 </div>
+            </section>
 
-                <!-- ================================ -->
-                <!-- RÉSEAUX -->
-                <!-- ================================ -->
+            <!-- ============================= -->
+            <!-- DÉJÀ TROUVÉ LEUR FAMILLE -->
+            <!-- ============================= -->
 
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="footer-titre">
-                        Suivez-nous
+            <section class="chiots-famille">
+                <div class="container">
+                    <h2 class="titre-section-chiots">
+                        ♡ Ils ont déjà trouvé leur famille
                     </h2>
 
-                    <div class="reseaux-sociaux">
-                        <a href="https://www.facebook.com/profile.php?id=61594627183723" target="_blank" aria-label="Facebook">
-                            <img src="images/accueil/logo_facebook.png" alt="Logo Facebook" class="logo-reseaux">
-                            <i class="bi bi-facebook"></i>
-                        </a>
+                    <div class="grille-famille">
+                        <!-- DACHSHUND -->
 
-                        <a href="https://www.instagram.com/jbelangerthibault/" target="_blank" aria-label="Instagram">
-                            <img src="images/accueil/logo_instagram.png" alt="Logo Instagram" class="logo-reseaux">
-                            <i class="bi bi-instagram"></i>
+                        <article class="carte-famille">
+                            <img
+                                src="images/nos_chiots/dachshund-nouille.png"
+                                alt="Nouille, chiot Dachshund"
+                            />
+
+                            <div>
+                                <h3>Nouille</h3>
+
+                                <p>Dachshund</p>
+
+                                <span class="badge-famille">
+                                    🐾 A déjà trouvé sa famille
+                                </span>
+                            </div>
+                        </article>
+
+                        <!-- BORDER COLLIE -->
+
+                        <article class="carte-famille">
+                            <img
+                                src="images/nos_chiots/border-oreo.jpg"
+                                alt="Oreo, chiot Border Collie"
+                            />
+
+                            <div>
+                                <h3>Oreo</h3>
+
+                                <p>Border Collie</p>
+
+                                <span class="badge-famille">
+                                    🐾 A déjà trouvé sa famille
+                                </span>
+                            </div>
+                        </article>
+
+                        <!-- BEAGLE -->
+
+                        <article class="carte-famille">
+                            <div class="icone-race-vide">🐶</div>
+
+                            <div>
+                                <h3>Beagle</h3>
+
+                                <span class="badge-famille">
+                                    Aucun chiot disponible pour le moment
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================= -->
+            <!-- APPEL À L'ACTION -->
+            <!-- ============================= -->
+
+            <section class="section-contact-chiot">
+                <div class="container">
+                    <div class="appel-contact-chiot">
+                        <div>
+                            <h2>♡ Un chiot vous intéresse ?</h2>
+
+                            <p>
+                                Contactez-nous pour en savoir plus ou planifier
+                                une visite.
+                            </p>
+                        </div>
+
+                        <a href="contact.html" class="btn-rendez-vous">
+                            Prendre rendez-vous →
                         </a>
-                        <a href="https://www.youtube.com/@ToutouCompagnie-p2m" target="_blank" aria-label="YouTube">
-                            <img src="images/accueil/logo_youtube.png" alt="Logo YouTube" class="logo-reseaux">
-                            <i class="bi bi-youtube"></i>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ================== -->
+        <!-- TA PARTIE FINIT -->
+        <!-- ================== -->
+
+        <!-- FOOTER JIMMY -->
+
+        <footer class="footer-site">
+            <!-- Forme arrondie -->
+            <div class="footer-vague"></div>
+
+            <div class="container footer-contenu">
+                <div class="row gy-5">
+                    <!-- ================================ -->
+                    <!-- LOGO -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <a
+                            href="index.html"
+                            class="footer-logo d-flex align-items-center"
+                        >
+                            <img
+                                src="images/accueil/logo.png"
+                                alt="Logo de Toutou & Compagnie"
+                                class="logo-footer"
+                            />
+
+                            <div class="ms-3">
+                                <div class="footer-nom">
+                                    Toutou <span>&</span><br />
+                                    Compagnie
+                                </div>
+                                <div class="footer-sous-titre">
+                                    ÉLEVAGE CANIN
+                                </div>
+                            </div>
                         </a>
+                    </div>
+
+                    <!-- ================================ -->
+                    <!-- NAVIGATION -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Navigation</h2>
+
+                        <ul class="footer-navigation">
+                            <li>
+                                <a href="index.html">Accueil</a>
+                            </li>
+
+                            <li>
+                                <a href="elevage.html">Notre élevage</a>
+                            </li>
+
+                            <li>
+                                <a href="races.html">Nos races</a>
+                            </li>
+
+                            <li>
+                                <a href="chiots.html">Nos chiots</a>
+                            </li>
+
+                            <li>
+                                <a href="conseils.html">Conseils</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ================================ -->
+                    <!-- CONTACT -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Nous joindre</h2>
+
+                        <div class="footer-contact">
+                            <div class="contact-ligne">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <p>
+                                    123, chemin des Cavaliers<br />
+                                    Saint-Henri, QC G0R 3E0
+                                </p>
+                            </div>
+
+                            <div class="contact-ligne">
+                                <i class="bi bi-telephone-fill"></i>
+                                <p>(418) 555-0123</p>
+                            </div>
+
+                            <div class="contact-ligne">
+                                <i class="bi bi-envelope-fill"></i>
+                                <p>info@toutouetcompagnie.ca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================ -->
+                    <!-- RÉSEAUX -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Suivez-nous</h2>
+
+                        <div class="reseaux-sociaux">
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61594627183723"
+                                target="_blank"
+                                aria-label="Facebook"
+                            >
+                                <img
+                                    src="images/accueil/logo_facebook.png"
+                                    alt="Logo Facebook"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-facebook"></i>
+                            </a>
+
+                            <a
+                                href="https://www.instagram.com/jbelangerthibault/"
+                                target="_blank"
+                                aria-label="Instagram"
+                            >
+                                <img
+                                    src="images/accueil/logo_instagram.png"
+                                    alt="Logo Instagram"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@ToutouCompagnie-p2m"
+                                target="_blank"
+                                aria-label="YouTube"
+                            >
+                                <img
+                                    src="images/accueil/logo_youtube.png"
+                                    alt="Logo YouTube"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="js/script.js" defer></script>
-    <script src="vendor/bootstrap.bundle.min.js"></script>
-</body>
+        <script src="js/script.js" defer></script>
+        <script src="vendor/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

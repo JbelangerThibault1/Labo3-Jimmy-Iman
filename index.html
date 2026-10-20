@@ -1,708 +1,599 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Toutou & Compagnie</title>
-    <meta name="description" content="Découvrez Toutou & Compagnie, notre élevage canin fictif, nos races et nos chiots.">
-    <link rel="stylesheet" href="vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header-site">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accueil - Toutou & Compagnie</title>
+        <meta
+            name="description"
+            content="Découvrez Toutou & Compagnie, notre élevage canin fictif, nos races et nos chiots."
+        />
+        <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" href="data:," />
+    </head>
+    <body>
+        <header class="header-site">
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="w-100 d-flex align-items-center">
+                    <!-- LOGO -->
+                    <a
+                        class="navbar-brand d-flex align-items-center"
+                        href="index.html"
+                    >
+                        <img
+                            src="images/accueil/logo.png"
+                            alt="Logo de Toutou & Compagnie"
+                            class="logo-header"
+                        />
 
-        <nav class="navbar navbar-expand-lg w-100">
-            <div class="w-100 d-flex align-items-center">
+                        <div class="logo-nom ms-3">
+                            <div class="nom-principal">
+                                Toutou <span>&</span> Compagnie
+                            </div>
+                            <div class="sous-titre-logo">ÉLEVAGE CANIN</div>
+                        </div>
+                    </a>
 
-                <!-- LOGO -->
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-header">
-                    
-                    <div class="logo-nom ms-3">
-                        <div class="nom-principal">
-                            Toutou <span>&</span> Compagnie
-                        </div>
-                        <div class="sous-titre-logo">
-                            ÉLEVAGE CANIN
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- MENU HAMBURGER -->
-                <button class="navbar-toggler"
+                    <!-- MENU HAMBURGER -->
+                    <button
+                        class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#navigation">
-                    <span class="hamburger-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </button>
-
-                <!-- MENU -->
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">
-                                Accueil
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link"
-                            href="elevage.html">
-                                Notre élevage
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="races.html">
-                                Nos races
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="chiots.html">
-                                Nos chiots
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="conseils.html">
-                                Conseils
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- RECHERCHE -->
-                    <button class="btn-recherche" type="button" aria-label="Rechercher">
-                        <img src="images/accueil/loupe.jpg" alt="Logo de recherche" class="logo-recherche">
+                        data-bs-target="#navigation"
+                    >
+                        <span class="hamburger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                     </button>
 
-                    <div class="form-check form-switch mt-3">
-                        <input type="checkbox" id="mode-sombre" class="form-check-input" role="switch">
-                        <label for="mode-sombre" class="form-check-label">Mode sombre</label>
+                    <!-- MENU -->
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="index.html"
+                                >
+                                    Accueil
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="elevage.html">
+                                    Notre élevage
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="races.html">
+                                    Nos races
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="chiots.html">
+                                    Nos chiots
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="conseils.html">
+                                    Conseils
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- RECHERCHE -->
+                        <button
+                            class="btn-recherche"
+                            type="button"
+                            aria-label="Rechercher"
+                        >
+                            <img
+                                src="images/accueil/loupe.jpg"
+                                alt="Logo de recherche"
+                                class="logo-recherche"
+                            />
+                        </button>
+
+                        <div class="form-check form-switch mt-3">
+                            <input
+                                type="checkbox"
+                                id="mode-sombre"
+                                class="form-check-input"
+                                role="switch"
+                            />
+                            <label for="mode-sombre" class="form-check-label"
+                                >Mode sombre</label
+                            >
+                        </div>
+
+                        <!-- BOUTON CONTACT -->
+                        <a href="contact.html" class="btn-nous-joindre">
+                            Nous joindre
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="page-accueil">
+            <!-- ============================= -->
+            <!-- HERO / BANNIÈRE -->
+            <!-- ============================= -->
+
+            <section class="hero-accueil">
+                <div class="container hero-accueil-contenu">
+                    <div class="hero-accueil-texte">
+                        <span class="petit-titre-accueil">
+                            🐾 Toutou & Compagnie
+                        </span>
+                        <h1>Des compagnons pour la vie</h1>
+                        <p>
+                            Découvrez notre élevage familial, nos différentes
+                            races de chiens et nos adorables chiots disponibles.
+                        </p>
+                        <div class="boutons-hero">
+                            <a href="chiots.html" class="btn-accueil-principal">
+                                Voir nos chiots
+                            </a>
+
+                            <a href="races.html" class="btn-accueil-secondaire">
+                                Découvrir nos races
+                            </a>
+                        </div>
                     </div>
 
-                    <!-- BOUTON CONTACT -->
-                    <a href="contact.html"
-                    class="btn-nous-joindre">
-                        Nous joindre
-                    </a>
+                    <div class="hero-accueil-image">
+                        <img
+                            src="images/accueil/chiens.png"
+                            alt="Chiot de l'élevage Toutou et Compagnie"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================= -->
+            <!-- PRÉSENTATION -->
+            <!-- ============================= -->
+
+            <section class="presentation-accueil">
+                <div class="container">
+                    <div class="grille-presentation">
+                        <div class="presentation-image">
+                            <img
+                                src="images/accueil/elevages.png"
+                                alt="Chiens de Toutou et Compagnie"
+                            />
+                        </div>
+
+                        <div class="presentation-texte">
+                            <span class="petit-titre-accueil">
+                                ♡ Notre élevage
+                            </span>
+
+                            <h2>
+                                Un élevage pensé pour le bien-être des chiens
+                            </h2>
+
+                            <p>
+                                Chez Toutou & Compagnie, nous souhaitons offrir
+                                un environnement chaleureux, sécuritaire et
+                                familial à nos chiens et à leurs chiots.
+                            </p>
+
+                            <p>
+                                Chaque chiot est entouré d'attention et de soins
+                                afin de bien commencer sa vie avant de rejoindre
+                                sa future famille.
+                            </p>
+
+                            <a href="elevage.html" class="btn-texte-accueil">
+                                En savoir plus →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================= -->
+            <!-- STATISTIQUES -->
+            <!-- ============================= -->
+
+            <div class="statistiques-accueil">
+                <div class="container">
+                    <div class="grille-statistiques">
+                        <div class="stat-accueil">
+                            <span>🐶</span>
+                            <strong>11</strong>
+                            <p>Races présentées</p>
+                        </div>
+
+                        <div class="stat-accueil">
+                            <span>🐾</span>
+                            <strong>10+</strong>
+                            <p>Chiots fictifs</p>
+                        </div>
+
+                        <div class="stat-accueil">
+                            <span>♡</span>
+                            <strong>100 %</strong>
+                            <p>Passion des chiens</p>
+                        </div>
+
+                        <div class="stat-accueil">
+                            <span>🏡</span>
+                            <strong>1</strong>
+                            <p>Élevage familial</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
 
-    <main class="page-accueil">
+            <!-- ============================= -->
+            <!-- NOS SERVICES / ENGAGEMENTS -->
+            <!-- ============================= -->
 
-    <!-- ============================= -->
-    <!-- HERO / BANNIÈRE -->
-    <!-- ============================= -->
+            <section class="engagements-accueil">
+                <div class="container">
+                    <div class="titre-centre">
+                        <span class="petit-titre-accueil">
+                            🐾 Pourquoi nous choisir ?
+                        </span>
 
-    <section class="hero-accueil">
-        <div class="container hero-accueil-contenu">
-            <div class="hero-accueil-texte">
-                <span class="petit-titre-accueil">
-                    🐾 Toutou & Compagnie
-                </span>
-                <h1>
-                    Des compagnons pour la vie
-                </h1>
-                <p>
-                    Découvrez notre élevage familial, nos différentes
-                    races de chiens et nos adorables chiots disponibles.
-                </p>
-                <div class="boutons-hero">
-
-                    <a href="chiots.html"
-                       class="btn-accueil-principal">
-                        Voir nos chiots
-                    </a>
-
-                    <a href="races.html"
-                       class="btn-accueil-secondaire">
-                        Découvrir nos races
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="hero-accueil-image">
-
-                <img
-                    src="images/accueil/chiens.png"
-                    alt="Chiot de l'élevage Toutou et Compagnie"
-                >
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ============================= -->
-    <!-- PRÉSENTATION -->
-    <!-- ============================= -->
-
-    <section class="presentation-accueil">
-
-        <div class="container">
-
-            <div class="grille-presentation">
-
-                <div class="presentation-image">
-
-                    <img
-                        src="images/accueil/elevages.png"
-                        alt="Chiens de Toutou et Compagnie"
-                    >
-
-                </div>
-
-
-                <div class="presentation-texte">
-
-                    <span class="petit-titre-accueil">
-                        ♡ Notre élevage
-                    </span>
-
-                    <h2>
-                        Un élevage pensé pour le bien-être des chiens
-                    </h2>
-
-                    <p>
-                        Chez Toutou & Compagnie, nous souhaitons offrir
-                        un environnement chaleureux, sécuritaire et familial
-                        à nos chiens et à leurs chiots.
-                    </p>
-
-                    <p>
-                        Chaque chiot est entouré d'attention et de soins
-                        afin de bien commencer sa vie avant de rejoindre
-                        sa future famille.
-                    </p>
-
-                    <a href="elevage.html"
-                       class="btn-texte-accueil">
-                        En savoir plus →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ============================= -->
-    <!-- STATISTIQUES -->
-    <!-- ============================= -->
-
-    <div class="statistiques-accueil">
-
-        <div class="container">
-
-            <div class="grille-statistiques">
-
-                <div class="stat-accueil">
-                    <span>🐶</span>
-                    <strong>11</strong>
-                    <p>Races présentées</p>
-                </div>
-
-
-                <div class="stat-accueil">
-                    <span>🐾</span>
-                    <strong>10+</strong>
-                    <p>Chiots fictifs</p>
-                </div>
-
-
-                <div class="stat-accueil">
-                    <span>♡</span>
-                    <strong>100 %</strong>
-                    <p>Passion des chiens</p>
-                </div>
-
-
-                <div class="stat-accueil">
-                    <span>🏡</span>
-                    <strong>1</strong>
-                    <p>Élevage familial</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- ============================= -->
-    <!-- NOS SERVICES / ENGAGEMENTS -->
-    <!-- ============================= -->
-
-    <section class="engagements-accueil">
-
-        <div class="container">
-
-            <div class="titre-centre">
-
-                <span class="petit-titre-accueil">
-                    🐾 Pourquoi nous choisir ?
-                </span>
-
-                <h2>
-                    Le bien-être de nos chiens avant tout
-                </h2>
-
-            </div>
-
-
-            <div class="grille-engagements">
-
-
-                <article class="carte-engagement">
-
-                    <div class="icone-engagement">
-                        🏡
+                        <h2>Le bien-être de nos chiens avant tout</h2>
                     </div>
 
-                    <h3>
-                        Élevage familial
-                    </h3>
+                    <div class="grille-engagements">
+                        <article class="carte-engagement">
+                            <div class="icone-engagement">🏡</div>
 
-                    <p>
-                        Nos chiens grandissent dans un environnement
-                        chaleureux et adapté à leurs besoins.
-                    </p>
+                            <h3>Élevage familial</h3>
 
-                </article>
+                            <p>
+                                Nos chiens grandissent dans un environnement
+                                chaleureux et adapté à leurs besoins.
+                            </p>
+                        </article>
 
+                        <article class="carte-engagement">
+                            <div class="icone-engagement">♡</div>
 
-                <article class="carte-engagement">
+                            <h3>Socialisation</h3>
 
-                    <div class="icone-engagement">
-                        ♡
+                            <p>
+                                Les chiots sont habitués progressivement aux
+                                humains, aux sons et à leur environnement.
+                            </p>
+                        </article>
+
+                        <article class="carte-engagement">
+                            <div class="icone-engagement">🩺</div>
+
+                            <h3>Santé et soins</h3>
+
+                            <p>
+                                Nous accordons une grande importance au suivi,
+                                aux soins et au bien-être général.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================= -->
+            <!-- CHIENNE VEDETTE -->
+            <!-- ============================= -->
+
+            <section class="vedette-accueil">
+                <div class="container">
+                    <div class="carte-vedette">
+                        <div class="vedette-image">
+                            <img
+                                src="images/nos_chiots/huskybrun.jpg"
+                                alt="Loki, chiot Husky sibérien"
+                            />
+                        </div>
+
+                        <div class="vedette-contenu">
+                            <span class="badge-disponible"> ✓ Disponible </span>
+
+                            <span class="petit-titre-accueil">
+                                Notre chienne vedette
+                            </span>
+
+                            <h2>Rencontrez Loki</h2>
+
+                            <p class="race-vedette">
+                                Husky sibérien • Femelle • 11 semaines
+                            </p>
+
+                            <p>
+                                Loki est une jeune Husky énergique, expressive
+                                et très sociable. Elle adore jouer dehors,
+                                découvrir de nouvelles choses et être entourée
+                                de sa famille.
+                            </p>
+
+                            <a href="chiots.html" class="btn-accueil-principal">
+                                Voir nos chiots
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================= -->
+            <!-- APERÇU DES RACES -->
+            <!-- ============================= -->
+
+            <section class="races-accueil">
+                <div class="container">
+                    <div class="titre-centre">
+                        <span class="petit-titre-accueil"> 🐾 Nos races </span>
+
+                        <h2>Trouvez le compagnon qui vous correspond</h2>
+
+                        <p>
+                            Découvrez quelques-unes des races présentes chez
+                            Toutou & Compagnie.
+                        </p>
                     </div>
 
-                    <h3>
-                        Socialisation
-                    </h3>
+                    <div class="grille-races-accueil">
+                        <a href="races.html" class="carte-race-accueil">
+                            <img
+                                src="images/nos_races/shiba_inu.jpg"
+                                alt="Shiba Inu"
+                            />
 
-                    <p>
-                        Les chiots sont habitués progressivement
-                        aux humains, aux sons et à leur environnement.
-                    </p>
+                            <h3>Shiba Inu</h3>
+                        </a>
 
-                </article>
+                        <a href="races.html" class="carte-race-accueil">
+                            <img
+                                src="images/nos_races/husky.jpg"
+                                alt="Husky sibérien"
+                            />
 
+                            <h3>Husky sibérien</h3>
+                        </a>
 
-                <article class="carte-engagement">
+                        <a href="races.html" class="carte-race-accueil">
+                            <img
+                                src="images/nos_races/golden_retriever.jpg"
+                                alt="Golden Retriever"
+                            />
 
-                    <div class="icone-engagement">
-                        🩺
+                            <h3>Golden Retriever</h3>
+                        </a>
+
+                        <a href="races.html" class="carte-race-accueil">
+                            <img src="images/nos_races/corgi.jpg" alt="Corgi" />
+
+                            <h3>Corgi</h3>
+                        </a>
                     </div>
 
-                    <h3>
-                        Santé et soins
-                    </h3>
-
-                    <p>
-                        Nous accordons une grande importance
-                        au suivi, aux soins et au bien-être général.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ============================= -->
-<!-- CHIENNE VEDETTE -->
-<!-- ============================= -->
-
-    <section class="vedette-accueil">
-
-        <div class="container">
-
-            <div class="carte-vedette">
-
-                <div class="vedette-image">
-
-                    <img
-                        src="images/nos_chiots/huskybrun.jpg"
-                        alt="Loki, chiot Husky sibérien"
-                    >
-
+                    <div class="bouton-centre">
+                        <a href="races.html" class="btn-accueil-principal">
+                            Découvrir toutes nos races
+                        </a>
+                    </div>
                 </div>
+            </section>
+            <section class="quiz-accueil">
+                <div class="container">
+                    <div class="bloc-quiz-accueil">
+                        <div class="icone-quiz">🐾</div>
 
+                        <div class="texte-quiz-accueil">
+                            <span class="petit-titre-accueil">
+                                Vous hésitez entre plusieurs races ?
+                            </span>
 
-                <div class="vedette-contenu">
+                            <h2>Quelle race vous correspond ?</h2>
 
-                    <span class="badge-disponible">
-                        ✓ Disponible
-                    </span>
+                            <p>
+                                Répondez à quelques questions sur votre mode de
+                                vie, vos habitudes et vos préférences afin de
+                                découvrir les races qui pourraient le mieux vous
+                                convenir.
+                            </p>
 
-                    <span class="petit-titre-accueil">
-                        Notre chienne vedette
-                    </span>
-
-                    <h2>
-                        Rencontrez Loki
-                    </h2>
-
-                    <p class="race-vedette">
-                        Husky sibérien • Femelle • 11 semaines
-                    </p>
-
-                    <p>
-                        Loki est une jeune Husky énergique, expressive
-                        et très sociable. Elle adore jouer dehors,
-                        découvrir de nouvelles choses et être entourée
-                        de sa famille.
-                    </p>
-
-                    <a href="chiots.html"
-                    class="btn-accueil-principal">
-                        Voir nos chiots
-                    </a>
-
+                            <a href="quiz.html" class="btn-accueil-principal">
+                                Faire le quiz →
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-            </div>
+            <!-- ============================= -->
+            <!-- CONTACT FINAL -->
+            <!-- ============================= -->
 
-        </div>
+            <section class="cta-accueil">
+                <div class="container">
+                    <div class="bloc-cta-accueil">
+                        <div>
+                            <span class="petit-titre-accueil">
+                                ♡ Votre futur compagnon vous attend
+                            </span>
 
-    </section>
+                            <h2>Prêt à rencontrer nos chiots ?</h2>
 
+                            <p>
+                                Contactez-nous pour obtenir plus d'informations
+                                ou planifier une visite.
+                            </p>
+                        </div>
 
-    <!-- ============================= -->
-    <!-- APERÇU DES RACES -->
-    <!-- ============================= -->
-
-    <section class="races-accueil">
-
-        <div class="container">
-
-            <div class="titre-centre">
-
-                <span class="petit-titre-accueil">
-                    🐾 Nos races
-                </span>
-
-                <h2>
-                    Trouvez le compagnon qui vous correspond
-                </h2>
-
-                <p>
-                    Découvrez quelques-unes des races présentes
-                    chez Toutou & Compagnie.
-                </p>
-
-            </div>
-
-
-            <div class="grille-races-accueil">
-
-
-                <a href="races.html"
-                   class="carte-race-accueil">
-
-                    <img
-                        src="images/nos_races/shiba_inu.jpg"
-                        alt="Shiba Inu"
-                    >
-
-                    <h3>Shiba Inu</h3>
-
-                </a>
-
-
-                <a href="races.html"
-                   class="carte-race-accueil">
-
-                    <img
-                        src="images/nos_races/husky.jpg"
-                        alt="Husky sibérien"
-                    >
-
-                    <h3>Husky sibérien</h3>
-
-                </a>
-
-
-                <a href="races.html"
-                   class="carte-race-accueil">
-
-                    <img
-                        src="images/nos_races/golden_retriever.jpg"
-                        alt="Golden Retriever"
-                    >
-
-                    <h3>Golden Retriever</h3>
-
-                </a>
-
-
-                <a href="races.html"
-                   class="carte-race-accueil">
-
-                    <img
-                        src="images/nos_races/corgi.jpg"
-                        alt="Corgi"
-                    >
-
-                    <h3>Corgi</h3>
-
-                </a>
-
-            </div>
-
-
-            <div class="bouton-centre">
-
-                <a href="races.html"
-                   class="btn-accueil-principal">
-                    Découvrir toutes nos races
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-    <section class="quiz-accueil">
-
-        <div class="container">
-
-            <div class="bloc-quiz-accueil">
-
-                <div class="icone-quiz">
-                    🐾
+                        <a href="contact.html" class="btn-accueil-principal">
+                            Nous contacter →
+                        </a>
+                    </div>
                 </div>
+            </section>
+        </main>
 
-                <div class="texte-quiz-accueil">
+        <footer class="footer-site">
+            <!-- Forme arrondie -->
+            <div class="footer-vague"></div>
 
-                    <span class="petit-titre-accueil">
-                        Vous hésitez entre plusieurs races ?
-                    </span>
+            <div class="container footer-contenu">
+                <div class="row gy-5">
+                    <!-- ================================ -->
+                    <!-- LOGO -->
+                    <!-- ================================ -->
 
-                    <h2>
-                        Quelle race vous correspond ?
-                    </h2>
+                    <div class="col-lg-3 col-md-6">
+                        <a
+                            href="index.html"
+                            class="footer-logo d-flex align-items-center"
+                        >
+                            <img
+                                src="images/accueil/logo.png"
+                                alt="Logo de Toutou & Compagnie"
+                                class="logo-footer"
+                            />
 
-                    <p>
-                        Répondez à quelques questions sur votre mode de vie,
-                        vos habitudes et vos préférences afin de découvrir
-                        les races qui pourraient le mieux vous convenir.
-                    </p>
-
-                    <a href="quiz.html"
-                    class="btn-accueil-principal">
-                        Faire le quiz →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ============================= -->
-    <!-- CONTACT FINAL -->
-    <!-- ============================= -->
-
-    <section class="cta-accueil">
-
-        <div class="container">
-
-            <div class="bloc-cta-accueil">
-
-                <div>
-
-                    <span class="petit-titre-accueil">
-                        ♡ Votre futur compagnon vous attend
-                    </span>
-
-                    <h2>
-                        Prêt à rencontrer nos chiots ?
-                    </h2>
-
-                    <p>
-                        Contactez-nous pour obtenir plus
-                        d'informations ou planifier une visite.
-                    </p>
-
-                </div>
-
-
-                <a href="contact.html"
-                   class="btn-accueil-principal">
-                    Nous contacter →
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-</main>
-    
-
-
-    <footer class="footer-site">
-        <!-- Forme arrondie -->
-        <div class="footer-vague"></div>
-
-        <div class="container footer-contenu">
-            <div class="row gy-5">
-                <!-- ================================ -->
-                <!-- LOGO -->
-                <!-- ================================ -->
-
-                <div class="col-lg-3 col-md-6">
-                    <a href="index.html"
-                    class="footer-logo d-flex align-items-center">
-                        <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-footer">
-
-                        <div class="ms-3">
-                            <div class="footer-nom">
-                                Toutou <span>&</span><br>
-                                Compagnie
+                            <div class="ms-3">
+                                <div class="footer-nom">
+                                    Toutou <span>&</span><br />
+                                    Compagnie
+                                </div>
+                                <div class="footer-sous-titre">
+                                    ÉLEVAGE CANIN
+                                </div>
                             </div>
-                            <div class="footer-sous-titre">
-                                ÉLEVAGE CANIN
+                        </a>
+                    </div>
+
+                    <!-- ================================ -->
+                    <!-- NAVIGATION -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Navigation</h2>
+
+                        <ul class="footer-navigation">
+                            <li>
+                                <a href="index.html">Accueil</a>
+                            </li>
+
+                            <li>
+                                <a href="elevage.html">Notre élevage</a>
+                            </li>
+
+                            <li>
+                                <a href="races.html">Nos races</a>
+                            </li>
+
+                            <li>
+                                <a href="chiots.html">Nos chiots</a>
+                            </li>
+
+                            <li>
+                                <a href="conseils.html">Conseils</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ================================ -->
+                    <!-- CONTACT -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Nous joindre</h2>
+
+                        <div class="footer-contact">
+                            <div class="contact-ligne">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <p>
+                                    123, chemin des Cavaliers<br />
+                                    Saint-Henri, QC G0R 3E0
+                                </p>
+                            </div>
+
+                            <div class="contact-ligne">
+                                <i class="bi bi-telephone-fill"></i>
+                                <p>(418) 555-0123</p>
+                            </div>
+
+                            <div class="contact-ligne">
+                                <i class="bi bi-envelope-fill"></i>
+                                <p>info@toutouetcompagnie.ca</p>
                             </div>
                         </div>
-                    </a>
-                </div>
-
-                <!-- ================================ -->
-                <!-- NAVIGATION -->
-                <!-- ================================ -->
-
-                <div class="col-lg-3 col-md-6">
-
-                    <h2 class="footer-titre">
-                        Navigation
-                    </h2>
-
-                    <ul class="footer-navigation">
-
-                        <li>
-                            <a href="index.html">Accueil</a>
-                        </li>
-
-                        <li>
-                            <a href="elevage.html">Notre élevage</a>
-                        </li>
-
-                        <li>
-                            <a href="races.html">Nos races</a>
-                        </li>
-
-                        <li>
-                            <a href="chiots.html">Nos chiots</a>
-                        </li>
-
-                        <li>
-                            <a href="conseils.html">Conseils</a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- ================================ -->
-                <!-- CONTACT -->
-                <!-- ================================ -->
-
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="footer-titre">
-                        Nous joindre
-                    </h2>
-
-                    <div class="footer-contact">
-                        <div class="contact-ligne">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <p>
-                                123, chemin des Cavaliers<br>
-                                Saint-Henri, QC G0R 3E0
-                            </p>
-                        </div>
-
-                        <div class="contact-ligne">
-                            <i class="bi bi-telephone-fill"></i>
-                            <p>
-                                (418) 555-0123
-                            </p>
-                        </div>
-
-                        <div class="contact-ligne">
-                            <i class="bi bi-envelope-fill"></i>
-                            <p>
-                                info@toutouetcompagnie.ca
-                            </p>
-                        </div>
                     </div>
-                </div>
 
-                <!-- ================================ -->
-                <!-- RÉSEAUX -->
-                <!-- ================================ -->
+                    <!-- ================================ -->
+                    <!-- RÉSEAUX -->
+                    <!-- ================================ -->
 
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="footer-titre">
-                        Suivez-nous
-                    </h2>
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Suivez-nous</h2>
 
-                    <div class="reseaux-sociaux">
-                        <a href="https://www.facebook.com/profile.php?id=61594627183723" target="_blank" aria-label="Facebook">
-                            <img src="images/accueil/logo_facebook.png" alt="Logo Facebook" class="logo-reseaux">
-                            <i class="bi bi-facebook"></i>
-                        </a>
+                        <div class="reseaux-sociaux">
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61594627183723"
+                                target="_blank"
+                                aria-label="Facebook"
+                            >
+                                <img
+                                    src="images/accueil/logo_facebook.png"
+                                    alt="Logo Facebook"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-facebook"></i>
+                            </a>
 
-                        <a href="https://www.instagram.com/jbelangerthibault/" target="_blank" aria-label="Instagram">
-                            <img src="images/accueil/logo_instagram.png" alt="Logo Instagram" class="logo-reseaux">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@ToutouCompagnie-p2m" target="_blank" aria-label="YouTube">
-                            <img src="images/accueil/logo_youtube.png" alt="Logo YouTube" class="logo-reseaux">
-                            <i class="bi bi-youtube"></i>
-                        </a>
+                            <a
+                                href="https://www.instagram.com/jbelangerthibault/"
+                                target="_blank"
+                                aria-label="Instagram"
+                            >
+                                <img
+                                    src="images/accueil/logo_instagram.png"
+                                    alt="Logo Instagram"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@ToutouCompagnie-p2m"
+                                target="_blank"
+                                aria-label="YouTube"
+                            >
+                                <img
+                                    src="images/accueil/logo_youtube.png"
+                                    alt="Logo YouTube"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </footer>
 
-        </div>
-    </footer>
-
-    <script src="vendor/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js" defer></script>
-</body>
+        <script src="vendor/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js" defer></script>
+    </body>
 </html>

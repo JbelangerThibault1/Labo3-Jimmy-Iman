@@ -1,770 +1,949 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conseils</title>
-    <meta name="description" content="Découvrez nos conseils sur les soins, l'alimentation, l'éducation et l'activité">
-    <link rel="stylesheet" href="vendor/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header-site">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Conseils</title>
+        <meta
+            name="description"
+            content="Découvrez nos conseils sur les soins, l'alimentation, l'éducation et l'activité"
+        />
+        <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" href="data:," />
+    </head>
+    <body>
+        <header class="header-site">
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="w-100 d-flex align-items-center">
+                    <!-- LOGO -->
+                    <a
+                        class="navbar-brand d-flex align-items-center"
+                        href="index.html"
+                    >
+                        <img
+                            src="images/accueil/logo.png"
+                            alt="Logo de Toutou & Compagnie"
+                            class="logo-header"
+                        />
 
-        <nav class="navbar navbar-expand-lg w-100">
-            <div class="w-100 d-flex align-items-center">
+                        <div class="logo-nom ms-3">
+                            <div class="nom-principal">
+                                Toutou <span>&</span> Compagnie
+                            </div>
+                            <div class="sous-titre-logo">ÉLEVAGE CANIN</div>
+                        </div>
+                    </a>
 
-                <!-- LOGO -->
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-header">
-                    
-                    <div class="logo-nom ms-3">
-                        <div class="nom-principal">
-                            Toutou <span>&</span> Compagnie
-                        </div>
-                        <div class="sous-titre-logo">
-                            ÉLEVAGE CANIN
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- MENU HAMBURGER -->
-                <button class="navbar-toggler"
+                    <!-- MENU HAMBURGER -->
+                    <button
+                        class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#navigation">
-                    <span class="hamburger-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </button>
-
-                <!-- MENU -->
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                Accueil
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link"
-                            href="elevage.html">
-                                Notre élevage
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="races.html">
-                                Nos races
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="chiots.html">
-                                Nos chiots
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="conseils.html">
-                                Conseils
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- RECHERCHE -->
-                    <button class="btn-recherche" type="button" aria-label="Rechercher">
-                        <img src="images/accueil/loupe.jpg" alt="Logo de recherche" class="logo-recherche">
+                        data-bs-target="#navigation"
+                    >
+                        <span class="hamburger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                     </button>
 
-                    <div class="form-check form-switch mt-3">
-                        <input type="checkbox" id="mode-sombre" class="form-check-input" role="switch">
-                        <label for="mode-sombre" class="form-check-label">Mode sombre</label>
-                    </div>
-
-                    <!-- BOUTON CONTACT -->
-                    <a href="contact.html"
-                    class="btn-nous-joindre">
-                        Nous joindre
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <main>
-         
-        <section class="banniere-conseils">
-            <div class="container">
-                <div class="banniere-conseils-contenu">
-
-                    <div class="banniere-conseils-texte">
-                        <span class="petit-titre-conseils">
-                            🐾 Toutou & Compagnie
-                        </span>
-
-                        <h1>Nos conseils pour votre compagnon</h1>
-
-                        <p>
-                            Découvrez nos conseils essentiels pour prendre soin de votre chien
-                            et lui offrir une vie saine, active et équilibrée.
-                        </p>
-                    </div>
-
-                    <div class="banniere-conseils-decoration">
-                        ♡
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <!-- LES 4 SECTIONS DE CONSEILS -->
-        <div class="row conseil">
-            
-            <!-- Section 1 santé  -->
-            <section class="conseils-section col-md-6 p-4">
-                <div class="conseil-entete">
-                    <div class="entete-conseil row">
-                        <div class=" d-flex align-items-center gap-3 mt-2 text-center">
-                            <img src="images/conseils/icone-sante.png"
-                                alt="Icône soins et santé"
-                                class="conseil-icone">
-                            
-                            <div class="conseil-titre ">
-                                <h2 class="mt-2">Soins et santé 🐾</h2>  
-                                
-                                <p class="m-3">Prévenez les problèmes de santé et assurez à votre chien une vie longue et heureuse.</p>     
-                            </div>             
-                        </div>
-                    </div>
-                </div>         
-                
-                <div class="row conseil-contenu">
-                <!-- Colonne des conseils -->
-                    <div class="conseil-liste col-md-7">
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/brosse.png"
-                                    alt="Icône soins du pelage"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Soins du pelage</h3>
-                                <p>Brossez régulièrement votre chien pour retirer les poils morts, prévenir les nœuds et garder son pelage propre et sain.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/bain.png"
-                                    alt="Icône hygiène générale"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Hygiène générale</h3>
-                                <p>Vérifiez régulièrement ses oreilles, ses yeux, ses dents et ses griffes afin de maintenir une bonne hygiène au quotidien.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/vaccination.png"
-                                    alt="Icône vaccinations"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Vaccinations</h3>
-                                <p>Respectez le calendrier de vaccination recommandé par votre vétérinaire pour protéger votre chien contre plusieurs maladies.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/parasites.png"
-                                    alt="Icône prévention des parasites"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Prévention des parasites</h3>
-                                <p>Utilisez une protection adaptée contre les puces, les tiques et les autres parasites selon les recommandations de votre vétérinaire.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/veterinaire.png"
-                                    alt="Icône visites vétérinaires"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Visites vétérinaires</h3>
-                                <p>Planifiez des examens réguliers afin de surveiller sa santé et de détecter rapidement tout changement ou problème potentiel.</p>
-                            </div>
-                        </article>
-                    </div>
-                
-
-
-                <!-- Colonne image + conseil important -->
-                    <div class="conseil-visuel col-md-5">
-
-                        <img src="images/conseils/golden_vet.png"
-                            alt="Chien lors d'un examen de santé"
-                            class="conseil-image">
-
-                        <aside class="conseil-astuce text-center">
-                            <h3>💡 Conseil  <span>🐾</span></h3>
-                            
-                            <p>
-                                Un chien en bonne santé est un chien plus heureux
-                                et plus actif. En cas de doute, consulté toujours un vétérinaire.
-                            </p>
-                        </aside>
-                    </div>
-                </div>    
-            </section>            
-                
-
-            <!-- Section 2 éducation  -->
-            <section class="conseils-section col-md-6 p-4">
-                <div class="conseil-entete">
-                    <div class="entete-conseil row">
-                        <div class=" d-flex align-items-center gap-3 mt-2 text-center">
-                            <img src="images/conseils/education.png"
-                                alt="Icône éducation"
-                                class="conseil-icone">
-                            
-                            <div class="conseil-titre ">
-                                <h2 class="mt-2">Éducation 🐾</h2>  
-                                
-                                <p class="m-3">Des méthodes positives pour développer un bon comportement et renforcer votre lien.</p>     
-                            </div>             
-                        </div>
-                    </div>
-                </div>         
-                
-                <div class="row conseil-contenu">
-                <!-- Colonne des conseils -->
-                    <div class="conseil-liste col-md-7">
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/commande.png"
-                                    alt="Icône commande de base"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Commandes de base</h3>
-                                <p>Apprenez-lui les commandes essentielles (comme "assis", "restez", "viens") pour sa sécurité et votre tranquillité d'esprit.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/renforcement.png"
-                                    alt="Icône renforcement positif"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Renforcement positif</h3>
-                                <p>Utilisez des récompenses (friandises, caresses, jeux) pour encourager les bons comportements. Évitez les punitions qui peuvent créer du stress.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/socialisation.png"
-                                    alt="Icône socialisation"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Socialisation</h3>
-                                <p>Exposez votre chien dès son jeune âge à différents environnements, personnes et animaux pour qu'il soit bien équilibré.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/entrainement.png"
-                                    alt="Icône entraînement"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Gestion des comportements indésirables</h3>
-                                <p>Apprenez des techniques adaptées pour corriger les aboiements excessifs, la mastication ou la traction en laisse.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/patience.png"
-                                    alt="Icône patience"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Patience et constance</h3>
-                                <p>La clé d'une bonne éducation est la régularité. Soyez patient, cohérent et utilisez toujours les mêmes règles.</p>
-                            </div>
-                        </article>
-                    </div>
-                
-
-
-                <!-- Colonne image + conseil important -->
-                    <div class="conseil-visuel col-md-5">
-
-                        <img src="images/conseils/education-aside.png"
-                            alt="Chien en obéissance avec son maître"
-                            class="conseil-image">
-
-                        <aside class="conseil-astuce text-center">
-                            <h3>💡 Conseil  <span>🐾</span></h3>
-                            
-                            <p>
-                                Des séances courtes et amusantes de 5 à 10 minutes sont plus efficaces que de longues séances.
-                            </p>
-                        </aside>
-                    </div>
-                </div>    
-            </section>     
-        
-            <!-- Section 3 alimentation  -->
-            <section class="conseils-section col-md-6 p-4">
-                <div class="conseil-entete">
-                    <div class="entete-conseil row">
-                        <div class=" d-flex align-items-center gap-3 mt-2 text-center">
-                            <img src="images/conseils/alimentation.png"
-                                alt="Icône alimentation"
-                                class="conseil-icone">
-                            
-                            <div class="conseil-titre ">
-                                <h2 class="mt-2">Alimentation 🐾</h2>  
-                                
-                                <p class="m-3">Une nutrition adaptée pour donner à votre chien toute l'énergie et la vitalité dont il a besoin.</p>     
-                            </div>             
-                        </div>
-                    </div>
-                </div>         
-                
-                <div class="row conseil-contenu">
-                <!-- Colonne des conseils -->
-                    <div class="conseil-liste col-md-7">
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/nourriture.png"
-                                    alt="Icône nourriture chien"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Choisir une nourriture de qualité</h3>
-                                <p>Optez pour des aliments complets et équilibrés, adaptés à son âge, sa taille, sa race et son niveau d'activité.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/quantité.png"
-                                    alt="Icône quantité nourriture"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Quantités adaptées</h3>
-                                <p>Respectez les portions recommandées afin de maintenir un poids santé et d'éviter le surpoids ou l'obésité.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/aliment_proscrit.png"
-                                    alt="Icône aliments à éviter"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Aliments à éviter</h3>
-                                <p>Ne donnez pas d'aliments toxiques comme le chocolat, les raisins, les oignons, l'ail, l'avocat ou les aliments très gras et salés.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/friandise.png"
-                                    alt="Icône friandises"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Friandises</h3>
-                                <p>Offrez des friandises avec modération et privilégiez des options saines et naturelles.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/bol_eau.png"
-                                    alt="Icône d'un bol d'eau"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Eau fraîche</h3>
-                                <p>Assurez-vous qu'il ait toujours accès à de l'eau fraîche et propre, surtout après l'activité physique.</p>
-                            </div>
-                        </article>
-                    </div>
-                
-
-
-                <!-- Colonne image + conseil important -->
-                    <div class="conseil-visuel col-md-5">
-
-                        <img src="images/conseils/berger_alimentation.png"
-                            alt="Chien qui mange dans sa gamelle"
-                            class="conseil-image">
-
-                        <aside class="conseil-astuce text-center">
-                            <h3>💡 Conseil  <span>🐾</span></h3>
-                            
-                            <p>
-                                Les besoins nutritionnels varient selon l'âge, la race et le niveau d'activité. N'hésitez pas à demander conseil à votre vétérinaire pour un régime adapté.
-                            </p>
-                        </aside>
-                    </div>
-                </div>    
-            </section>     
-
-            <!-- Section 4 activités  -->
-            <section class="conseils-section col-md-6 p-4">
-                <div class="conseil-entete">
-                    <div class="entete-conseil row">
-                        <div class=" d-flex align-items-center gap-3 mt-2 text-center">
-                            <img src="images/conseils/activite.png"
-                                alt="Icône soins et santé"
-                                class="conseil-icone">
-                            
-                            <div class="conseil-titre ">
-                                <h2 class="mt-2">Activité 🐾</h2>  
-                                
-                                <p class="m-3">Des activités physiques et mentales pour un chien équilibré et épanoui.</p>     
-                            </div>             
-                        </div>
-                    </div>
-                </div>         
-                
-                <div class="row conseil-contenu">
-                <!-- Colonne des conseils -->
-                    <div class="conseil-liste col-md-7">
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/promenade.png"
-                                    alt="Icône chien promenade"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Promenades quotidiennes</h3>
-                                <p>Adaptez la durée et l'intensité selon son âge, sa race et son énergie. Les promenades aident à maintenir son poids santé et stimulent son esprit.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/jeux_interactif.png"
-                                    alt="Icône chien balle"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Jeux interactifs</h3>
-                                <p>Utilisez des jouets, des jeux de lancer ou des jeux d'intelligence pour le divertir et ronforcer son lien.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/stimulation_mentale.png"
-                                    alt="Icône stimulation mentale"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Stimulation mentale</h3>
-                                <p>Proposez des activités qui font réfléchir votre chien (casse-têtes, recherche de friandises, nouveaux environnements) pour éviter l'ennui.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/activite_race.png"
-                                    alt="Icône activités selon la race"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Activités selon la race</h3>
-                                <p>Certaines races ont des besoins plus élevés (ex. : courses, randonnés), tandis que d'autres préfèreront des activités plus douces.</p>
-                            </div>
-                        </article>
-
-
-                        <article class="conseil-item">
-                            <div class="item-sante">
-                                <img src="images/conseils/saisons.png"
-                                    alt="Icône adapter saisons"
-                                    class="conseil-icone">
-                            </div>
-
-                            <div class="item-texte">
-                                <h3>Adapter aux saisons</h3>
-                                <p>En été, évitez les fortes chaleurs et privilégiez les heures fraîches. En hiver, protégez ses pattes du sel et du froid.</p>
-                            </div>
-                        </article>
-                    </div>
-                
-
-
-                <!-- Colonne image + conseil important -->
-                    <div class="conseil-visuel col-md-5">
-
-                        <img src="images/conseils/activite_aside.png"
-                            alt="Chien qui court dans un parc"
-                            class="conseil-image">
-
-                        <aside class="conseil-astuce text-center">
-                            <h3>💡 Conseil  <span>🐾</span></h3>
-                            
-                            <p>
-                                Un chien qui se dépense physiquement et mentalement est généralement plus calme, plus heureux et moins enclin aux comportements indésirables.
-                            </p>
-                        </aside>
-                    </div>
-                </div>    
-            </section>     
-        
-        
-        </div>
-
-
-        <!-- Petite table rapide de conseils -->
-        <div class="container mt-5 mb-5 ">
-            <h3 class="text-center mb-4">Tableau récapitulatif des besoins selon la taille du chien</h3>
-            
-            <div class="tableau-conteneur">
-                <table class="table table-striped tableau-conseils">
-                    <thead>
-                        <tr>
-                            <th>Taille</th>
-                            <th>Activité quotidienne</th>
-                            <th>Nombre de repas</th>
-                            <th>Espace recommandé</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Petit</td>
-                            <td>30 minutes</td>
-                            <td>1-2 repas</td>
-                            <td>Appartement ou maison avec jardin</td>
-                        </tr>
-                        <tr>
-                            <td>Moyen</td>
-                            <td>1 heure</td>
-                            <td>2 repas</td>
-                            <td>Maison avec jardin</td>
-                        </tr>
-                        <tr>
-                            <td>Grand</td>
-                            <td>1 à 2 heures</td>
-                            <td>2-3 repas</td>
-                            <td>Maison avec grand jardin ou accès à un parc</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>      
-        </div>
-
-    </main>
-    
-
-
-
-
-
-
-    <footer class="footer-site">
-        <!-- Forme arrondie -->
-        <div class="footer-vague"></div>
-
-        <div class="container footer-contenu">
-            <div class="row gy-5">
-                <!-- ================================ -->
-                <!-- LOGO -->
-                <!-- ================================ -->
-
-                <div class="col-lg-3 col-md-6">
-                    <a href="index.html"
-                    class="footer-logo d-flex align-items-center">
-                        <img src="images/accueil/logo.png" alt="Logo de Toutou & Compagnie" class="logo-footer">
-
-                        <div class="ms-3">
-                            <div class="footer-nom">
-                                Toutou <span>&</span><br>
-                                Compagnie
-                            </div>
-                            <div class="footer-sous-titre">
-                                ÉLEVAGE CANIN
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- ================================ -->
-                <!-- NAVIGATION -->
-                <!-- ================================ -->
-
-                <div class="col-lg-3 col-md-6">
-
-                    <h2 class="footer-titre">
-                        Navigation
-                    </h2>
-
-                    <ul class="footer-navigation">
-
-                        <li>
-                            <a href="index.html">Accueil</a>
-                        </li>
-
-                        <li>
-                            <a href="elevage.html">Notre élevage</a>
-                        </li>
-
-                        <li>
-                            <a href="races.html">Nos races</a>
-                        </li>
-
-                        <li>
-                            <a href="chiots.html">Nos chiots</a>
-                        </li>
-
-                        <li>
-                            <a href="conseils.html">Conseils</a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- ================================ -->
-                <!-- CONTACT -->
-                <!-- ================================ -->
-
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="footer-titre">
-                        Nous joindre
-                    </h2>
-
-                    <div class="footer-contact">
-                        <div class="contact-ligne">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <p>
-                                123, chemin des Cavaliers<br>
-                                Saint-Henri, QC G0R 3E0
-                            </p>
+                    <!-- MENU -->
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    Accueil
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="elevage.html">
+                                    Notre élevage
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="races.html">
+                                    Nos races
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="chiots.html">
+                                    Nos chiots
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="conseils.html"
+                                >
+                                    Conseils
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- RECHERCHE -->
+                        <button
+                            class="btn-recherche"
+                            type="button"
+                            aria-label="Rechercher"
+                        >
+                            <img
+                                src="images/accueil/loupe.jpg"
+                                alt="Logo de recherche"
+                                class="logo-recherche"
+                            />
+                        </button>
+
+                        <div class="form-check form-switch mt-3">
+                            <input
+                                type="checkbox"
+                                id="mode-sombre"
+                                class="form-check-input"
+                                role="switch"
+                            />
+                            <label for="mode-sombre" class="form-check-label"
+                                >Mode sombre</label
+                            >
                         </div>
 
-                        <div class="contact-ligne">
-                            <i class="bi bi-telephone-fill"></i>
-                            <p>
-                                (418) 555-0123
-                            </p>
-                        </div>
-
-                        <div class="contact-ligne">
-                            <i class="bi bi-envelope-fill"></i>
-                            <p>
-                                info@toutouetcompagnie.ca
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ================================ -->
-                <!-- RÉSEAUX -->
-                <!-- ================================ -->
-
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="footer-titre">
-                        Suivez-nous
-                    </h2>
-
-                    <div class="reseaux-sociaux">
-                        <a href="https://www.facebook.com/profile.php?id=61594627183723" target="_blank" aria-label="Facebook">
-                            <img src="images/accueil/logo_facebook.png" alt="Logo Facebook" class="logo-reseaux">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/jbelangerthibault/" target="_blank" aria-label="Instagram">
-                            <img src="images/accueil/logo_instagram.png" alt="Logo Instagram" class="logo-reseaux">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@ToutouCompagnie-p2m" target="_blank" aria-label="YouTube">
-                            <img src="images/accueil/logo_youtube.png" alt="Logo YouTube" class="logo-reseaux">
-                            <i class="bi bi-youtube"></i>
+                        <!-- BOUTON CONTACT -->
+                        <a href="contact.html" class="btn-nous-joindre">
+                            Nous joindre
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </footer>
+            </nav>
+        </header>
 
-    <script src="js/script.js" defer></script>
-    <script src="vendor/bootstrap.bundle.min.js"></script>
-</body>
+        <main>
+            <section class="banniere-conseils">
+                <div class="container">
+                    <div class="banniere-conseils-contenu">
+                        <div class="banniere-conseils-texte">
+                            <span class="petit-titre-conseils">
+                                🐾 Toutou & Compagnie
+                            </span>
+
+                            <h1>Nos conseils pour votre compagnon</h1>
+
+                            <p>
+                                Découvrez nos conseils essentiels pour prendre
+                                soin de votre chien et lui offrir une vie saine,
+                                active et équilibrée.
+                            </p>
+                        </div>
+
+                        <div class="banniere-conseils-decoration">♡</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LES 4 SECTIONS DE CONSEILS -->
+            <div class="row conseil">
+                <!-- Section 1 santé  -->
+                <section class="conseils-section col-md-6 p-4">
+                    <div class="conseil-entete">
+                        <div class="entete-conseil row">
+                            <div
+                                class="d-flex align-items-center gap-3 mt-2 text-center"
+                            >
+                                <img
+                                    src="images/conseils/icone-sante.png"
+                                    alt="Icône soins et santé"
+                                    class="conseil-icone"
+                                />
+
+                                <div class="conseil-titre">
+                                    <h2 class="mt-2">Soins et santé 🐾</h2>
+
+                                    <p class="m-3">
+                                        Prévenez les problèmes de santé et
+                                        assurez à votre chien une vie longue et
+                                        heureuse.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row conseil-contenu">
+                        <!-- Colonne des conseils -->
+                        <div class="conseil-liste col-md-7">
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/brosse.png"
+                                        alt="Icône soins du pelage"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Soins du pelage</h3>
+                                    <p>
+                                        Brossez régulièrement votre chien pour
+                                        retirer les poils morts, prévenir les
+                                        nœuds et garder son pelage propre et
+                                        sain.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/bain.png"
+                                        alt="Icône hygiène générale"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Hygiène générale</h3>
+                                    <p>
+                                        Vérifiez régulièrement ses oreilles, ses
+                                        yeux, ses dents et ses griffes afin de
+                                        maintenir une bonne hygiène au
+                                        quotidien.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/vaccination.png"
+                                        alt="Icône vaccinations"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Vaccinations</h3>
+                                    <p>
+                                        Respectez le calendrier de vaccination
+                                        recommandé par votre vétérinaire pour
+                                        protéger votre chien contre plusieurs
+                                        maladies.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/parasites.png"
+                                        alt="Icône prévention des parasites"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Prévention des parasites</h3>
+                                    <p>
+                                        Utilisez une protection adaptée contre
+                                        les puces, les tiques et les autres
+                                        parasites selon les recommandations de
+                                        votre vétérinaire.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/veterinaire.png"
+                                        alt="Icône visites vétérinaires"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Visites vétérinaires</h3>
+                                    <p>
+                                        Planifiez des examens réguliers afin de
+                                        surveiller sa santé et de détecter
+                                        rapidement tout changement ou problème
+                                        potentiel.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Colonne image + conseil important -->
+                        <div class="conseil-visuel col-md-5">
+                            <img
+                                src="images/conseils/golden_vet.png"
+                                alt="Chien lors d'un examen de santé"
+                                class="conseil-image"
+                            />
+
+                            <aside class="conseil-astuce text-center">
+                                <h3>💡 Conseil <span>🐾</span></h3>
+
+                                <p>
+                                    Un chien en bonne santé est un chien plus
+                                    heureux et plus actif. En cas de doute,
+                                    consulté toujours un vétérinaire.
+                                </p>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 2 éducation  -->
+                <section class="conseils-section col-md-6 p-4">
+                    <div class="conseil-entete">
+                        <div class="entete-conseil row">
+                            <div
+                                class="d-flex align-items-center gap-3 mt-2 text-center"
+                            >
+                                <img
+                                    src="images/conseils/education.png"
+                                    alt="Icône éducation"
+                                    class="conseil-icone"
+                                />
+
+                                <div class="conseil-titre">
+                                    <h2 class="mt-2">Éducation 🐾</h2>
+
+                                    <p class="m-3">
+                                        Des méthodes positives pour développer
+                                        un bon comportement et renforcer votre
+                                        lien.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row conseil-contenu">
+                        <!-- Colonne des conseils -->
+                        <div class="conseil-liste col-md-7">
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/commande.png"
+                                        alt="Icône commande de base"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Commandes de base</h3>
+                                    <p>
+                                        Apprenez-lui les commandes essentielles
+                                        (comme "assis", "restez", "viens") pour
+                                        sa sécurité et votre tranquillité
+                                        d'esprit.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/renforcement.png"
+                                        alt="Icône renforcement positif"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Renforcement positif</h3>
+                                    <p>
+                                        Utilisez des récompenses (friandises,
+                                        caresses, jeux) pour encourager les bons
+                                        comportements. Évitez les punitions qui
+                                        peuvent créer du stress.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/socialisation.png"
+                                        alt="Icône socialisation"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Socialisation</h3>
+                                    <p>
+                                        Exposez votre chien dès son jeune âge à
+                                        différents environnements, personnes et
+                                        animaux pour qu'il soit bien équilibré.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/entrainement.png"
+                                        alt="Icône entraînement"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>
+                                        Gestion des comportements indésirables
+                                    </h3>
+                                    <p>
+                                        Apprenez des techniques adaptées pour
+                                        corriger les aboiements excessifs, la
+                                        mastication ou la traction en laisse.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/patience.png"
+                                        alt="Icône patience"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Patience et constance</h3>
+                                    <p>
+                                        La clé d'une bonne éducation est la
+                                        régularité. Soyez patient, cohérent et
+                                        utilisez toujours les mêmes règles.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Colonne image + conseil important -->
+                        <div class="conseil-visuel col-md-5">
+                            <img
+                                src="images/conseils/education-aside.png"
+                                alt="Chien en obéissance avec son maître"
+                                class="conseil-image"
+                            />
+
+                            <aside class="conseil-astuce text-center">
+                                <h3>💡 Conseil <span>🐾</span></h3>
+
+                                <p>
+                                    Des séances courtes et amusantes de 5 à 10
+                                    minutes sont plus efficaces que de longues
+                                    séances.
+                                </p>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 3 alimentation  -->
+                <section class="conseils-section col-md-6 p-4">
+                    <div class="conseil-entete">
+                        <div class="entete-conseil row">
+                            <div
+                                class="d-flex align-items-center gap-3 mt-2 text-center"
+                            >
+                                <img
+                                    src="images/conseils/alimentation.png"
+                                    alt="Icône alimentation"
+                                    class="conseil-icone"
+                                />
+
+                                <div class="conseil-titre">
+                                    <h2 class="mt-2">Alimentation 🐾</h2>
+
+                                    <p class="m-3">
+                                        Une nutrition adaptée pour donner à
+                                        votre chien toute l'énergie et la
+                                        vitalité dont il a besoin.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row conseil-contenu">
+                        <!-- Colonne des conseils -->
+                        <div class="conseil-liste col-md-7">
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/nourriture.png"
+                                        alt="Icône nourriture chien"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Choisir une nourriture de qualité</h3>
+                                    <p>
+                                        Optez pour des aliments complets et
+                                        équilibrés, adaptés à son âge, sa
+                                        taille, sa race et son niveau
+                                        d'activité.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/quantité.png"
+                                        alt="Icône quantité nourriture"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Quantités adaptées</h3>
+                                    <p>
+                                        Respectez les portions recommandées afin
+                                        de maintenir un poids santé et d'éviter
+                                        le surpoids ou l'obésité.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/aliment_proscrit.png"
+                                        alt="Icône aliments à éviter"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Aliments à éviter</h3>
+                                    <p>
+                                        Ne donnez pas d'aliments toxiques comme
+                                        le chocolat, les raisins, les oignons,
+                                        l'ail, l'avocat ou les aliments très
+                                        gras et salés.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/friandise.png"
+                                        alt="Icône friandises"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Friandises</h3>
+                                    <p>
+                                        Offrez des friandises avec modération et
+                                        privilégiez des options saines et
+                                        naturelles.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/bol_eau.png"
+                                        alt="Icône d'un bol d'eau"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Eau fraîche</h3>
+                                    <p>
+                                        Assurez-vous qu'il ait toujours accès à
+                                        de l'eau fraîche et propre, surtout
+                                        après l'activité physique.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Colonne image + conseil important -->
+                        <div class="conseil-visuel col-md-5">
+                            <img
+                                src="images/conseils/berger_alimentation.png"
+                                alt="Chien qui mange dans sa gamelle"
+                                class="conseil-image"
+                            />
+
+                            <aside class="conseil-astuce text-center">
+                                <h3>💡 Conseil <span>🐾</span></h3>
+
+                                <p>
+                                    Les besoins nutritionnels varient selon
+                                    l'âge, la race et le niveau d'activité.
+                                    N'hésitez pas à demander conseil à votre
+                                    vétérinaire pour un régime adapté.
+                                </p>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 4 activités  -->
+                <section class="conseils-section col-md-6 p-4">
+                    <div class="conseil-entete">
+                        <div class="entete-conseil row">
+                            <div
+                                class="d-flex align-items-center gap-3 mt-2 text-center"
+                            >
+                                <img
+                                    src="images/conseils/activite.png"
+                                    alt="Icône soins et santé"
+                                    class="conseil-icone"
+                                />
+
+                                <div class="conseil-titre">
+                                    <h2 class="mt-2">Activité 🐾</h2>
+
+                                    <p class="m-3">
+                                        Des activités physiques et mentales pour
+                                        un chien équilibré et épanoui.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row conseil-contenu">
+                        <!-- Colonne des conseils -->
+                        <div class="conseil-liste col-md-7">
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/promenade.png"
+                                        alt="Icône chien promenade"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Promenades quotidiennes</h3>
+                                    <p>
+                                        Adaptez la durée et l'intensité selon
+                                        son âge, sa race et son énergie. Les
+                                        promenades aident à maintenir son poids
+                                        santé et stimulent son esprit.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/jeux_interactif.png"
+                                        alt="Icône chien balle"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Jeux interactifs</h3>
+                                    <p>
+                                        Utilisez des jouets, des jeux de lancer
+                                        ou des jeux d'intelligence pour le
+                                        divertir et ronforcer son lien.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/stimulation_mentale.png"
+                                        alt="Icône stimulation mentale"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Stimulation mentale</h3>
+                                    <p>
+                                        Proposez des activités qui font
+                                        réfléchir votre chien (casse-têtes,
+                                        recherche de friandises, nouveaux
+                                        environnements) pour éviter l'ennui.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/activite_race.png"
+                                        alt="Icône activités selon la race"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Activités selon la race</h3>
+                                    <p>
+                                        Certaines races ont des besoins plus
+                                        élevés (ex. : courses, randonnés),
+                                        tandis que d'autres préfèreront des
+                                        activités plus douces.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="conseil-item">
+                                <div class="item-sante">
+                                    <img
+                                        src="images/conseils/saisons.png"
+                                        alt="Icône adapter saisons"
+                                        class="conseil-icone"
+                                    />
+                                </div>
+
+                                <div class="item-texte">
+                                    <h3>Adapter aux saisons</h3>
+                                    <p>
+                                        En été, évitez les fortes chaleurs et
+                                        privilégiez les heures fraîches. En
+                                        hiver, protégez ses pattes du sel et du
+                                        froid.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Colonne image + conseil important -->
+                        <div class="conseil-visuel col-md-5">
+                            <img
+                                src="images/conseils/activite_aside.png"
+                                alt="Chien qui court dans un parc"
+                                class="conseil-image"
+                            />
+
+                            <aside class="conseil-astuce text-center">
+                                <h3>💡 Conseil <span>🐾</span></h3>
+
+                                <p>
+                                    Un chien qui se dépense physiquement et
+                                    mentalement est généralement plus calme,
+                                    plus heureux et moins enclin aux
+                                    comportements indésirables.
+                                </p>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Petite table rapide de conseils -->
+            <div class="container mt-5 mb-5">
+                <h3 class="text-center mb-4">
+                    Tableau récapitulatif des besoins selon la taille du chien
+                </h3>
+
+                <div class="tableau-conteneur">
+                    <table class="table table-striped tableau-conseils">
+                        <thead>
+                            <tr>
+                                <th>Taille</th>
+                                <th>Activité quotidienne</th>
+                                <th>Nombre de repas</th>
+                                <th>Espace recommandé</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Petit</td>
+                                <td>30 minutes</td>
+                                <td>1-2 repas</td>
+                                <td>Appartement ou maison avec jardin</td>
+                            </tr>
+                            <tr>
+                                <td>Moyen</td>
+                                <td>1 heure</td>
+                                <td>2 repas</td>
+                                <td>Maison avec jardin</td>
+                            </tr>
+                            <tr>
+                                <td>Grand</td>
+                                <td>1 à 2 heures</td>
+                                <td>2-3 repas</td>
+                                <td>
+                                    Maison avec grand jardin ou accès à un parc
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer-site">
+            <!-- Forme arrondie -->
+            <div class="footer-vague"></div>
+
+            <div class="container footer-contenu">
+                <div class="row gy-5">
+                    <!-- ================================ -->
+                    <!-- LOGO -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <a
+                            href="index.html"
+                            class="footer-logo d-flex align-items-center"
+                        >
+                            <img
+                                src="images/accueil/logo.png"
+                                alt="Logo de Toutou & Compagnie"
+                                class="logo-footer"
+                            />
+
+                            <div class="ms-3">
+                                <div class="footer-nom">
+                                    Toutou <span>&</span><br />
+                                    Compagnie
+                                </div>
+                                <div class="footer-sous-titre">
+                                    ÉLEVAGE CANIN
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- ================================ -->
+                    <!-- NAVIGATION -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Navigation</h2>
+
+                        <ul class="footer-navigation">
+                            <li>
+                                <a href="index.html">Accueil</a>
+                            </li>
+
+                            <li>
+                                <a href="elevage.html">Notre élevage</a>
+                            </li>
+
+                            <li>
+                                <a href="races.html">Nos races</a>
+                            </li>
+
+                            <li>
+                                <a href="chiots.html">Nos chiots</a>
+                            </li>
+
+                            <li>
+                                <a href="conseils.html">Conseils</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ================================ -->
+                    <!-- CONTACT -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Nous joindre</h2>
+
+                        <div class="footer-contact">
+                            <div class="contact-ligne">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <p>
+                                    123, chemin des Cavaliers<br />
+                                    Saint-Henri, QC G0R 3E0
+                                </p>
+                            </div>
+
+                            <div class="contact-ligne">
+                                <i class="bi bi-telephone-fill"></i>
+                                <p>(418) 555-0123</p>
+                            </div>
+
+                            <div class="contact-ligne">
+                                <i class="bi bi-envelope-fill"></i>
+                                <p>info@toutouetcompagnie.ca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================ -->
+                    <!-- RÉSEAUX -->
+                    <!-- ================================ -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-titre">Suivez-nous</h2>
+
+                        <div class="reseaux-sociaux">
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61594627183723"
+                                target="_blank"
+                                aria-label="Facebook"
+                            >
+                                <img
+                                    src="images/accueil/logo_facebook.png"
+                                    alt="Logo Facebook"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-facebook"></i>
+                            </a>
+
+                            <a
+                                href="https://www.instagram.com/jbelangerthibault/"
+                                target="_blank"
+                                aria-label="Instagram"
+                            >
+                                <img
+                                    src="images/accueil/logo_instagram.png"
+                                    alt="Logo Instagram"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@ToutouCompagnie-p2m"
+                                target="_blank"
+                                aria-label="YouTube"
+                            >
+                                <img
+                                    src="images/accueil/logo_youtube.png"
+                                    alt="Logo YouTube"
+                                    class="logo-reseaux"
+                                />
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/script.js" defer></script>
+        <script src="vendor/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

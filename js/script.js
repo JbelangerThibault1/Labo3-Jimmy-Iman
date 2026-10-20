@@ -151,15 +151,12 @@ if (formulaireContact) {
             if (champ === prenom) {
                 localStorage.setItem("contact_prenom", champ.value);
             }
-
             if (champ === nom) {
                 localStorage.setItem("contact_nom", champ.value);
             }
-
             if (champ === courriel) {
                 localStorage.setItem("contact_courriel", champ.value);
             }
-
             if (champ === telephone) {
                 localStorage.setItem("contact_telephone", champ.value);
             }
@@ -172,10 +169,9 @@ if (formulaireContact) {
 
     formulaireContact.addEventListener("submit", function (event) {
         event.preventDefault();
-
         let formulaireValide = true;
 
-        // Vérifier tous les champs
+        // vérifier tous les champs
         champs.forEach(function (champ) {
             if (!validerChamp(champ)) {
                 formulaireValide = false;
@@ -186,9 +182,7 @@ if (formulaireContact) {
         const raisonChoisie = formulaireContact.querySelector(
             'input[name="raison"]:checked',
         );
-
         const groupeRaison = formulaireContact.querySelector(".type-demande");
-
         if (!raisonChoisie) {
             afficherErreur(groupeRaison, "Veuillez sélectionner une raison.");
             formulaireValide = false;
@@ -210,7 +204,6 @@ if (formulaireContact) {
         // ==========================================
         // ENVOI VALIDE
         // ==========================================
-
         if (formulaireValide) {
             // Créer un objet avec les informations du formulaire
             const demande = {
@@ -229,10 +222,8 @@ if (formulaireContact) {
             const demandes = JSON.parse(
                 localStorage.getItem("mesDemandes") || "[]",
             );
-
             // ajouter la nouvelle demande
             demandes.push(demande);
-
             // sauvegarder le tableau dans le localStorage
             localStorage.setItem("mesDemandes", JSON.stringify(demandes));
 
@@ -240,7 +231,6 @@ if (formulaireContact) {
             // avec les informations du formulaire
             const donnees = new FormData(formulaireContact);
             const parametres = new URLSearchParams(donnees);
-
             window.location.href = "merci.html?" + parametres.toString();
         }
     });
@@ -253,7 +243,6 @@ if (formulaireContact) {
             effacerErreur(groupeRaison);
         });
     });
-
     consentement.addEventListener("change", function () {
         if (consentement.checked) {
             effacerErreur(consentement);
