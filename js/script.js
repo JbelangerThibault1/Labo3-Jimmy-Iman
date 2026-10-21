@@ -45,11 +45,9 @@ if (formulaireContact) {
     );
 
     const champs = [prenom, nom, courriel, telephone, message];
-
     // ==========================================
     // afficher les erreurs
     // ==========================================
-
     function afficherErreur(champ, texte) {
         let erreur = champ.parentElement.querySelector(".erreur-js");
         if (!erreur) {
@@ -65,7 +63,6 @@ if (formulaireContact) {
     // ==========================================
     // effacer les erreurs
     // ==========================================
-
     function effacerErreur(champ) {
         const erreur = champ.parentElement.querySelector(".erreur-js");
         if (erreur) {
@@ -75,7 +72,6 @@ if (formulaireContact) {
     // ==========================================
     // valider un champ
     // ==========================================
-
     function validerChamp(champ) {
         const valeur = champ.value.trim();
         // champs obligatoires
@@ -122,20 +118,16 @@ if (formulaireContact) {
         effacerErreur(champ);
         return true;
     }
-
     // ==========================================
     // PRÉ-REMPLISSAGE LOCALSTORAGE
     // ==========================================
-
     prenom.value = localStorage.getItem("contact_prenom") || "";
     nom.value = localStorage.getItem("contact_nom") || "";
     courriel.value = localStorage.getItem("contact_courriel") || "";
     telephone.value = localStorage.getItem("contact_telephone") || "";
-
     // ==========================================
     // VALIDATION EN TEMPS RÉEL
     // ==========================================
-
     champs.forEach(function (champ) {
         champ.addEventListener("input", function () {
             validerChamp(champ);
