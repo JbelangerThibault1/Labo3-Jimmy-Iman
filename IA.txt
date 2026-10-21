@@ -1,0 +1,36 @@
+Outil utilisé : ChatGPT
+
+1. Utilisation de l'IA
+
+J'ai utilisé ChatGPT comme outil d'accompagnement pour m'aider à comprendre certaines notions de programmation Web et à résoudre des problèmes rencontrés pendant le développement du projet.
+Aucune génération de code n'a été demandé, seulement de l'optimisation et de l'aide lors de bugs, en nous expliquant chaque notion et la correction à apporter.
+
+2. Types d'aide obtenue
+
+HTML :
+
+Explications sur la structure des pages et l'utilisation de certaines balises.
+Aide à la compréhension des formulaires et de leurs attributs.
+
+CSS :
+
+Aide à la correction de problèmes d'affichage et de mise en page.
+Suggestions pour améliorer les styles, les couleurs et les éléments visuels.
+Aide pour optimiser le code et le rendre plus beau, sans rien changer, mais en supprimant les lignes inutiles et en m'expliquant pourquoi.
+
+JavaScript :
+
+Aide à la compréhension et à la correction de fonctionnalités interactives.
+Explications concernant les événements, les fonctions, les paramètres et la manipulation du DOM.
+Accompagnement pour la validation du formulaire.
+Aide à l'utilisation du localStorage pour conserver des données.
+Explications détaillées de l'aide qu'il a suggérer.
+
+3. Vérification et compréhension
+
+Les réponses et les suggestions fournies par ChatGPT ont été utilisées comme soutien au développement.
+J'ai également utilisé l'IA pour obtenir des explications sur certaines lignes de code et approfondir ma compréhension des notions enseignées en classe.
+
+4. Conclusion
+
+L'intelligence artificielle a servi d'outil d'apprentissage, de dépannage et d'assistance à la programmation durant la réalisation du projet.
